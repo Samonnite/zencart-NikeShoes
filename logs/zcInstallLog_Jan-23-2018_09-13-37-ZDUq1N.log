@@ -1,0 +1,113 @@
+---------------
+Jan 23 2018 9:13 -- inspect
+PHP中没有编译CURL - 请联系主机商。
+
+---------------
+Jan 23 2018 9:13 -- inspect
+PHP中没有编译CURL - 请联系主机商。
+
+---------------
+Jan 23 2018 9:13 -- inspect
+System Inspection Results: 
+------------------------------
+WARN: Zen Cart 版本: => 有新版本 v1.5.5f :: v155f contains minor updates
+<a href="https://www.zen-cart.com/showthread.php?219730-Zen-Cart-v1-5-5f-released!#post1339733
+" target="_blank">下载地址</a>
+NA: 服务器 => Apache/2.4.4 (Win32) PHP/5.4.16
+NA: HTTP主机 => localhost
+NA: 转换路径 => D:/wamp/www/zen-cart-chinese-with-plugin-1.5.4/zc_install/index.php(SCRIPT_FILENAME)
+NA: 真实路径 => D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4
+NA: PHP O/S => WINNT
+NA: PHP API模式 => apache2handler
+NA: PHP页面最大执行时间 => 30
+OK: MySQL支持 => ON
+OK: PHP版本 => 5.4.16
+OK: PHP Sessions 支持 => ON
+OK: PHP Session.AutoStart => OFF
+OK: PHP session.use_trans_sid => OFF
+OK: 建议SQL缓存目录 => D:/wamp/www/zen-cart-chinese-with-plugin-1.5.4/cache
+OK: PHP GD 支持 => ON
+OK: GD Version => GD bundled (2.1.0 compatible)
+OK: PHP ZLIB 压缩支持 => ON
+WARN: PHP cURL 支持 => OFF
+WARN: CURL 非SSL功能 => PHP中没有编译CURL - 请联系主机商。
+WARN: CURL SSL功能 => PHP中没有编译CURL - 请联系主机商。
+OK: PHP 上传支持 => ON  upload_max_filesize=2M;  post_max_size=8M
+OK: PHP 上传临时目录 => d:/wamp/tmp
+WARN: Apache .htaccess 支持 => 无法测试 - 不支持 CURL
+NA: PHP include_path => .;C:\php\pear
+NA: PHP SMTP 目标 => localhost
+NA: PHP sendmail 路径 => 
+NA: PHP sendmail 发件人 => you@yourdomain
+OK: PHP open_basedir 限制 => 
+OK: PHP 输出缓存 (gzip) => ON
+OK: PHP XML 支持 => ON
+OK: PHP Session.Save_Path => D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\cache-->可写
+OK: includes/configure.php =>  可写
+OK: admin/includes/configure.php =>  可写
+OK: cache => OK 777 read/write/execute
+OK: images => OK 777 read/write/execute (INCLUDE SUBDIRECTORIES TOO)
+OK: includes/languages/english/html_includes => OK 777 read/write (INCLUDE SUBDIRECTORIES TOO)
+OK: logs => OK 777 read/write/execute
+OK: media => OK 777 read/write/execute
+OK: pub => OK 777 read/write/execute
+OK: admin/backups => OK 777 read/write
+OK: admin/images/graphs => OK 777 read/write/execute
+PHP Extensions compiled: Core, bcmath, calendar, ctype, date, ereg, filter, ftp, hash, iconv, json, mcrypt, SPL, odbc, pcre, Reflection, session, standard, mysqlnd, tokenizer, zip, zlib, libxml, dom, PDO, Phar, SimpleXML, wddx, xml, xmlreader, xmlwriter, apache2handler, gd, mbstring, mysql, mysqli, pdo_mysql, pdo_sqlite, mhash, xdebug
+------------------------------
+
+
+---------------
+Jan 23 2018 9:13 -- inspect
+PHP中没有编译CURL - 请联系主机商。
+
+---------------
+Jan 23 2018 9:13 -- inspect
+PHP中没有编译CURL - 请联系主机商。
+
+---------------
+Jan 23 2018 9:16 -- database_setup
+FATAL: 数据库不存在 - 
+
+---------------
+Jan 23 2018 9:16 -- database_setup1
+Installer - Page: database_setup -- collected information: Array
+(
+    [language] => schinese
+    [DIR_FS_SQL_CACHE] => D:/wamp/www/zen-cart-chinese-with-plugin-1.5.4/cache
+    [DB_TYPE] => mysql
+    [DB_PREFIX] => 
+    [DB_CHARSET] => utf8
+    [DB_SERVER] => localhost
+    [DB_SERVER_USERNAME] => root
+    [DB_SERVER_PASSWORD] => ***private***
+    [DB_DATABASE] => zencart
+    [SQL_CACHE_METHOD] => none
+)
+
+
+---------------
+Jan 23 2018 9:17 -- database_setup1
+Installer - Page: database_setup -- collected information: Array
+(
+    [language] => schinese
+    [DIR_FS_SQL_CACHE] => D:/wamp/www/zen-cart-chinese-with-plugin-1.5.4/cache
+    [DB_TYPE] => mysql
+    [DB_PREFIX] => 
+    [DB_CHARSET] => utf8
+    [DB_SERVER] => localhost
+    [DB_SERVER_USERNAME] => root
+    [DB_SERVER_PASSWORD] => ***private***
+    [DB_DATABASE] => zencart
+    [SQL_CACHE_METHOD] => none
+)
+
+
+---------------
+Jan 23 2018 9:20 -- store_setup
+FATAL: 商店的电子邮件地址为空
+
+---------------
+Jan 23 2018 9:20 -- store_setup
+FATAL: 商店的电子邮件地址无效
+
