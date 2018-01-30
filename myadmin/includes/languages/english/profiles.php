@@ -4,31 +4,31 @@
  * @copyright Copyright 2003-2014 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
- * @version GIT: $Id: Author: Ian Wilson   Modified in v1.5.4 $
+ * @version GIT: $Id: Author: Jack Modified in v1.5.4 $
  */
 
-define('HEADING_TITLE_ALL_PROFILES', 'User Profiles');
-define('HEADING_TITLE_INDIVIDUAL_PROFILE', 'Profile for %s ');
-define('HEADING_TITLE_NEW_PROFILE', 'New Profile for ');
+define('HEADING_TITLE_ALL_PROFILES', '管理用户权限');
+define('HEADING_TITLE_INDIVIDUAL_PROFILE', '%s的权限');
+define('HEADING_TITLE_NEW_PROFILE', '添加新的权限');
 
-define('ERROR_NO_PROFILE_DEFINED', 'The option that you requested cannot be undertaken without specifying a profile');
-define('ERROR_NO_PROFILE_NAME', 'Please enter a name for the new profile');
-define('ERROR_INVALID_PROFILE_NAME', 'Please enter a valid name for the profile');
-define('ERROR_DUPLICATE_PROFILE_NAME', 'A profile with that name already exists. Please choose a different name or edit the existing profile');
-define('ERROR_NO_PAGES_IN_PROFILE', 'A profile cannot be empty, please select some pages');
-define('ERROR_UNABLE_TO_CREATE_PROFILE', 'Unable to create profile');
+define('ERROR_NO_PROFILE_DEFINED', '请指定权限后再设定选项');
+define('ERROR_NO_PROFILE_NAME', '请输入权限名称');
+define('ERROR_INVALID_PROFILE_NAME', '请检查权限名称');
+define('ERROR_DUPLICATE_PROFILE_NAME', '该名称已存在，请输入另外一个名字。');
+define('ERROR_NO_PAGES_IN_PROFILE', '权限不能为空，请选择一些页面。');
+define('ERROR_UNABLE_TO_CREATE_PROFILE', '无法创建权限');
 
-define('SUCCESS_PROFILE_INSERTED', 'Profile Added.');
-define('SUCCESS_PROFILE_UPDATED', 'Profile Updated');
-define('SUCCESS_PROFILE_NAME_UPDATED', 'Profile Name Updated');
-define('SUCCESS_PROFILE_DELETED', 'Profile Deleted');
+define('SUCCESS_PROFILE_INSERTED', '权限已增加');
+define('SUCCESS_PROFILE_UPDATED', '权限已更新');
+define('SUCCESS_PROFILE_NAME_UPDATED', '权限名称已更新');
+define('SUCCESS_PROFILE_DELETED', '权限已删除');
 
 define('TEXT_ID', 'ID');
-define('TEXT_NAME', 'Name');
-define('TEXT_USERS', 'Users');
-define('TEXT_NO_PROFILES_FOUND', 'No profiles have been defined yet');
+define('TEXT_NAME', '姓名');
+define('TEXT_USERS', '用户');
+define('TEXT_NO_PROFILES_FOUND', '未定义权限');
 
-define('IMAGE_ADD_PROFILE', 'Add Profile');
-define('IMAGE_RENAME', 'Rename');
+define('IMAGE_ADD_PROFILE', '添加权限');
+define('IMAGE_RENAME', '改名');
 
-define('TEXT_CONFIRM_DELETE', 'Delete requested. Please confirm: ');
+define('TEXT_CONFIRM_DELETE', '即将删除，请确认: ');

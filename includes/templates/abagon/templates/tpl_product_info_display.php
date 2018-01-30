@@ -16,7 +16,7 @@
 <div class="centerColumn" id="productGeneral">
 
 <!--bof Product Name-->
-<h1 id="productName" class="productGeneral"><?php echo $products_name; ?></h1>
+
 <!--eof Product Name-->
 
 <!--bof Form start-->
@@ -31,8 +31,8 @@
 /**
  * display the category icons
  */
-require($template->get_template_dir('/tpl_modules_category_icon_display.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_modules_category_icon_display.php'); ?>
-<?php } ?>
+// require($template->get_template_dir('/tpl_modules_category_icon_display.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_modules_category_icon_display.php'); ?>
+ <?php } ?>
 <!--eof Category Icon -->
 
 <!--bof Prev/Next top position -->
@@ -41,13 +41,13 @@ require($template->get_template_dir('/tpl_modules_category_icon_display.php',DIR
 /**
  * display the product previous/next helper
  */
-require($template->get_template_dir('/tpl_products_next_previous.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_products_next_previous.php'); ?>
-<?php } ?>
+// require($template->get_template_dir('/tpl_products_next_previous.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_products_next_previous.php'); ?>
+ <?php } ?>
 <!--eof Prev/Next top position-->
 
-<table class="product-detail-table" width="100%" border="0" cellpadding="0" cellspacing="0">
-<tr>
-	<td class="left-side-info">
+<div class="product-detail-table" width="100%" border="0" cellpadding="0" cellspacing="0">
+<div>
+	<div class="left-side-info">
 
 <!--bof Main Product Image -->
 <?php
@@ -65,12 +65,9 @@ require($template->get_template_dir('/tpl_products_next_previous.php',DIR_WS_TEM
 
 <!--bof Product details list  -->
 <?php if ( (($flag_show_product_info_model == 1 and $products_model != '') or ($flag_show_product_info_weight == 1 and $products_weight !=0) or ($flag_show_product_info_quantity == 1) or ($flag_show_product_info_manufacturer == 1 and !empty($manufacturers_name))) ) { ?>
-<ul id="productDetailsList" class="floatingBox back">
-  <?php echo (($flag_show_product_info_model == 1 and $products_model !='') ? '<li><span class="product-info-label">' . TEXT_PRODUCT_MODEL . '</span>' . $products_model . '</li>' : '') . "\n"; ?>
-  <?php echo (($flag_show_product_info_weight == 1 and $products_weight !=0) ? '<li><span class="product-info-label">' . TEXT_PRODUCT_WEIGHT . '</span>' .  $products_weight . TEXT_PRODUCT_WEIGHT_UNIT . '</li>'  : '') . "\n"; ?>
-  <?php echo (($flag_show_product_info_quantity == 1) ? '<li><span class="product-info-label">'. TEXT_PRODUCT_QUANTITY . ': </span>'  . $products_quantity  . '</li>'  : '') . "\n"; ?>
-  <?php echo (($flag_show_product_info_manufacturer == 1 and !empty($manufacturers_name)) ? '<li><span class="product-info-label">' . TEXT_PRODUCT_MANUFACTURER . '</span>' . $manufacturers_name . '</li>' : '') . "\n"; ?>
-</ul>
+<!-- <ul id="productDetailsList" class="floatingBox back">
+
+</ul> -->
 <br class="clearBoth" />
 <?php
   }
@@ -78,9 +75,14 @@ require($template->get_template_dir('/tpl_products_next_previous.php',DIR_WS_TEM
 <!--eof Product details list -->
 
 
-	</td>
-	<td class="right-side-info">
-
+</div>
+<div class="right-side">
+	<div class="right-side-info">
+  <h1 id="productName" class="productGeneral"><?php echo $products_name; ?></h1>
+  <?php echo (($flag_show_product_info_model == 1 and $products_model !='') ? '<li><span class="product-info-label">' . TEXT_PRODUCT_MODEL . '</span>' . $products_model . '</li>' : '') . "\n"; ?>
+  <?php echo (($flag_show_product_info_weight == 1 and $products_weight !=0) ? '<li><span class="product-info-label">' . TEXT_PRODUCT_WEIGHT . '</span>' .  $products_weight . TEXT_PRODUCT_WEIGHT_UNIT . '</li>'  : '') . "\n"; ?>
+  <?php echo (($flag_show_product_info_quantity == 1) ? '<li><span class="product-info-label">'. TEXT_PRODUCT_QUANTITY . ': </span>'  . $products_quantity  . '</li>'  : '') . "\n"; ?>
+  <?php echo (($flag_show_product_info_manufacturer == 1 and !empty($manufacturers_name)) ? '<li><span class="product-info-label">' . TEXT_PRODUCT_MANUFACTURER . '</span>' . $manufacturers_name . '</li>' : '') . "\n"; ?>
 <!--bof Product Price block -->
 <h2 id="productPrices" class="productGeneral">
 <?php
@@ -100,12 +102,8 @@ require($template->get_template_dir('/tpl_products_next_previous.php',DIR_WS_TEM
 <?php } ?>
 <!--eof free ship icon  -->
 
- <!--bof Product description -->
-<?php if ($products_description != '') { ?>
-<div id="productDescription" class="productGeneral biggerText"><?php echo stripslashes($products_description); ?></div>
-<?php } ?>
-<!--eof Product description -->
-<br class="clearBoth" />
+
+
 
 <!--bof Attributes Module -->
 <?php
@@ -147,7 +145,7 @@ if (CUSTOMERS_APPROVAL == 3 and TEXT_LOGIN_FOR_PRICE_BUTTON_REPLACE_SHOWROOM == 
               $the_button = '<input type="hidden" name="cart_quantity" value="1" />' . zen_draw_hidden_field('products_id', (int)$_GET['products_id']) . zen_image_submit(BUTTON_IMAGE_IN_CART, BUTTON_IN_CART_ALT);
             } else {
               // show the quantity box
-    $the_button = PRODUCTS_ORDER_QTY_TEXT . '<input type="text" name="cart_quantity" value="' . (zen_get_buy_now_qty($_GET['products_id'])) . '" maxlength="6" size="4" /><br />' . zen_get_products_quantity_min_units_display((int)$_GET['products_id']) . '<br />' . zen_draw_hidden_field('products_id', (int)$_GET['products_id']) . zen_image_submit(BUTTON_IMAGE_IN_CART, BUTTON_IN_CART_ALT);
+    $the_button = PRODUCTS_ORDER_QTY_TEXT . '<input type="text" name="cart_quantity" value="' . (zen_get_buy_now_qty($_GET['products_id'])) . '" maxlength="6" size="4" />' . zen_get_products_quantity_min_units_display((int)$_GET['products_id']) . '' . zen_draw_hidden_field('products_id', (int)$_GET['products_id']) . zen_image_submit(BUTTON_IMAGE_IN_CART, BUTTON_IN_CART_ALT);
             }
     $display_button = zen_get_buy_now_button($_GET['products_id'], $the_button);
   ?>
@@ -164,10 +162,37 @@ if (CUSTOMERS_APPROVAL == 3 and TEXT_LOGIN_FOR_PRICE_BUTTON_REPLACE_SHOWROOM == 
 <br class="clearBoth" />
 
 
+  </div>
+  <br class="clearBoth" />
+       <!--bof Product description -->
+ <?php if ($products_description != '') { ?>
+<div id="productDescription" class="productGeneral biggerText"><?php echo stripslashes($products_description); ?></div>
+<?php } ?>
 
-	</td>
-</tr>
-</table>
+<!--eof Product description -->
+<!--bof Reviews button and count-->
+<?php
+  if ($flag_show_product_info_reviews == 1) {
+    // if more than 0 reviews, then show reviews button; otherwise, show the "write review" button
+    if ($reviews->fields['count'] > 0 ) { ?>
+<div id="productReviewLink" class="buttonRow back"><?php echo '<a href="' . zen_href_link(FILENAME_PRODUCT_REVIEWS, zen_get_all_get_params()) . '">' . zen_image_button(BUTTON_IMAGE_REVIEWS, BUTTON_REVIEWS_ALT) . '</a>'; ?></div>
+<br class="clearBoth" />
+<p class="reviewCount"><?php echo ($flag_show_product_info_reviews_count == 1 ? TEXT_CURRENT_REVIEWS . ' ' . $reviews->fields['count'] : ''); ?></p>
+<?php } else { ?>
+<div id="productReviewLink" class="buttonRow back"><?php echo '<a href="' . zen_href_link(FILENAME_PRODUCT_REVIEWS_WRITE, zen_get_all_get_params(array())) . '">' . zen_image_button(BUTTON_IMAGE_WRITE_REVIEW, BUTTON_WRITE_REVIEW_ALT) . '</a>'; ?></div>
+<br class="clearBoth" />
+<?php
+  }
+}
+?>
+<!--eof Reviews button and count -->
+<br class="clearBoth" />
+
+  </div>
+
+  </div>
+  <br class="clearBoth" />
+  </div>
 
 <!--bof Additional Product Images -->
 <?php
@@ -186,23 +211,8 @@ if (CUSTOMERS_APPROVAL == 3 and TEXT_LOGIN_FOR_PRICE_BUTTON_REPLACE_SHOWROOM == 
  require($template->get_template_dir('/tpl_products_next_previous.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_products_next_previous.php'); ?>
 <?php } ?>
 <!--eof Prev/Next bottom position -->
+<br class="clearBoth" />
 
-<!--bof Reviews button and count-->
-<?php
-  if ($flag_show_product_info_reviews == 1) {
-    // if more than 0 reviews, then show reviews button; otherwise, show the "write review" button
-    if ($reviews->fields['count'] > 0 ) { ?>
-<div id="productReviewLink" class="buttonRow back"><?php echo '<a href="' . zen_href_link(FILENAME_PRODUCT_REVIEWS, zen_get_all_get_params()) . '">' . zen_image_button(BUTTON_IMAGE_REVIEWS, BUTTON_REVIEWS_ALT) . '</a>'; ?></div>
-<br class="clearBoth" />
-<p class="reviewCount"><?php echo ($flag_show_product_info_reviews_count == 1 ? TEXT_CURRENT_REVIEWS . ' ' . $reviews->fields['count'] : ''); ?></p>
-<?php } else { ?>
-<div id="productReviewLink" class="buttonRow back"><?php echo '<a href="' . zen_href_link(FILENAME_PRODUCT_REVIEWS_WRITE, zen_get_all_get_params(array())) . '">' . zen_image_button(BUTTON_IMAGE_WRITE_REVIEW, BUTTON_WRITE_REVIEW_ALT) . '</a>'; ?></div>
-<br class="clearBoth" />
-<?php
-  }
-}
-?>
-<!--eof Reviews button and count -->
 
 
 <!--bof Product date added/available-->

@@ -36,7 +36,7 @@
 <br class="clearBoth" />
 
 
-<form action="<?php echo zen_href_link(FILENAME_GV_REDEEM, '', 'NONSSL', false); ?>" method="get">
+<!-- <form action="<?php echo zen_href_link(FILENAME_GV_REDEEM, '', 'NONSSL', false); ?>" method="get">
 <?php echo zen_draw_hidden_field('main_page',FILENAME_GV_REDEEM) . zen_draw_hidden_field('goback','true') . zen_hide_session_id(); ?>
 <fieldset>
 <legend><?php echo TEXT_GV_REDEEM_INFO; ?></legend>
@@ -44,6 +44,6 @@
 <?php echo zen_draw_input_field('gv_no', $_GET['gv_no'], 'size="18" id="lookup-gv-redeem"');?>
 </fieldset>
 <div class="buttonRow forward"><?php echo zen_image_submit(BUTTON_IMAGE_REDEEM, BUTTON_REDEEM_ALT); ?></div>
-</form>
+</form> -->
 
 </div>

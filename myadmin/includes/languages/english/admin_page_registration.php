@@ -7,26 +7,26 @@
  * @version $Id: admin_page_registration.php 18695 2011-05-04 05:24:19Z drbyte $
  */
 
-define('HEADING_TITLE', 'Admin Page Registration');
-define('TEXT_PAGE_KEY', 'Page Key');
-define('TEXT_LANGUAGE_KEY', 'Page Name');
-define('TEXT_MAIN_PAGE', 'Page Filename');
-define('TEXT_PAGE_PARAMS', 'Page Parameters');
-define('TEXT_MENU_KEY', 'Menu');
-define('TEXT_DISPLAY_ON_MENU', 'Display on Menu?');
-define('TEXT_SORT_ORDER', 'Sort Order');
+define('HEADING_TITLE', '管理页面注册');
+define('TEXT_PAGE_KEY', '页面编码');
+define('TEXT_LANGUAGE_KEY', '页面名称');
+define('TEXT_MAIN_PAGE', '页面文件名');
+define('TEXT_PAGE_PARAMS', '页面参数');
+define('TEXT_MENU_KEY', '菜单');
+define('TEXT_DISPLAY_ON_MENU', '在菜单下显示?');
+define('TEXT_SORT_ORDER', '排序');
 
-define('TEXT_EXAMPLE_PAGE_KEY', '(e.g. myModPageName)');
-define('TEXT_EXAMPLE_LANGUAGE_KEY', '(e.g. BOX_MY_MOD_PAGE_NAME)');
-define('TEXT_EXAMPLE_MAIN_PAGE', '(e.g. FILENAME_PAGE_NAME)');
-define('TEXT_EXAMPLE_PAGE_PARAMS', '(e.g. option=1 or, more usually, leave blank)');
-define('TEXT_SELECT_MENU', 'Select Menu');
+define('TEXT_EXAMPLE_PAGE_KEY', '(例如 myModPageName)');
+define('TEXT_EXAMPLE_LANGUAGE_KEY', '(例如 BOX_MY_MOD_PAGE_NAME)');
+define('TEXT_EXAMPLE_MAIN_PAGE', '(例如 FILENAME_PAGE_NAME)');
+define('TEXT_EXAMPLE_PAGE_PARAMS', '(例如 option=1 或者留空)');
+define('TEXT_SELECT_MENU', '选择菜单');
 
-define('ERROR_PAGE_KEY_NOT_ENTERED', 'Page key not entered. All admin pages must have a unique page key.');
-define('ERROR_PAGE_KEY_ALREADY_EXISTS', 'Page key already exists. Page keys must be unique.');
-define('ERROR_LANGUAGE_KEY_NOT_ENTERED', 'Language key not entered. All admin page must have a language key that defines the text on any menu link.');
-define('ERROR_LANGUAGE_KEY_HAS_NOT_BEEN_DEFINED', 'The language key entered has not been defined. Please check that it has been spelt correctly.');
-define('ERROR_MAIN_PAGE_NOT_ENTERED', 'The filename definition for the page has not been entered.');
-define('ERROR_FILENAME_HAS_NOT_BEEN_DEFINED', 'The filename definition entered does not exist. Please check that it has been spelt correctly.');
-define('ERROR_MENU_NOT_CHOSEN', 'Menu not chosen. You must associate the new page with a menu, even if it will not be displayed on that menu.');
-define('SUCCESS_ADMIN_PAGE_REGISTERED', 'Your admin page has been registered.');
+define('ERROR_PAGE_KEY_NOT_ENTERED', '没有输入页面编码。所有管理页面都需要一个唯一的页面编码。');
+define('ERROR_PAGE_KEY_ALREADY_EXISTS', '页面编码已存在。页面编码必须唯一。');
+define('ERROR_LANGUAGE_KEY_NOT_ENTERED', '没有输入页面名称。所有管理页面都要输入一个在菜单上的名称。');
+define('ERROR_LANGUAGE_KEY_HAS_NOT_BEEN_DEFINED', '页面名称未定义，请核对。');
+define('ERROR_MAIN_PAGE_NOT_ENTERED', '没有输入文件名。');
+define('ERROR_FILENAME_HAS_NOT_BEEN_DEFINED', '文件名不存在，请检查拼写。');
+define('ERROR_MENU_NOT_CHOSEN', '没有选择菜单。即使不显示，也要给新的页面选择一个菜单。');
+define('SUCCESS_ADMIN_PAGE_REGISTERED', '管理页面已注册。');

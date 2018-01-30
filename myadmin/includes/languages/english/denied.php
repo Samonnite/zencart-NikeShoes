@@ -7,6 +7,6 @@
  * @version $Id: denied.php 17000 2010-07-26 15:10:53Z kuroi $
  */
 
-define('TEXT_ACCESS_DENIED', 'Sorry, your security clearance does not allow you to access this resource.');
-define('TEXT_CONTACT_SITE_ADMIN', 'Please contact your site administrator if you believe this to be incorrect.');
-define('TEXT_APOLOGY', 'Sorry for any inconvenience.');
+define('TEXT_ACCESS_DENIED', '对不起，您没有权限访问该页面。');
+define('TEXT_CONTACT_SITE_ADMIN', '如有疑问，请联系网站管理员。');
+define('TEXT_APOLOGY', '很抱歉给您造成的不便。');

@@ -17,26 +17,28 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: media_types.php 1105 2005-04-04 22:05:35Z birdbrain $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: media_types.php 290 2004-09-15 19:48:26Z wilt $
 //
 
-define('HEADING_TITLE', 'Media Types');
+define('HEADING_TITLE', '媒体类型');
 
-define('TABLE_HEADING_MEDIA_TYPE', 'Media Type');
-define('TABLE_HEADING_MEDIA_TYPE_EXT', 'Extension');
-define('TABLE_HEADING_ACTION', 'Action');
+define('TABLE_HEADING_MEDIA_TYPE', '媒体类型');
+define('TABLE_HEADING_MEDIA_TYPE_EXT', '扩展');
+define('TABLE_HEADING_ACTION', '操作');
 
-define('TEXT_HEADING_NEW_MEDIA_TYPE', 'New Media Type');
-define('TEXT_HEADING_EDIT_MEDIA_TYPE', 'Edit Media Type');
-define('TEXT_HEADING_DELETE_MEDIA_TYPES', 'Delete Media Type');
+define('TEXT_HEADING_NEW_MEDIA_TYPE', '新建媒体类型');
+define('TEXT_HEADING_EDIT_MEDIA_TYPE', '编辑媒体类型');
+define('TEXT_HEADING_DELETE_MEDIA_TYPES', '删除媒体类型');
 
-define('TEXT_MEDIA_TYPE_NAME', 'Media Type Name');
-define('TEXT_MEDIA_TYPE_EXT', 'Media Type Extension');
-define('TEXT_EXTENSION', 'Extension: ');
+define('TEXT_MEDIA_TYPE_NAME', '媒体类型名称');
+define('TEXT_MEDIA_TYPE_EXT', '媒体类型扩展');
+define('TEXT_EXTENSION', '扩展: ');
 
-define('TEXT_NEW_INTRO', 'Please fill out the following information for the new media type');
-define('TEXT_EDIT_INTRO', 'Please make any necessary changes');
+define('TEXT_NEW_INTRO', '请填写以下新媒体类型的信息');
+define('TEXT_EDIT_INTRO', '请做必要修改');
 
-define('TEXT_DELETE_INTRO', 'Are you sure you want to delete this media type?');
-define('TEXT_DISPLAY_NUMBER_OF_MEDIA_TYPES', 'Displaying <strong>%d</strong> to <strong>%d</strong> (of <strong>%d</strong> Media Types)');
+define('TEXT_DELETE_INTRO', '您确认要删除该媒体类型吗?');
+define('TEXT_DISPLAY_NUMBER_OF_MEDIA_TYPES', '显示<strong>%d</strong>到<strong>%d</strong> (共<strong>%d</strong>个媒体类型)');
 ?>

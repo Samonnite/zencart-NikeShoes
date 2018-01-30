@@ -3,7 +3,7 @@
 // +----------------------------------------------------------------------+
 // |zen-cart Open Source E-commerce                                       |
 // +----------------------------------------------------------------------+
-// | Copyright (c) 2006 The zen-cart developers                           |
+// | Copyright (c) 2004 The zen-cart developers                           |
 // |                                                                      |
 // | http://www.zen-cart.com/index.php                                    |
 // |                                                                      |
@@ -17,40 +17,42 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
 //  $Id: media_manager.php 4873 2006-11-02 09:12:46Z drbyte $
 //
 
-define('HEADING_TITLE_MEDIA_MANAGER', 'Media Manager');
+define('HEADING_TITLE_MEDIA_MANAGER', '媒体管理');
 
-define('TABLE_HEADING_MEDIA', 'Collection Name');
-define('TABLE_HEADING_ACTION', 'Action');
-define('TEXT_HEADING_NEW_MEDIA_COLLECTION', 'New Media Collection');
-define('TEXT_NEW_INTRO', 'Please enter the details of the new media collection below');
-define('TEXT_MEDIA_COLLECTION_NAME', 'Media Collection Name');
-define('TEXT_MEDIA_EDIT_INSTRUCTIONS', 'Use the section above to change the Media Collection Name, then clicking on the save button.<br /><br />
-                                        Use the selection below to add or remove media clips from the media collection.');
-define('TEXT_DATE_ADDED', 'Date Added:');
-define('TEXT_LAST_MODIFIED', 'Last Modified:');
-define('TEXT_PRODUCTS', 'Linked Products:');
-define('TEXT_CLIPS', 'Linked Clips:');
-define('TEXT_NO_PRODUCTS', 'No Products in this category');
-define('TEXT_HEADING_EDIT_MEDIA_COLLECTION', 'Edit Media Collection');
-define('TEXT_EDIT_INTRO', 'Please amend the details of the new media collection below');
-define('TEXT_HEADING_DELETE_MEDIA_COLLECTION', 'Delete Media Collection');
-define('TEXT_DELETE_INTRO', 'Do you want to delete this media collection?');
-  define('TEXT_DISPLAY_NUMBER_OF_MEDIA', 'Displaying <strong>%d</strong> to <strong>%d</strong> (of <strong>%d</strong> Media Collections)');
-define('TEXT_ADD_MEDIA_CLIP', 'Add Media Clip');
-define('TEXT_MEDIA_CLIP_DIR', 'Upload to Media Directory');
-define('TEXT_MEDIA_CLIP_TYPE', 'Media Clip Type');
-define('TEXT_HEADING_ASSIGN_MEDIA_COLLECTION', 'Assign Media Collection to Product');
-define('TEXT_PRODUCTS_INTRO', 'You can assign and remove this Media Collection for products using the forms below.');
-define('IMAGE_PRODUCTS', 'Assign to Product');
-define('TEXT_DELETE_PRODUCTS', 'Delete this Media Collection and all items linked to it?');
-define('TEXT_DELETE_WARNING_PRODUCTS', '<strong>WARNING:</strong> There are %s items still linked to this Media Collection!');
-define('TEXT_WARNING_FOLDER_UNWRITABLE', 'NOTE: media folder ' . DIR_FS_CATALOG_MEDIA . ' is not writable. Cannot upload files.');
+define('TABLE_HEADING_MEDIA', '片断名称');
+define('TABLE_HEADING_ACTION', '操作');
+define('TEXT_HEADING_NEW_MEDIA_COLLECTION', '新媒体片断');
+define('TEXT_NEW_INTRO', '请在下面输入新媒体片断的详情');
+define('TEXT_MEDIA_COLLECTION_NAME', '媒体片断名称');
+define('TEXT_MEDIA_EDIT_INSTRUCTIONS', '使用上面的部分修改媒体片断名称, 然后点击保存按钮。<br /><br />
+                                        使用下面的部分在添加或删除媒体片断.');
+define('TEXT_DATE_ADDED', '加入日期:');
+define('TEXT_LAST_MODIFIED', '最后修改:');
+define('TEXT_PRODUCTS', '链接商品:');
+define('TEXT_CLIPS', '链接片断:');
+define('TEXT_NO_PRODUCTS', '该分类中没有商品');
+define('TEXT_HEADING_EDIT_MEDIA_COLLECTION', '修改媒体片断');
+define('TEXT_EDIT_INTRO', '请在下面修改媒体片断');
+define('TEXT_HEADING_DELETE_MEDIA_COLLECTION', '删除媒体片断');
+define('TEXT_DELETE_INTRO', '您要删除该媒体片断吗?');
+  define('TEXT_DISPLAY_NUMBER_OF_MEDIA', '显示<strong>%d</strong>到<strong>%d</strong> (共<strong>%d</strong>个媒体片断)');
+define('TEXT_ADD_MEDIA_CLIP', '添加媒体片断');
+define('TEXT_MEDIA_CLIP_DIR', '上传到媒体目录');
+define('TEXT_MEDIA_CLIP_TYPE', '媒体片断类型');
+define('TEXT_HEADING_ASSIGN_MEDIA_COLLECTION', '指定媒体收集到商品');
+define('TEXT_PRODUCTS_INTRO', '您可以用下面的表格指定或删除该媒体收集给商品.');
+define('IMAGE_PRODUCTS', '指定给商品');
+define('TEXT_DELETE_PRODUCTS', '删除该媒体收集和所有链接条目?');
+define('TEXT_DELETE_WARNING_PRODUCTS', '<strong>警告:</strong> 共有%s个条目还链接在该媒体片断上!');
+define('TEXT_WARNING_FOLDER_UNWRITABLE', '说明: 媒体目录' . DIR_FS_CATALOG_MEDIA . '不可写，无法上传文件。');
 
-define('ERROR_UNKNOWN_DATA', 'ERROR: Unknown data supplied ... operation cancelled');
-define('TEXT_ADD','Add');
+define('ERROR_UNKNOWN_DATA', '错误: 未知数据 ... 操作取消');
+define('TEXT_ADD','增加');
 
 
 ?>

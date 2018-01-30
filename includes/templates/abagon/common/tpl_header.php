@@ -124,19 +124,17 @@ if ($current_page_base == 'account' || $current_page_base == 'login' || $current
 							</div>-->
 				</div>
 
- 
-        
-            
+       
 <div class="clearBoth"></div>			   
 
 			   
-			   <div align="right" class="cart-header-wrapper">
+			   <div  class="cart-header-wrapper">
 					  <!-- header cart section -->
-					  <table align="right" class="align-center cart-header">
+					  <table align="center" class=" cart-header">
 						<tr>
 						   <td>
                <div class="hidden cart-dropdown-wrapper">
-								  <div class="cart-tab-wrapper"><img src="<?php echo $template->get_template_dir('', DIR_WS_TEMPLATE, $current_page_base,'images')?>/spacer.gif" width="1" height="1" alt="" /></div>
+								  <div class="cart-tab-wrapper"></div>
 							   </div>
 								<?php require($template->get_template_dir('tpl_shopping_cart_header.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_shopping_cart_header.php'); 
 								echo $content;?>		
@@ -146,16 +144,33 @@ if ($current_page_base == 'account' || $current_page_base == 'login' || $current
 				</div>
 			   
 			   </div>
-			   <div class="clearBoth"></div>
+         <div class="clearBoth"></div>
+           
 			   <div class="main_menu_panel">
-               <?php require($template->get_template_dir('tpl_top_nav.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_top_nav.php'); ?>
+
+
+	<div class="clearBoth"></div>
+<!--bof-mega menu display-->
+	<?php require($template->get_template_dir('tpl_mega_menu.php',DIR_WS_TEMPLATE, $current_page_base,'common'). '/tpl_mega_menu.php');?>  
+	<!--eof-mega menu display-->
 
                       
           </div>
-          <!--eof-branding display-->
-          <div class="bannerpic"><a href="/"></a></div> 
-	    </div>
+          <div>
 
+
+  </div>
+          <!--eof-branding display-->
+        
+      </div>
+
+ <?php 
+ if($this_is_home_page){
+ ?>  
+  <a href="<?php echo zen_href_link(FILENAME_DEFAULT); ?>" ><div class="bannerpic"></div> </a>
+  <?php
+ }   
+?>
           <!--bof-optional categories tabs navigation display-->
           <?php
             if (CATEGORIES_TABS_STATUS == '1') {

@@ -4,28 +4,30 @@
  * @copyright Copyright 2003-2012 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: login.php 19286 2011-07-28 15:42:33Z drbyte $
+ * @Simplified Chinese version   http://www.zen-cart.cn
  * @version GIT: $Id: Author: DrByte  Mon Jul 16 14:10:24 2012 -0400 Modified in v1.5.1 $
  */
 
-define('HEADING_TITLE', 'Admin Login');
-define('HEADING_TITLE_EXPIRED', 'Admin Login - Password Expired');
+define('HEADING_TITLE', '管理员登录');
+define('HEADING_TITLE_EXPIRED', '管理员登录 - 密码过期');
 
-define('TEXT_ADMIN_NAME', 'Admin Username:');
-define('TEXT_ADMIN_PASS', 'Admin Password:');
-define('TEXT_ADMIN_OLD_PASSWORD', 'Old Password:');
-define('TEXT_ADMIN_NEW_PASSWORD', 'New Password:');
-define('TEXT_ADMIN_CONFIRM_PASSWORD', 'Confirm Password:');
+define('TEXT_ADMIN_NAME', '管理员用户名: ');
+define('TEXT_ADMIN_PASS', '管理员的密码: ');
+define('TEXT_ADMIN_OLD_PASSWORD', '旧的密码:');
+define('TEXT_ADMIN_NEW_PASSWORD', '新的密码:');
+define('TEXT_ADMIN_CONFIRM_PASSWORD', '确认密码:');
 
-define('ERROR_WRONG_LOGIN', 'You entered the wrong username or password.');
-define('ERROR_SECURITY_ERROR', 'There was a security error when trying to login.');
+define('ERROR_WRONG_LOGIN', '您输入了错误的用户名或密码。');
+define('ERROR_SECURITY_ERROR', '登录时出现安全错误。');
 
-define('TEXT_PASSWORD_FORGOTTEN', 'Forgot Password');
+define('TEXT_PASSWORD_FORGOTTEN', '重发密码');
 
-define('LOGIN_EXPIRY_NOTICE', 'Please be aware that after 15 minutes of inactivity, you will be required to login again.<br /><br />Note: All passwords expire after 90 days, at which time you will be prompted for a new password.');
-define('ERROR_PASSWORD_EXPIRED', 'NOTE: Your password has expired. Please select a new password. Your password <strong>must contain both NUMBERS and LETTERS and minimum 7 characters.</strong>');
-define('TEXT_TEMPORARY_PASSWORD_MUST_BE_CHANGED', 'For security reasons, your temporary password needs to be changed. Please select a new password.<br />Your password <strong>must contain both NUMBERS and LETTERS and minimum 7 characters.</strong>');
+define('LOGIN_EXPIRY_NOTICE', '超过15分钟没有任何操作，需要重新登录。<br /><br />说明: 密码90天后过期。');
+define('ERROR_PASSWORD_EXPIRED', '说明: 您的密码已过期。请设置新的密码，密码<strong>需要包含数字和字母，不少于7位。</strong>');
+define('TEXT_TEMPORARY_PASSWORD_MUST_BE_CHANGED', '为了保证安全，您的临时密码需要修改，请输入新的密码。<br />密码<strong>需要包含数字和字母，不少于7位。</strong>');
 
-define('TEXT_EMAIL_SUBJECT_LOGIN_FAILURES', 'Admin login failure notice');
-define('TEXT_EMAIL_MULTIPLE_LOGIN_FAILURES', 'Important Notice: There have been multiple unsuccessful login attempts to your administrative account. For your protection and for system security, after 6 attempts the account will be locked for a minimum of 30 minutes, during which you will be unable to login even if you remember your password. Continued attempts to login will continue to lock the account for another 30 minutes. You will not be able to do password resets during this time. Apologies for the inconvenience.' . "\n\nThe last login attempt was from this IP address: %s.\n\n\n");
+define('TEXT_EMAIL_SUBJECT_LOGIN_FAILURES', '管理员登录失败通知');
+define('TEXT_EMAIL_MULTIPLE_LOGIN_FAILURES', '重要通知: 出现好多次管理员登录失败。为了保证系统安全，登录失败6次后，帐号冻结30分钟，在这期间，即使密码正确也无法登录，继续登录会造成帐号再次冻结30分钟。在账号冻结期间，不能重置密码。很抱歉给您造成的不便。' . "\n\n最后一次登录的IP地址: %s.\n\n\n");
 
-define('EXPIRED_DUE_TO_SSL', 'Note: Your password has expired because your site has changed from non-SSL (less secure) to being SSL-protected (more secure). Changing your password under SSL is an important step to greater security. Sorry for any inconvenience. Standard password expiry rules apply.');
+define('EXPIRED_DUE_TO_SSL', '说明: 由于您的网站从非SSL(不够安全)修改为SSL(更安全)，需要重新修改密码。通过SSL修改密码很重要。很抱歉给您造成的不便。密码还是90天后过期。');

@@ -1,0 +1,6 @@
+[29-Jan-2018 07:12:23 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\includes\templates\template_default\templates\tpl_modules_main_product_image.php on line 21
+[29-Jan-2018 07:12:23 UTC] PHP Stack trace:
+[29-Jan-2018 07:12:23 UTC] PHP   1. {main}() D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\index.php:0
+[29-Jan-2018 07:12:23 UTC] PHP   2. require() D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\index.php:117
+[29-Jan-2018 07:12:23 UTC] PHP   3. require() D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\includes\templates\abagon\common\tpl_main_page.php:104
+[29-Jan-2018 07:12:23 UTC] PHP   4. require() D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\includes\modules\pages\product_info\main_template_vars.php:178

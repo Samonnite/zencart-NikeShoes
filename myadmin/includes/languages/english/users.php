@@ -7,27 +7,27 @@
  * @version $Id: users.php 18773 2011-05-20 01:00:21Z drbyte $
  */
 
-define('HEADING_TITLE', 'Admin Users');
+define('HEADING_TITLE', '管理用户');
 
-define('IMAGE_ADD_USER', 'Add User');
-define('IMAGE_RESET_PWD', 'Reset Password');
+define('IMAGE_ADD_USER', '增加用户');
+define('IMAGE_RESET_PWD', '重置密码');
 
 define('TEXT_ID', 'ID');
-define('TEXT_NAME', 'Name');
-define('TEXT_EMAIL', 'Email');
-define('TEXT_PROFILE', 'Profile');
-define('TEXT_PASSWORD', 'Password');
-define('TEXT_CONFIRM_PASSWORD', 'Confirm Password');
-define('TEXT_NO_USERS_FOUND', 'No admin users found');
-define('TEXT_CONFIRM_DELETE', 'Delete requested. Please confirm: ');
+define('TEXT_NAME', '名字');
+define('TEXT_EMAIL', '邮件');
+define('TEXT_PROFILE', '权限');
+define('TEXT_PASSWORD', '密码');
+define('TEXT_CONFIRM_PASSWORD', '确认密码');
+define('TEXT_NO_USERS_FOUND', '没有找到管理用户');
+define('TEXT_CONFIRM_DELETE', '删除操作，请确认: ');
 
-define('ERROR_NO_USER_DEFINED', 'The option that you requested cannot be undertaken without specifying a user');
-define('ERROR_USER_MUST_HAVE_PROFILE', 'Users must be assigned a profile');
-define('ERROR_DUPLICATE_USER', 'Sorry, an admin user of that name already exists. Please select another name.');
-define('ERROR_ADMIN_NAME_TOO_SHORT', 'Admin user names must have at least %s characters');
-define('ERROR_PASSWORD_TOO_SHORT', 'Passwords must contain at least %s characters');
-define('SUCCESS_NEW_USER_ADDED', 'New user added');
-define('SUCCESS_USER_DETAILS_UPDATED', 'User details updated');
-define('SUCCESS_PASSWORD_UPDATED', 'Password updated');
-define('ERROR_ADMIN_INVALID_EMAIL_ADDRESS', 'Sorry, the email address you specified contains invalid characters.');
-define('ERROR_ADMIN_INVALID_CHARS_IN_USERNAME', 'Sorry, the admin username you entered contains invalid characters.');
+define('ERROR_NO_USER_DEFINED', '请指定用户');
+define('ERROR_USER_MUST_HAVE_PROFILE', '请给用户指定权限');
+define('ERROR_DUPLICATE_USER', '很抱歉，管理用户已存在，请重新输入。');
+define('ERROR_ADMIN_NAME_TOO_SHORT', '管理用户名字至少%s位');
+define('ERROR_PASSWORD_TOO_SHORT', '密码至少要%s位');
+define('SUCCESS_NEW_USER_ADDED', '新用户已增加');
+define('SUCCESS_USER_DETAILS_UPDATED', '用户资料已更新');
+define('SUCCESS_PASSWORD_UPDATED', '密码已更新');
+define('ERROR_ADMIN_INVALID_EMAIL_ADDRESS', '很抱歉，邮件地址不正确。');
+define('ERROR_ADMIN_INVALID_CHARS_IN_USERNAME', '很抱歉，管理用户名不正确。');

@@ -17,89 +17,91 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: banner_manager.php 3131 2006-03-07 22:53:04Z ajeh $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: banner_manager.php 1132 2005-04-06 02:39:19Z ajeh $
 //
 
-define('HEADING_TITLE', 'Banner Manager');
+define('HEADING_TITLE', '广告管理');
 
-define('TABLE_HEADING_BANNERS', 'Banners');
-define('TABLE_HEADING_GROUPS', 'Groups');
-define('TABLE_HEADING_STATISTICS', 'Displays / Clicks');
-define('TABLE_HEADING_STATUS', 'Status');
-define('TABLE_HEADING_BANNER_OPEN_NEW_WINDOWS','New Window');
-define('TABLE_HEADING_BANNER_ON_SSL', 'Show SSL');
-define('TABLE_HEADING_ACTION', 'Action');
-define('TABLE_HEADING_BANNER_SORT_ORDER', 'Sort<br />Order');
+define('TABLE_HEADING_BANNERS', '广告');
+define('TABLE_HEADING_GROUPS', '组别');
+define('TABLE_HEADING_STATISTICS', '显示/点击');
+define('TABLE_HEADING_STATUS', '状态');
+define('TABLE_HEADING_BANNER_OPEN_NEW_WINDOWS','新窗口');
+define('TABLE_HEADING_BANNER_ON_SSL', '显示 SSL');
+define('TABLE_HEADING_ACTION', '操作');
+define('TABLE_HEADING_BANNER_SORT_ORDER', '排序');
 
-define('TEXT_BANNERS_TITLE', 'Banner Title:');
-define('TEXT_BANNERS_URL', 'Banner URL:');
-define('TEXT_BANNERS_GROUP', 'Banner Group:');
-define('TEXT_BANNERS_NEW_GROUP', ', or enter a new banner group below');
-define('TEXT_BANNERS_IMAGE', 'Image:');
-define('TEXT_BANNERS_IMAGE_LOCAL', ', or enter local file below');
-define('TEXT_BANNERS_IMAGE_TARGET', 'Image Target (Save To):');
-define('TEXT_BANNER_IMAGE_TARGET_INFO', '<strong>Suggested Target location for the image on the server:</strong> ' . DIR_FS_CATALOG_IMAGES . 'banners/');
-define('TEXT_BANNERS_HTML_TEXT_INFO', '<strong>NOTE: HTML banners do not record the clicks on the banner</strong>');
-define('TEXT_BANNERS_HTML_TEXT', 'HTML Text:');
-define('TEXT_BANNERS_ALL_SORT_ORDER', 'Sort Order - banner_box_all');
-define('TEXT_BANNERS_ALL_SORT_ORDER_INFO', '<strong>NOTE: The banners_box_all sidebox will display the banners in their defined sort order</strong>');
-define('TEXT_BANNERS_EXPIRES_ON', 'Expires On:');
-define('TEXT_BANNERS_OR_AT', ', or at');
-define('TEXT_BANNERS_IMPRESSIONS', 'impressions/views.');
-define('TEXT_BANNERS_SCHEDULED_AT', 'Scheduled At:');
-define('TEXT_BANNERS_BANNER_NOTE', '<b>Banner Notes:</b><ul><li>Use an image or HTML text for the banner - not both.</li><li>HTML Text has priority over an image</li><li>HTML Text will not register the click thru, but will register displays</li><li>Banners with absolute image URLs should not be displayed on secure pages</li></ul>');
-define('TEXT_BANNERS_INSERT_NOTE', '<b>Image Notes:</b><ul><li>Uploading directories must have proper user (write) permissions setup!</li><li>Do not fill out the \'Save To\' field if you are not uploading an image to the webserver (ie, you are using a local (serverside) image).</li><li>The \'Save To\' field must be an existing directory with an ending slash (eg, banners/).</li></ul>');
-define('TEXT_BANNERS_EXPIRCY_NOTE', '<b>Expiry Notes:</b><ul><li>Only one of the two fields should be submitted</li><li>If the banner is not to expire automatically, then leave these fields blank</li></ul>');
-define('TEXT_BANNERS_SCHEDULE_NOTE', '<b>Schedule Notes:</b><ul><li>If a schedule is set, the banner will be activated on that date.</li><li>All scheduled banners are marked as inactive until their date has arrived, to which they will then be marked active.</li></ul>');
-define('TEXT_BANNERS_STATUS', 'Banner Status:');
-define('TEXT_BANNERS_ACTIVE', 'Active');
-define('TEXT_BANNERS_NOT_ACTIVE', 'Not Active');
-define('TEXT_INFO_BANNER_STATUS', '<strong>NOTE:</strong> Banner status will be updated based on Scheduled Date and Impressions');
-define('TEXT_BANNERS_OPEN_NEW_WINDOWS', 'Banner New Window');
-define('TEXT_INFO_BANNER_OPEN_NEW_WINDOWS', '<strong>NOTE:</strong> Banner will open in a new window');
-define('TEXT_BANNERS_ON_SSL', 'Banner on SSL');
-define('TEXT_INFO_BANNER_ON_SSL', '<strong>NOTE:</strong> Banner can be displayed on Secure Pages without errors');
+define('TEXT_BANNERS_TITLE', '广告标题:');
+define('TEXT_BANNERS_URL', '广告URL:');
+define('TEXT_BANNERS_GROUP', '广告组别:');
+define('TEXT_BANNERS_NEW_GROUP', ', 或在下面输入新的广告组别');
+define('TEXT_BANNERS_IMAGE', '图像:');
+define('TEXT_BANNERS_IMAGE_LOCAL', ', 或在下面输入本地文件');
+define('TEXT_BANNERS_IMAGE_TARGET', '图像目标 (保存到):');
+define('TEXT_BANNER_IMAGE_TARGET_INFO', '<strong>图像在服务器上的推荐路径:</strong> ' . DIR_FS_CATALOG_IMAGES . 'banners/');
+define('TEXT_BANNERS_HTML_TEXT_INFO', '<strong>说明: HTML广告不计点击次数</strong>');
+define('TEXT_BANNERS_HTML_TEXT', 'HTML文本:');
+define('TEXT_BANNERS_ALL_SORT_ORDER', '排序顺序 - banner_box_all');
+define('TEXT_BANNERS_ALL_SORT_ORDER_INFO', '<strong>说明: banners_box_all边框按照设定的顺序显示广告</strong>');
+define('TEXT_BANNERS_EXPIRES_ON', '有效期:');
+define('TEXT_BANNERS_OR_AT', ', 或在');
+define('TEXT_BANNERS_IMPRESSIONS', '观看/查看.');
+define('TEXT_BANNERS_SCHEDULED_AT', '生效日期:');
+define('TEXT_BANNERS_BANNER_NOTE', '<b>广告注释:</b><ul><li>广告不能同时使用图像和HTML文本.</li><li>HTML文本优先于图像</li><li>HTML文本不记录点击，只记录显示次数</li><li>不要在安全页面上显示绝对路径图像</li></ul>');
+define('TEXT_BANNERS_INSERT_NOTE', '<b>图像注释:</b><ul><li>上传目录必须要有适当用户权限(可写)设置!</li><li>如果您没有上传图像到服务器, 不要填写 \'保存到\' 字段 (例如, 您使用本地 (服务器端) 图像).</li><li>该 \'保存到\' 字段必须是一个以/结尾的已有目录 (如, banners/).</li></ul>');
+define('TEXT_BANNERS_EXPIRCY_NOTE', '<b>有效期注释:</b><ul><li>只有发送两个字段中的一个</li><li>如果广告不是自动失效, 那么不要添这些字段</li></ul>');
+define('TEXT_BANNERS_SCHEDULE_NOTE', '<b>生效日期注释:</b><ul><li>如果设定了生效日期, 该广告将在相应日期激活.</li><li>所有广告在生效日期前标记为[等待中], 到期后将标记为[使用中].</li></ul>');
+define('TEXT_BANNERS_STATUS', '广告状态:');
+define('TEXT_BANNERS_ACTIVE', '使用中');
+define('TEXT_BANNERS_NOT_ACTIVE', '等待中');
+define('TEXT_INFO_BANNER_STATUS', '<strong>提示:</strong> 广告状态将按生效日期和显示更新');
+define('TEXT_BANNERS_OPEN_NEW_WINDOWS', '广告新窗口');
+define('TEXT_INFO_BANNER_OPEN_NEW_WINDOWS', '<strong>提示:</strong> 广告将在新窗口打开');
+define('TEXT_BANNERS_ON_SSL', '带SSL的广告');
+define('TEXT_INFO_BANNER_ON_SSL', '<strong>提示:</strong> 广告可以无误地显示在安全页面');
 
-define('TEXT_BANNERS_DATE_ADDED', 'Date Added:');
-define('TEXT_BANNERS_SCHEDULED_AT_DATE', 'Scheduled At: <b>%s</b>');
-define('TEXT_BANNERS_EXPIRES_AT_DATE', 'Expires At: <b>%s</b>');
-define('TEXT_BANNERS_EXPIRES_AT_IMPRESSIONS', 'Expires At: <b>%s</b> impressions');
-define('TEXT_BANNERS_STATUS_CHANGE', 'Status Change: %s');
+define('TEXT_BANNERS_DATE_ADDED', '加入日期:');
+define('TEXT_BANNERS_SCHEDULED_AT_DATE', '生效日期: <b>%s</b>');
+define('TEXT_BANNERS_EXPIRES_AT_DATE', '有效期: <b>%s</b>');
+define('TEXT_BANNERS_EXPIRES_AT_IMPRESSIONS', '有效期: <b>%s</b> 显示');
+define('TEXT_BANNERS_STATUS_CHANGE', '状态改变: %s');
 
 define('TEXT_BANNERS_DATA', 'D<br>A<br>T<br>A');
 define('TEXT_BANNERS_LAST_3_DAYS', 'Last 3 Days');
-define('TEXT_BANNERS_BANNER_VIEWS', 'Banner Views');
-define('TEXT_BANNERS_BANNER_CLICKS', 'Banner Clicks');
+define('TEXT_BANNERS_BANNER_VIEWS', '广告查看');
+define('TEXT_BANNERS_BANNER_CLICKS', '广告点击');
 
-define('TEXT_INFO_DELETE_INTRO', 'Are you sure you want to delete this banner?');
-define('TEXT_INFO_DELETE_IMAGE', 'Delete banner image');
+define('TEXT_INFO_DELETE_INTRO', '您确认要删除该广告吗?');
+define('TEXT_INFO_DELETE_IMAGE', '删除广告图像');
 
-define('SUCCESS_BANNER_INSERTED', 'Success: The banner has been inserted.');
-define('SUCCESS_BANNER_UPDATED', 'Success: The banner has been updated.');
-define('SUCCESS_BANNER_REMOVED', 'Success: The banner has been removed.');
-define('SUCCESS_BANNER_STATUS_UPDATED', 'Success: The status of the banner has been updated.');
+define('SUCCESS_BANNER_INSERTED', '成功: 广告增加了.');
+define('SUCCESS_BANNER_UPDATED', '成功: 广告更新了.');
+define('SUCCESS_BANNER_REMOVED', '成功: 广告删除了.');
+define('SUCCESS_BANNER_STATUS_UPDATED', '成功: 广告状态更新了.');
 
-define('ERROR_BANNER_TITLE_REQUIRED', 'Error: Banner title required.');
-define('ERROR_BANNER_GROUP_REQUIRED', 'Error: Banner group required.');
-define('ERROR_IMAGE_DIRECTORY_DOES_NOT_EXIST', 'Error: Target directory does not exist: %s');
-define('ERROR_IMAGE_DIRECTORY_NOT_WRITEABLE', 'Error: Target directory is not writeable: %s');
-define('ERROR_IMAGE_DOES_NOT_EXIST', 'Error: Image does not exist.');
-define('ERROR_IMAGE_IS_NOT_WRITEABLE', 'Error: Image can not be removed.');
-define('ERROR_UNKNOWN_STATUS_FLAG', 'Error: Unknown status flag.');
-define('ERROR_BANNER_IMAGE_REQUIRED', 'Error: Banner image required.');
+define('ERROR_BANNER_TITLE_REQUIRED', '错误: 需要广告名称.');
+define('ERROR_BANNER_GROUP_REQUIRED', '错误: 需要广告组.');
+define('ERROR_IMAGE_DIRECTORY_DOES_NOT_EXIST', '错误: 目标目录不存在: %s');
+define('ERROR_IMAGE_DIRECTORY_NOT_WRITEABLE', '错误: 目标目录不可写: %s');
+define('ERROR_IMAGE_DOES_NOT_EXIST', '错误: 图像不存在.');
+define('ERROR_IMAGE_IS_NOT_WRITEABLE', '错误: 不能删除图像.');
+define('ERROR_UNKNOWN_STATUS_FLAG', '错误: 未知状态标记.');
+define('ERROR_BANNER_IMAGE_REQUIRED', '错误: 需要广告图像.');
 
-define('ERROR_GRAPHS_DIRECTORY_DOES_NOT_EXIST', 'Error: Graphs directory does not exist. Please create a graphs directory example: <strong>' . DIR_WS_ADMIN . 'images/graphs</strong>');
-define('ERROR_GRAPHS_DIRECTORY_NOT_WRITEABLE', 'Error: Graphs directory is not writeable. This is located at: <strong>' . DIR_WS_ADMIN . 'images/graphs</strong>');
+define('ERROR_GRAPHS_DIRECTORY_DOES_NOT_EXIST', '错误: 图像目录不存在. 请建立一个图像目录 例如: <strong>' . DIR_WS_ADMIN . 'images/graphs</strong>');
+define('ERROR_GRAPHS_DIRECTORY_NOT_WRITEABLE', '错误: 图像目录不可写. 位于: <strong>' . DIR_WS_ADMIN . 'images/graphs</strong>');
 
-define('TEXT_LEGEND_BANNER_ON_SSL', 'Show SSL');
-define('TEXT_LEGEND_BANNER_OPEN_NEW_WINDOWS', 'New Window');
+define('TEXT_LEGEND_BANNER_ON_SSL', '显示SSL');
+define('TEXT_LEGEND_BANNER_OPEN_NEW_WINDOWS', '新窗口');
 
 // Tooltip Text for images in Banner Manager
-define('IMAGE_ICON_BANNER_OPEN_NEW_WINDOWS_ON','Open New Window - Enabled');
-define('IMAGE_ICON_BANNER_OPEN_NEW_WINDOWS_OFF','Open New Window - Disabled');
-define('IMAGE_ICON_BANNER_ON_SSL_ON','Show on Secure Pages - Enabled');
-define('IMAGE_ICON_BANNER_ON_SSL_OFF','Show on Secure Pages - Disabled');
+define('IMAGE_ICON_BANNER_OPEN_NEW_WINDOWS_ON','开新窗口 - 开启');
+define('IMAGE_ICON_BANNER_OPEN_NEW_WINDOWS_OFF','开新窗口 - 关闭');
+define('IMAGE_ICON_BANNER_ON_SSL_ON','在安全页面显示 - 开启');
+define('IMAGE_ICON_BANNER_ON_SSL_OFF','在安全页面显示 - 关闭');
 
-define('SUCCESS_BANNER_OPEN_NEW_WINDOW_UPDATED', 'Success: The status of the banner to open in a new window has been updated.');
-define('SUCCESS_BANNER_ON_SSL_UPDATED', 'Success: The status of the banner to show on SSL has been updated.');
+define('SUCCESS_BANNER_OPEN_NEW_WINDOW_UPDATED', '成功: 在新窗口中打开的广告状态已更新。');
+define('SUCCESS_BANNER_ON_SSL_UPDATED', '成功: 在安全页面上显示的广告状态已更新。');
 ?>

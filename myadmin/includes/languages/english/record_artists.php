@@ -17,29 +17,31 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
 //  $Id: record_artists.php 4810 2006-10-22 19:02:19Z ajeh $
 //
-  define('HEADING_TITLE', 'Recording Artists');
-  define('TABLE_HEADING_RECORD_ARTISTS', 'Record Artists');
-  define('TABLE_HEADING_ACTION', 'Action');
-  define('TEXT_NEW_INTRO', 'Please enter the details of the new recording artist below.');
-  define('TEXT_EDIT_INTRO', 'Please amend the details of the recording artist below.');
-  define('TEXT_DELETE_INTRO', 'Are you sure you want to delete this artist.');
-  define('TEXT_DELETE_IMAGE', 'Delete Image?.');
-  define('TEXT_RECORD_ARTIST_NAME', 'Artists Name');
-  define('TEXT_RECORD_ARTIST_IMAGE', 'Artists Image');
-  define('TEXT_RECORD_ARTIST_URL', 'Artists Web Site');
-  define('TEXT_ARTISTS_IMAGE_DIR', 'Image Directory&nbsp;');
-  define('TEXT_ARTISTS_IMAGE_MANUAL', '<strong>Or, select an existing image file from server, filename:</strong>');
+  define('HEADING_TITLE', '歌手档案');
+  define('TABLE_HEADING_RECORD_ARTISTS', '歌手名字');
+  define('TABLE_HEADING_ACTION', '操作');
+  define('TEXT_NEW_INTRO', '请在下面输入新歌手的资料。');
+  define('TEXT_EDIT_INTRO', '请在下面修改该歌手的资料。');
+  define('TEXT_DELETE_INTRO', '您确认要删除该歌手吗?');
+  define('TEXT_DELETE_IMAGE', '删除图像?');
+  define('TEXT_RECORD_ARTIST_NAME', '歌手名字');
+  define('TEXT_RECORD_ARTIST_IMAGE', '歌手照片');
+  define('TEXT_RECORD_ARTIST_URL', '歌手网站');
+  define('TEXT_ARTISTS_IMAGE_DIR', '图像目录&nbsp;');
+  define('TEXT_ARTISTS_IMAGE_MANUAL', '<strong>或从服务器上选择已有图像文件，文件名:</strong>');
 
-  define('TEXT_HEADING_NEW_RECORD_ARTIST', 'New Recording Artist');
-  define('TEXT_HEADING_EDIT_RECORD_ARTIST', 'Edit Recording Artist');
-  define('TEXT_HEADING_DELETE_RECORD_ARTIST', 'Delete Recording Artist');
-  define('TEXT_DATE_ADDED', 'Date Added');
-  define('TEXT_LAST_MODIFIED', 'Date Modified');
-  define('TEXT_IMAGE_NONEXISTENT', 'Image does not exist');
-  define('TEXT_PRODUCTS', 'Linked Products');
-  define('TEXT_DISPLAY_NUMBER_OF_ARTISTS', 'Displaying <strong>%d</strong> to <strong>%d</strong> (of <strong>%d</strong> Recording Artists)');
-  define('TEXT_DELETE_PRODUCTS', 'Delete this Recording Artist and all items linked to it?');
-  define('TEXT_DELETE_WARNING_PRODUCTS', '<b>WARNING:</b> There are %s items still linked to this Recording Artist!');
+  define('TEXT_HEADING_NEW_RECORD_ARTIST', '新增歌手档案');
+  define('TEXT_HEADING_EDIT_RECORD_ARTIST', '编辑歌手档案');
+  define('TEXT_HEADING_DELETE_RECORD_ARTIST', '删除歌手档案');
+  define('TEXT_DATE_ADDED', '加入日期');
+  define('TEXT_LAST_MODIFIED', '修改日期');
+  define('TEXT_IMAGE_NONEXISTENT', '图像不存在');
+  define('TEXT_PRODUCTS', '链接商品');
+  define('TEXT_DISPLAY_NUMBER_OF_ARTISTS', '显示<strong>%d</strong>到<strong>%d</strong> (共<strong>%d</strong>个歌手档案)');
+  define('TEXT_DELETE_PRODUCTS', '删除该歌手和所有链接的条目吗?');
+  define('TEXT_DELETE_WARNING_PRODUCTS', '<b>警告:</b> 共有%s个条目还链接到该歌手档案!');
 ?>

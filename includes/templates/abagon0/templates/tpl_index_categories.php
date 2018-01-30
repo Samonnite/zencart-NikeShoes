@@ -118,16 +118,7 @@ while (!$show_display_category->EOF) {
 ?>
 
 <?php if ($show_display_category->fields['configuration_key'] == 'SHOW_PRODUCT_INFO_CATEGORY_FEATURED_PRODUCTS') { ?>
-<?php
-/**
- * display the Featured Products Center Box
- */
-?>
-<?php
-    require($template->get_template_dir('tpl_modules_featured_products.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_modules_featured_products.php'); ?>
-<?php  } ?>
 
-<?php if ($show_display_category->fields['configuration_key'] == 'SHOW_PRODUCT_INFO_CATEGORY_SPECIALS_PRODUCTS') { ?>
 <?php
 /**
  * display the Special Products Center Box
@@ -153,7 +144,16 @@ while (!$show_display_category->EOF) {
 ?>
 
 <?php if ($this_is_home_page) { ?>
+  <?php
+/**
+ * display the Featured Products Center Box
+ */
+?>
+<?php
+    require($template->get_template_dir('tpl_modules_featured_products.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_modules_featured_products.php'); ?>
+<?php  } ?>
 
+<?php if ($show_display_category->fields['configuration_key'] == 'SHOW_PRODUCT_INFO_CATEGORY_SPECIALS_PRODUCTS') { ?>
 <!--bof-banner #4 display -->
 <?php
   if (SHOW_BANNERS_GROUP_SET4 != '' && $banner = zen_banner_exists('dynamic', SHOW_BANNERS_GROUP_SET4)) {

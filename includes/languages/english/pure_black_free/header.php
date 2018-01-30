@@ -28,14 +28,14 @@
   define('HEADER_SALES_TEXT', '');
   define('HEADER_LOGO_WIDTH', '131px');
   define('HEADER_LOGO_HEIGHT', '37px');
-  define('HEADER_LOGO_IMAGE', 'logo.gif');
+  define('HEADER_LOGO_IMAGE', 'logo.png');
 
 // header Search Button/Box Search Button
   define('HEADER_SEARCH_BUTTON','Search');
   define('HEADER_SEARCH_DEFAULT_TEXT', 'Search for...');
   define('HEADER_ADVANCED_SEARCH', 'Advanced Search');
   define('HEADER_SHOPPING_CART_EMPTY', 'Your cart is empty');
-  define('HEADER_PRODUCT_AMOUNT', 'item(s) - ');
+  define('HEADER_PRODUCT_AMOUNT', 'articles(s) - ');
   define('HEADER_CART_SUBTOTAL', 'subtotal: ');
   define('HEADER_CURRENCY', '&nbsp;&nbsp;Currency:');
   define('HEADER_LANGUAGES', 'Language:');

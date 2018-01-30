@@ -17,28 +17,30 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: banner_statistics.php 1105 2005-04-04 22:05:35Z birdbrain $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: banner_statistics.php 290 2004-09-15 19:48:26Z wilt $
 //
 
-define('HEADING_TITLE', 'Banner Statistics');
+define('HEADING_TITLE', '广告统计');
 
-define('TABLE_HEADING_SOURCE', 'Source');
-define('TABLE_HEADING_VIEWS', 'Views');
-define('TABLE_HEADING_CLICKS', 'Clicks');
+define('TABLE_HEADING_SOURCE', '来源');
+define('TABLE_HEADING_VIEWS', '查看');
+define('TABLE_HEADING_CLICKS', '点击');
 
-define('TEXT_BANNERS_DATA', 'D<br>a<br>t<br>a');
-define('TEXT_BANNERS_DAILY_STATISTICS', '%s Daily Statistics For %s %s');
-define('TEXT_BANNERS_MONTHLY_STATISTICS', '%s Monthly Statistics For %s');
-define('TEXT_BANNERS_YEARLY_STATISTICS', '%s Yearly Statistics');
+define('TEXT_BANNERS_DATA', '数<br>据<br>数<br>据');
+define('TEXT_BANNERS_DAILY_STATISTICS', '%s 按日统计的 %s %s');
+define('TEXT_BANNERS_MONTHLY_STATISTICS', '%s 按月统计的 %s');
+define('TEXT_BANNERS_YEARLY_STATISTICS', '%s 按年统计的');
 
-define('STATISTICS_TYPE_DAILY', 'Daily');
-define('STATISTICS_TYPE_MONTHLY', 'Monthly');
-define('STATISTICS_TYPE_YEARLY', 'Yearly');
+define('STATISTICS_TYPE_DAILY', '每日');
+define('STATISTICS_TYPE_MONTHLY', '每月');
+define('STATISTICS_TYPE_YEARLY', '每年');
 
-define('TITLE_TYPE', 'Type:');
-define('TITLE_YEAR', 'Year:');
-define('TITLE_MONTH', 'Month:');
+define('TITLE_TYPE', '类型:');
+define('TITLE_YEAR', '年:');
+define('TITLE_MONTH', '月:');
 
-define('ERROR_GRAPHS_DIRECTORY_DOES_NOT_EXIST', 'Error: Graphs directory does not exist. Please create a graphs directory example: <strong>' . DIR_WS_ADMIN . 'images/graphs</strong>');
-define('ERROR_GRAPHS_DIRECTORY_NOT_WRITEABLE', 'Error: Graphs directory is not writeable. This is located at: <strong>' . DIR_WS_ADMIN . 'images/graphs</strong>');
+define('ERROR_GRAPHS_DIRECTORY_DOES_NOT_EXIST', '错误: 图像目录不存在. 请建立一个图像目录 例如: <strong>' . DIR_WS_ADMIN . 'images/graphs</strong>');
+define('ERROR_GRAPHS_DIRECTORY_NOT_WRITEABLE', '错误: 错误: 图像目录不可写. 位于: <strong>' . DIR_WS_ADMIN . 'images/graphs</strong>');
 ?>

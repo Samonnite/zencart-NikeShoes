@@ -6,30 +6,29 @@
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: sqlpatch.php 19537 2011-09-20 17:14:44Z drbyte $
  */
-
-  define('HEADING_TITLE','SQL Query Executor');
-  define('HEADING_WARNING','BE SURE TO DO A FULL DATABASE BACKUP BEFORE RUNNING SCRIPTS HERE');
-  define('HEADING_WARNING2','If you are installing 3rd-party contributions, note that you do so at your own risk.<br />Zen Cart&reg; makes no warranty as to the safety of scripts supplied by 3rd-party contributors. Test before using on your live database!');
-  define('HEADING_WARNING_INSTALLSCRIPTS', 'NOTE: Zen Cart database-upgrade scripts should NOT be run from this page.<br />Please upload the new <strong>zc_install</strong> folder and run the upgrade from there instead for better reliability.');
-  define('TEXT_QUERY_RESULTS','Query Results:');
-  define('TEXT_ENTER_QUERY_STRING','Enter the query <br />to be executed:&nbsp;&nbsp;<br /><br />Be sure to<br />end with ;');
-  define('TEXT_QUERY_FILENAME','Upload file:');
-  define('ERROR_NOTHING_TO_DO','Error: Nothing to do - no query or query-file specified.');
-  define('TEXT_CLOSE_WINDOW', '[ close window ]');
-  define('SQLPATCH_HELP_TEXT','The SQLPATCH tool lets you install system patches by pasting SQL code directly into the textarea '.
-                              'field here, or by uploading a supplied script (.SQL) file.<br />' .
-                              'When preparing scripts to be used by this tool, DO NOT include a table prefix, as this tool will ' .
-                              'automatically insert the required prefix for the active database, based on settings in the store\'s ' .
-                              'admin/includes/configure.php file (DB_PREFIX definition).<br /><br />' .
-                              'The commands entered or uploaded may only begin with the following statements, and MUST be in UPPERCASE:'.
+  define('HEADING_TITLE','SQL工具');
+  define('HEADING_WARNING','请备份数据库再执行以下脚本');
+  define('HEADING_WARNING2','如果您安装其它模块, 请自行负责.<br />Zen Cart&trade; 不担保其它脚本的安全性. 测试后再用于您的数据库!');
+  define('HEADING_WARNING_INSTALLSCRIPTS', '说明: 不要在这里运行Zen Cart数据库升级脚本。<br />请上传新的<strong>zc_install</strong>目录，然后升级。');
+  define('TEXT_QUERY_RESULTS','执行结果:');
+  define('TEXT_ENTER_QUERY_STRING','输入要执行的语句:&nbsp;&nbsp;<br /><br />以 ; 号结尾');
+  define('TEXT_QUERY_FILENAME','上传文件:');
+  define('ERROR_NOTHING_TO_DO','错误: 没有执行操作 - 没有指定执行语句或者执行文件.');
+  define('TEXT_CLOSE_WINDOW', '[ 关闭窗口 ]');
+  define('SQLPATCH_HELP_TEXT','该SQL工具用于安装系统补丁, 直接粘贴SQL代码到文本区. '.
+                              '或者上传(.SQL) 脚本文件.<br />' .
+                              '创建该工具使用的脚本文件时, 不要包括数据表前缀, 该工具会' .
+                              '自动加入当前数据库的前缀, 该设置在商店的 ' .
+                              'admin/includes/configure.php 文件中 (DB_PREFIX 定义).<br /><br />' .
+                              '输入和上传的命令必须用以下语句开头, 且为大写:'.
                               '<br /><ul><li>DROP TABLE IF EXISTS</li><li>CREATE TABLE</li><li>INSERT INTO</li><li>INSERT IGNORE INTO</li><li>ALTER TABLE</li>' .
                               '<li>UPDATE (just a single table)</li><li>UPDATE IGNORE (just a single table)</li><li>DELETE FROM</li><li>DROP INDEX</li><li>CREATE INDEX</li>' .
                               '<br /><li>SELECT </li></ul>' .
-'<h2>Advanced Methods</h2>The following methods can be used to issue more complex statements as necessary:<br />
+'<h2>高级模式</h2>以下方法用于更复杂的代码:<br />
 To run some blocks of code together so that they are treated as one command by MySQL, you need the "<code>#NEXT_X_ROWS_AS_ONE_COMMAND:xxx</code>" value set.  The parser will then treat X number of commands as one.<br />
 If you are running this file thru phpMyAdmin or equivalent, the "#NEXT..." comment is ignored, and the script will process fine.<br />
-<br /><strong>NOTE: </strong>SELECT.... FROM... and LEFT JOIN statements need the "FROM" or "LEFT JOIN" to be on a line by itself in order for the parse script to add the table prefix.<br /><br />
-<em><strong>Examples:</strong></em>
+<br /><strong>提示: </strong>SELECT.... FROM... and LEFT JOIN statements need the "FROM" or "LEFT JOIN" to be on a line by itself in order for the parse script to add the table prefix.<br /><br />
+<em><strong>例子:</strong></em>
 <ul><li><code>#NEXT_X_ROWS_AS_ONE_COMMAND:4<br />
 SET @t1=0;<br />
 SELECT (@t1:=configuration_value) as t1 <br />
@@ -53,17 +52,16 @@ LEFT JOIN othercol_f po<br />
 ON p.othercol_f = po.othercol_f<br />
 WHERE p.othercol_f = pm.othercol_f;</li>
 </ul></code>' );
-  define('REASON_TABLE_ALREADY_EXISTS','Cannot create table %s because it already exists');
-  define('REASON_TABLE_DOESNT_EXIST','Cannot drop table %s because it does not exist.');
-  define('REASON_TABLE_NOT_FOUND','Cannot execute because table %s does not exist.');
-  define('REASON_CONFIG_KEY_ALREADY_EXISTS','Cannot insert configuration_key "%s" because it already exists');
-  define('REASON_COLUMN_ALREADY_EXISTS','Cannot ADD column %s because it already exists.');
-  define('REASON_COLUMN_DOESNT_EXIST_TO_DROP','Cannot DROP column %s because it does not exist.');
-  define('REASON_COLUMN_DOESNT_EXIST_TO_CHANGE','Cannot CHANGE column %s because it does not exist.');
-  define('REASON_PRODUCT_TYPE_LAYOUT_KEY_ALREADY_EXISTS','Cannot insert prod-type-layout configuration_key "%s" because it already exists');
-  define('REASON_INDEX_DOESNT_EXIST_TO_DROP','Cannot drop index %s on table %s because it does not exist.');
-  define('REASON_PRIMARY_KEY_DOESNT_EXIST_TO_DROP','Cannot drop primary key on table %s because it does not exist.');
-  define('REASON_INDEX_ALREADY_EXISTS','Cannot add index %s to table %s because it already exists.');
-  define('REASON_PRIMARY_KEY_ALREADY_EXISTS','Cannot add primary key to table %s because a primary key already exists.');
-  define('REASON_NO_PRIVILEGES','User '.DB_SERVER_USERNAME.'@'.DB_SERVER.' does not have %s privileges to database '.DB_DATABASE.'.');
-
+  define('REASON_TABLE_ALREADY_EXISTS','表%s已经存在，无法创建');
+  define('REASON_TABLE_DOESNT_EXIST','表%s不存在，无法删除.');
+  define('REASON_TABLE_NOT_FOUND','表%s不存在，无法执行.');
+  define('REASON_CONFIG_KEY_ALREADY_EXISTS','配置值 "%s" 已经存在，无法插入');
+  define('REASON_COLUMN_ALREADY_EXISTS','列%s已经存在，无法添加.');
+  define('REASON_COLUMN_DOESNT_EXIST_TO_DROP','列%s不存在，无法删除.');
+  define('REASON_COLUMN_DOESNT_EXIST_TO_CHANGE','列%s不存在，无法修改.');
+  define('REASON_PRODUCT_TYPE_LAYOUT_KEY_ALREADY_EXISTS','prod-type-layout configuration_key "%s" 已经存在，无法插入');
+  define('REASON_INDEX_DOESNT_EXIST_TO_DROP','索引%s于表%s不存在，无法删除.');
+  define('REASON_PRIMARY_KEY_DOESNT_EXIST_TO_DROP','表%s的主关键字不存在，无法删除.');
+  define('REASON_INDEX_ALREADY_EXISTS','索引%s于表%s已存在，无法添加.');
+  define('REASON_PRIMARY_KEY_ALREADY_EXISTS','表%s主关键字已经存在，无法添加.');
+  define('REASON_NO_PRIVILEGES','用户 '.DB_SERVER_USERNAME.'@'.DB_SERVER.' 没有%s权限访问数据库 '.DB_DATABASE.'.');

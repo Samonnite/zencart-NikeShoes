@@ -17,23 +17,25 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: zones.php 1105 2005-04-04 22:05:35Z birdbrain $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: zones.php 290 2004-09-15 19:48:26Z wilt $
 //
 
-define('HEADING_TITLE', 'Zones');
+define('HEADING_TITLE', '地区代码');
 
-define('TABLE_HEADING_COUNTRY_NAME', 'Country');
-define('TABLE_HEADING_ZONE_NAME', 'Zones');
-define('TABLE_HEADING_ZONE_CODE', 'Code');
-define('TABLE_HEADING_ACTION', 'Action');
+define('TABLE_HEADING_COUNTRY_NAME', '国家或地区');
+define('TABLE_HEADING_ZONE_NAME', '地区');
+define('TABLE_HEADING_ZONE_CODE', '代码');
+define('TABLE_HEADING_ACTION', '操作');
 
-define('TEXT_INFO_EDIT_INTRO', 'Please make any necessary changes');
-define('TEXT_INFO_ZONES_NAME', 'Zones Name:');
-define('TEXT_INFO_ZONES_CODE', 'Zones Code:');
-define('TEXT_INFO_COUNTRY_NAME', 'Country:');
-define('TEXT_INFO_INSERT_INTRO', 'Please enter the new zone with its related data');
-define('TEXT_INFO_DELETE_INTRO', 'Are you sure you want to delete this zone?');
-define('TEXT_INFO_HEADING_NEW_ZONE', 'New Zone');
-define('TEXT_INFO_HEADING_EDIT_ZONE', 'Edit Zone');
-define('TEXT_INFO_HEADING_DELETE_ZONE', 'Delete Zone');
+define('TEXT_INFO_EDIT_INTRO', '请做必要的修改');
+define('TEXT_INFO_ZONES_NAME', '地区名称:');
+define('TEXT_INFO_ZONES_CODE', '地区代码:');
+define('TEXT_INFO_COUNTRY_NAME', '国家或地区:');
+define('TEXT_INFO_INSERT_INTRO', '请输入新地区及其相关数据');
+define('TEXT_INFO_DELETE_INTRO', '你确定要删除该地区吗?');
+define('TEXT_INFO_HEADING_NEW_ZONE', '新地区');
+define('TEXT_INFO_HEADING_EDIT_ZONE', '编辑地区');
+define('TEXT_INFO_HEADING_DELETE_ZONE', '删除地区');
 ?>

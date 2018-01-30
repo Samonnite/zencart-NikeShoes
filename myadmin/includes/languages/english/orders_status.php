@@ -17,23 +17,25 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: orders_status.php 1105 2005-04-04 22:05:35Z birdbrain $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: orders_status.php 290 2004-09-15 19:48:26Z wilt $
 //
 
-define('HEADING_TITLE', 'Orders Status');
+define('HEADING_TITLE', '订单状态');
 
-define('TABLE_HEADING_ORDERS_STATUS', 'Orders Status');
-define('TABLE_HEADING_ACTION', 'Action');
+define('TABLE_HEADING_ORDERS_STATUS', '订单状态');
+define('TABLE_HEADING_ACTION', '操作');
 
-define('TEXT_INFO_EDIT_INTRO', 'Please make any necessary changes');
-define('TEXT_INFO_ORDERS_STATUS_NAME', 'Orders Status:');
-define('TEXT_INFO_INSERT_INTRO', 'Please enter the new orders status with its related data');
-define('TEXT_INFO_DELETE_INTRO', 'Are you sure you want to delete this order status?');
-define('TEXT_INFO_HEADING_NEW_ORDERS_STATUS', 'New Orders Status');
-define('TEXT_INFO_HEADING_EDIT_ORDERS_STATUS', 'Edit Orders Status');
-define('TEXT_INFO_HEADING_DELETE_ORDERS_STATUS', 'Delete Orders Status');
+define('TEXT_INFO_EDIT_INTRO', '请做必要修改');
+define('TEXT_INFO_ORDERS_STATUS_NAME', '订单状态:');
+define('TEXT_INFO_INSERT_INTRO', '请输入新订单状态及其相关数据');
+define('TEXT_INFO_DELETE_INTRO', '你确定要删除该订单状态?');
+define('TEXT_INFO_HEADING_NEW_ORDERS_STATUS', '新订单状态');
+define('TEXT_INFO_HEADING_EDIT_ORDERS_STATUS', '编辑订单状态');
+define('TEXT_INFO_HEADING_DELETE_ORDERS_STATUS', '删除订单状态');
 
-define('ERROR_REMOVE_DEFAULT_ORDER_STATUS', 'Error: The default order status can not be removed. Please set another order status as default, and try again.');
-define('ERROR_STATUS_USED_IN_ORDERS', 'Error: This order status is currently used in orders.');
-define('ERROR_STATUS_USED_IN_HISTORY', 'Error: This order status is currently used in the order status history.');
+define('ERROR_REMOVE_DEFAULT_ORDER_STATUS', '错误: 默认订单状态无法删除. 请设置另一订单状态为默认值,然后再试一次.');
+define('ERROR_STATUS_USED_IN_ORDERS', '错误: 该订单状态正在订单中使用.');
+define('ERROR_STATUS_USED_IN_HISTORY', '错误: 该订单状态正在订单状态历史中使用.');
 ?>

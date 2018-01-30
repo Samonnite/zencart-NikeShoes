@@ -65,3 +65,6 @@ if (!isset($flag_disable_footer) || !$flag_disable_footer) {
 <?php
 } // flag_disable_footer
 ?>
+    <div id="goTopBtn" style="display: none;"></div>
+		<script type="text/javascript" src="includes/templates/abagon/jscript/scrolltop.js"></script>
+<script type="text/javascript">goTopEx();</script>

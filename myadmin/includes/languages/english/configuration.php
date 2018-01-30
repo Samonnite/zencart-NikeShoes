@@ -17,14 +17,16 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: configuration.php 1105 2005-04-04 22:05:35Z birdbrain $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: configuration.php 290 2004-09-15 19:48:26Z wilt $
 //
 
-define('TABLE_HEADING_CONFIGURATION_TITLE', 'Title');
-define('TABLE_HEADING_CONFIGURATION_VALUE', 'Value');
-define('TABLE_HEADING_ACTION', 'Action');
+define('TABLE_HEADING_CONFIGURATION_TITLE', '标题');
+define('TABLE_HEADING_CONFIGURATION_VALUE', '内容');
+define('TABLE_HEADING_ACTION', '操作');
 
-define('TEXT_INFO_EDIT_INTRO', 'Please make any necessary changes');
-define('TEXT_INFO_DATE_ADDED', 'Date Added:');
-define('TEXT_INFO_LAST_MODIFIED', 'Last Modified:');
+define('TEXT_INFO_EDIT_INTRO', '请做适当修改');
+define('TEXT_INFO_DATE_ADDED', '加入日期:');
+define('TEXT_INFO_LAST_MODIFIED', '最后修改:');
 ?>

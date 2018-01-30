@@ -4,64 +4,64 @@
  * @copyright Copyright 2003-2012 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
- * @version GIT: $Id: Author: DrByte  Mon Sep 24 14:38:59 2012 -0400 Modified in v1.5.2 $
+ * @version GIT: $Id: Author: Jack Modified in v1.5.4 $
  */
 
-  define('HEADING_TITLE', 'Store Manager');
-  define('TABLE_CONFIGURATION_TABLE', 'Lookup CONSTANT Definitions');
+  define('HEADING_TITLE', '商店管理');
+  define('TABLE_CONFIGURATION_TABLE', '查询常量定义');
 
-  define('SUCCESS_PRODUCT_UPDATE_SORT_ALL', '<strong>Successful</strong> update for Attributes Sort Order');
-  define('SUCCESS_PRODUCT_UPDATE_PRODUCTS_PRICE_SORTER', '<strong>Successful</strong> update for Products Price Sorter Values');
-  define('SUCCESS_PRODUCT_UPDATE_PRODUCTS_VIEWED', '<strong>Successful</strong> reset of Products Viewed to 0');
-  define('SUCCESS_PRODUCT_UPDATE_PRODUCTS_ORDERED', '<strong>Successful</strong> reset of Products Ordered to 0');
-  define('SUCCESS_UPDATE_ALL_MASTER_CATEGORIES_ID', '<strong>Successful</strong> reset of all Master Categories for Linked Products');
-  define('SUCCESS_UPDATE_COUNTER', '<strong>Successful</strong> Counter Updated to: ');
+  define('SUCCESS_PRODUCT_UPDATE_SORT_ALL', '<strong>成功</strong>更新属性排序');
+  define('SUCCESS_PRODUCT_UPDATE_PRODUCTS_PRICE_SORTER', '<strong>成功</strong>更新商品价格定购次数');
+  define('SUCCESS_PRODUCT_UPDATE_PRODUCTS_VIEWED', '<strong>成功</strong>重置商品查看次数为 0');
+  define('SUCCESS_PRODUCT_UPDATE_PRODUCTS_ORDERED', '<strong>成功</strong>重置商品定购次数为 0');
+  define('SUCCESS_UPDATE_ALL_MASTER_CATEGORIES_ID', '<strong>成功</strong>重置链接商品的所有主分类');
+  define('SUCCESS_UPDATE_COUNTER', '<strong>成功</strong>更新计数器为: ');
 
-  define('ERROR_CONFIGURATION_KEY_NOT_FOUND', '<strong>Error:</strong> No matching Configuration Keys were found ...');
-  define('ERROR_CONFIGURATION_KEY_NOT_ENTERED', '<strong>Error:</strong> No Configuration Key or Text was entered to search for ... Search was terminated');
+  define('ERROR_CONFIGURATION_KEY_NOT_FOUND', '<strong>错误:</strong> 没有找到匹配的配置关键字 ...');
+  define('ERROR_CONFIGURATION_KEY_NOT_ENTERED', '<strong>错误:</strong> 没有输入要查找的配置关键字或文字 ... 搜索中断');
 
-  define('TEXT_INFO_COUNTER_UPDATE', '<strong>Update Hit Counter</strong><br />to to a new value: ');
-  define('TEXT_INFO_PRODUCTS_PRICE_SORTER_UPDATE', '<strong>Update ALL Products Price Sorter</strong><br />to be able to sort by displayed prices: ');
-  define('TEXT_INFO_PRODUCTS_VIEWED_UPDATE', '<strong>Reset ALL Products Viewed</strong><br />Reset Product Viewed Counts to 0: ');
-  define('TEXT_INFO_PRODUCTS_ORDERED_UPDATE', '<strong>Reset ALL Products Ordered</strong><br />Reset Product Ordered Counts to 0: ');
-  define('TEXT_INFO_MASTER_CATEGORIES_ID_UPDATE', '<strong>Reset ALL Products Master Categories ID</strong><br />to be used for Linked Products and Pricing: ');
+  define('TEXT_INFO_COUNTER_UPDATE', '<strong>更新访问计数</strong><br />为: ');
+  define('TEXT_INFO_PRODUCTS_PRICE_SORTER_UPDATE', '<strong>更新所有商品价格排列</strong><br />以便于按显示价格排序: ');
+  define('TEXT_INFO_PRODUCTS_VIEWED_UPDATE', '<strong>重置所有商品查看次数</strong><br />重置商品查看次数为 0: ');
+  define('TEXT_INFO_PRODUCTS_ORDERED_UPDATE', '<strong>重置所有商品定购次数</strong><br />重置商品定购次数为 0: ');
+  define('TEXT_INFO_MASTER_CATEGORIES_ID_UPDATE', '<strong>重置所有商品主分类编号</strong><br />以便用于链接商品和价格: ');
 
-  define('TEXT_NEW_ORDERS_ID', 'New Order ID');
-  define('TEXT_INFO_SET_NEXT_ORDER_NUMBER', '<strong>Set next order number</strong><br />NOTE: You cannot set the order number to a value lower than any existing order already in the database.');
-  define('TEXT_MSG_NEXT_ORDER', 'The next order number has been set to %s');
-  define('TEXT_MSG_NEXT_ORDER_MAX', 'Due to existing order data, the next order number is currently: %s');
-  define('TEXT_MSG_NEXT_ORDER_TOO_LARGE', 'Due to database limitations, you cannot set the next order number higher than 2000000000. Please choose a lower value.');
+  define('TEXT_NEW_ORDERS_ID', '新的订单号码');
+  define('TEXT_INFO_SET_NEXT_ORDER_NUMBER', '<strong>设置下一个订单号</strong><br />说明: 新的订单号不能比当前数据库中的订单号更小。');
+  define('TEXT_MSG_NEXT_ORDER', '下一个订单号设置为%s');
+  define('TEXT_MSG_NEXT_ORDER_MAX', '由于已有订单，目前下一个订单号为: %s');
+  define('TEXT_MSG_NEXT_ORDER_TOO_LARGE', '由于数据库限制，下一个订单号不能高于 2000000000，请设置一个更小的值。');
 
-  define('TEXT_CONFIGURATION_CONSTANT', '<strong>Look-up CONSTANT or Language File defines</strong>');
-  define('TEXT_CONFIGURATION_KEY', 'Key or Name:');
-  define('TEXT_INFO_CONFIGURATION_UPDATE', '<strong>NOTE:</strong> CONSTANTS are written in uppercase.<br />Language file lookups may be an alternative search when nothing has been found in the database tables.');
+  define('TEXT_CONFIGURATION_CONSTANT', '<strong>查询常量或语言文件</strong>');
+  define('TEXT_CONFIGURATION_KEY', '关键字或名称:');
+  define('TEXT_INFO_CONFIGURATION_UPDATE', '<strong>注释:</strong> 常量为大写字母.<br />当在数据库表中找不到时, 可以查询语言文件.');
 
 
-  define('TEXT_CONFIGURATION_CONSTANT_FILES', '<strong>Look-up in Language File defines</strong>');
-  define('TEXT_CONFIGURATION_KEY_FILES', 'Look up text:');
-  define('TEXT_INFO_CONFIGURATION_UPDATE_FILES', '<strong>NOTE:</strong> Language file lookups maybe upper or lower case');
+  define('TEXT_CONFIGURATION_CONSTANT_FILES', '<strong>查询语言文件</strong>');
+  define('TEXT_CONFIGURATION_KEY_FILES', '查询文字:');
+  define('TEXT_INFO_CONFIGURATION_UPDATE_FILES', '<strong>注释:</strong> 查询语言文件可以是大写或小写');
 
-  define('TABLE_TITLE_KEY', '<strong>Key:</strong>');
-  define('TABLE_TITLE_TITLE', '<strong>Title:</strong>');
-  define('TABLE_TITLE_DESCRIPTION', '<strong>Description:</strong>');
-  define('TABLE_TITLE_GROUP', '<strong>Group:</strong>');
-  define('TABLE_TITLE_VALUE', '<strong>Value:</strong>');
+  define('TABLE_TITLE_KEY', '<strong>关键字:</strong>');
+  define('TABLE_TITLE_TITLE', '<strong>标题:</strong>');
+  define('TABLE_TITLE_DESCRIPTION', '<strong>简介:</strong>');
+  define('TABLE_TITLE_GROUP', '<strong>组别:</strong>');
+  define('TABLE_TITLE_VALUE', '<strong>价值:</strong>');
 
-  define('TEXT_LANGUAGE_LOOKUPS', 'Language File Look-ups:');
-  define('TEXT_LANGUAGE_LOOKUP_NONE', 'None');
-  define('TEXT_LANGUAGE_LOOKUP_CURRENT_LANGUAGE', 'All Language Files for ' . strtoupper($_SESSION['language']) . ' - Catalog/Admin');
-  define('TEXT_LANGUAGE_LOOKUP_CURRENT_CATALOG', 'All Main Language files - Catalog (' . DIR_WS_CATALOG . DIR_WS_LANGUAGES . 'english.php /espanol.php etc.)');
-  define('TEXT_LANGUAGE_LOOKUP_CURRENT_CATALOG_TEMPLATE', 'All Current Selected Language Files - ' . DIR_WS_CATALOG . DIR_WS_LANGUAGES . $_SESSION['language'] . '/*.php');
-  define('TEXT_LANGUAGE_LOOKUP_CURRENT_ADMIN', 'All Main Language files - Admin (' . DIR_WS_ADMIN . DIR_WS_LANGUAGES . 'english.php /espanol.php etc.)');
-  define('TEXT_LANGUAGE_LOOKUP_CURRENT_ADMIN_LANGUAGE', 'All Current Selected Language Files - Admin (' . DIR_WS_ADMIN . DIR_WS_LANGUAGES . $_SESSION['language'] . '/*.php)');
-  define('TEXT_LANGUAGE_LOOKUP_CURRENT_ALL', 'All Current Selected Language files - Catalog/Admin');
+  define('TEXT_LANGUAGE_LOOKUPS', '语言文件查询:');
+  define('TEXT_LANGUAGE_LOOKUP_NONE', '无');
+  define('TEXT_LANGUAGE_LOOKUP_CURRENT_LANGUAGE', '所有语言文件 ' . strtoupper($_SESSION['language']) . ' - Catalog/Admin');
+  define('TEXT_LANGUAGE_LOOKUP_CURRENT_CATALOG', '所有主要文件 - Catalog (' . DIR_WS_CATALOG . DIR_WS_LANGUAGES . 'english.php /schinese.php etc.)');
+  define('TEXT_LANGUAGE_LOOKUP_CURRENT_CATALOG_TEMPLATE', '所有当前选项语言文件 - ' . DIR_WS_CATALOG . DIR_WS_LANGUAGES . $_SESSION['language'] . '/*.php');
+  define('TEXT_LANGUAGE_LOOKUP_CURRENT_ADMIN', '所有主要语言文件 - Admin (' . DIR_WS_ADMIN . DIR_WS_LANGUAGES . 'english.php /schinese.php etc.)');
+  define('TEXT_LANGUAGE_LOOKUP_CURRENT_ADMIN_LANGUAGE', '所有当前选择语言文件 - Admin (' . DIR_WS_ADMIN . DIR_WS_LANGUAGES . $_SESSION['language'] . '/*.php)');
+  define('TEXT_LANGUAGE_LOOKUP_CURRENT_ALL', '所有当前选择语言文件 - Catalog/Admin');
 
-  define('TEXT_INFO_NO_EDIT_AVAILABLE','No edit available');
-  define('TEXT_INFO_CONFIGURATION_HIDDEN', ' or, HIDDEN');
+  define('TEXT_INFO_NO_EDIT_AVAILABLE','没有可以编辑的');
+  define('TEXT_INFO_CONFIGURATION_HIDDEN', ' 或, 隐藏');
 
-  define('TEXT_INFO_DATABASE_OPTIMIZE', '<strong>Optimize Database</strong> to remove wasted space from deleted records.<br />May be optionally run monthly or weekly on a busy database.<br />(Best to run during non-busy times.)');
-  define('TEXT_INFO_OPTIMIZING_DATABASE_TABLES', 'Database table optimization in progress. This may take a few minutes. Please wait. The previous menu will re-appear when finished ... ');
-  define('SUCCESS_DB_OPTIMIZE', 'Database Optimization - Tables Processed: ');
+  define('TEXT_INFO_DATABASE_OPTIMIZE', '<strong>优化数据库</strong>，永久删除记录。<br />可每周或每月执行一次。<br />');
+  define('TEXT_INFO_OPTIMIZING_DATABASE_TABLES', '数据库正在优化中，将会需要几分钟，请稍候。结束后会重新显示上一个菜单 ... ');
+  define('SUCCESS_DB_OPTIMIZE', '数据库优化 - 处理数据表: ');
 
-  define('TEXT_INFO_PURGE_DEBUG_LOG_FILES', '<strong>Cleanup Debug Log Files</strong><br /><strong>CAUTION: </strong>Zen Cart records PHP error messages for debugging purposes, and many payment modules can be set to log debug data to diagnose communication problems. <br />Clicking this purge option will *permanently* remove *ALL* debug logs associated with PHP errors and payment modules from the /logs/ folder.');
-  define('SUCCESS_CLEAN_DEBUG_FILES', 'Debug Log Files Purged');
+  define('TEXT_INFO_PURGE_DEBUG_LOG_FILES', '<strong>清空调试日志文件</strong><br /><strong>注意: </strong>Zen Cart 记录 PHP 错误信息用于调试，很多支付模块可以设定记录调试数据用于诊断通信问题。<br />点击本清空选项将从 /logs/ 目录 *彻底* 删除 *所有* PHP 错误和支付模块相关的调试日志。');
+  define('SUCCESS_CLEAN_DEBUG_FILES', '调试日志文件已清空');

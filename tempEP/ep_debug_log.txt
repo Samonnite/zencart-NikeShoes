@@ -1,0 +1,44 @@
+MySQL error 1046: No database selected
+When executing:
+select distinct products_options_id from products_options order by products_options_id
+MySQL error 1046: No database selected
+When executing:
+select languages_id, name from languages where code = 'gb'
+MySQL error 1046: No database selected
+When executing:
+select languages_id, code from languages order by sort_order
+MySQL error 1046: No database selected
+When executing:
+select distinct products_options_id from products_options order by products_options_id
+MySQL error 1046: No database selected
+When executing:
+select languages_id, name from languages where code = 'en'
+MySQL error 1046: No database selected
+When executing:
+select languages_id, code from languages order by sort_order
+MySQL error 1046: No database selected
+When executing:
+select distinct products_options_id from products_options order by products_options_id
+MySQL error 1046: No database selected
+When executing:
+select languages_id, name from languages where code = 'en'
+MySQL error 1046: No database selected
+When executing:
+select languages_id, code from languages order by sort_order
+MySQL error 1046: No database selected
+When executing:
+select distinct products_options_id from products_options order by products_options_id
+MySQL error 1046: No database selected
+When executing:
+select languages_id, name from languages where code = 'en'
+MySQL error 1046: No database selected
+When executing:
+select languages_id, code from languages order by sort_order
+MySQL error 1046: No database selected
+When executing:
+SELECT
+			p.products_id as v_products_id,
+			p.products_model as v_products_model
+			FROM
+			products as p
+			

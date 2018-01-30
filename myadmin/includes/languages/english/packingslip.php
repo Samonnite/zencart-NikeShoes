@@ -17,23 +17,25 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
 //  $Id: packingslip.php 5961 2007-03-03 17:17:39Z ajeh $
 //
 
-define('TABLE_HEADING_COMMENTS', 'Comments');
-define('TABLE_HEADING_CUSTOMER_NOTIFIED', 'Customer Notified');
-define('TABLE_HEADING_DATE_ADDED', 'Date Added');
-define('TABLE_HEADING_STATUS', 'Status');
+define('TABLE_HEADING_COMMENTS', '备注');
+define('TABLE_HEADING_CUSTOMER_NOTIFIED', '已通知客户');
+define('TABLE_HEADING_DATE_ADDED', '添加日期');
+define('TABLE_HEADING_STATUS', '状态');
 
-define('TABLE_HEADING_PRODUCTS_MODEL', 'Model');
-define('TABLE_HEADING_PRODUCTS', 'Products');
+define('TABLE_HEADING_PRODUCTS_MODEL', '型号');
+define('TABLE_HEADING_PRODUCTS', '商品');
 
-define('ENTRY_CUSTOMER', 'CUSTOMER:');
+define('ENTRY_CUSTOMER', '客户: ');
 
-define('ENTRY_SOLD_TO', 'BILL TO:');
-define('ENTRY_SHIP_TO', 'SHIP TO:');
-define('ENTRY_PAYMENT_METHOD', 'Payment Method:');
-define('ENTRY_DATE_PURCHASED', 'Date Ordered:');
+define('ENTRY_SOLD_TO', '帐单地址: ');
+define('ENTRY_SHIP_TO', '送货地址: ');
+define('ENTRY_PAYMENT_METHOD', '支付方式: ');
+define('ENTRY_DATE_PURCHASED', '订购时间: ');
 
-define('ENTRY_ORDER_ID','Invoice No. ');
+define('ENTRY_ORDER_ID','发票号. ');
 ?>

@@ -60,8 +60,8 @@ class breadcrumb extends base {
         $trail_string .= $this->_trail[$i]['title'];
       }
 
-      if (($i+1) < $n) $trail_string .= $separator;
-      $trail_string .= "\n";
+      // if (($i+1) < $n) $trail_string .= $separator;
+      // $trail_string .= "\n";
     }
 
     return $trail_string;

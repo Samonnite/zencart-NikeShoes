@@ -66,8 +66,8 @@
 ?>
 <table width="100%" border="0" cellspacing="0" cellpadding="0" id="contentMainWrapper">
   <tr>
-<?php
-if (COLUMN_LEFT_STATUS == 0 || (CUSTOMERS_APPROVAL == '1' and $_SESSION['customer_id'] == '') || (CUSTOMERS_APPROVAL_AUTHORIZATION == 1 && CUSTOMERS_AUTHORIZATION_COLUMN_LEFT_OFF == 'true' and ($_SESSION['customers_authorization'] != 0 or $_SESSION['customer_id'] == ''))) {
+<?php 
+if (COLUMN_LEFT_STATUS == 0 || $this_is_home_page||$_GET['main_page'] == 'shopping_cart'||$_GET['main_page'] == 'advanced_search'||$_GET['main_page'] == 'unsubscribe'||$_GET['main_page'] == 'conditions'||$_GET['main_page'] == 'site_map'||$_GET['main_page'] == 'discount_coupon'||$_GET['main_page'] == 'privacy'||$_GET['main_page'] == 'login'||$_GET['main_page'] == 'contact_us'||$_GET['main_page'] == 'gv_faq'||$_GET['main_page'] == 'shippinginfo'||(CUSTOMERS_APPROVAL == '1' and $_SESSION['customer_id'] == '') || (CUSTOMERS_APPROVAL_AUTHORIZATION == 1 && CUSTOMERS_AUTHORIZATION_COLUMN_LEFT_OFF == 'true' and ($_SESSION['customers_authorization'] != 0 or $_SESSION['customer_id'] == ''))) {
   // global disable of column_left
   $flag_disable_left = true;
 }
@@ -113,14 +113,14 @@ if (COLUMN_RIGHT_STATUS == 0 || (CUSTOMERS_APPROVAL == '1' and $_SESSION['custom
 }
 if ((!isset($flag_disable_right) || !$flag_disable_right)) {
 ?>
-<td id="navColumnTwo" class="columnRight" style="width: <?php echo COLUMN_WIDTH_RIGHT; ?>">
+<td id="navColumnTwo" class="columnRight" style="width: 0">
 <?php
  /**
   * prepares and displays right column sideboxes
   *
   */
 ?>
-<div id="navColumnTwoWrapper" style="width: <?php echo BOX_WIDTH_RIGHT; ?>"><?php require(DIR_WS_MODULES . zen_get_module_directory('column_right.php')); ?></div></td>
+<div id="navColumnTwoWrapper" style="width: 0"><?php require(DIR_WS_MODULES . zen_get_module_directory('column_right.php')); ?></div></td>
 <?php
 }
 ?>

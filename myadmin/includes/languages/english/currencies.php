@@ -5,35 +5,36 @@
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: currencies.php 18931 2011-06-13 15:22:34Z drbyte $
+ * @Simplified Chinese version   http://www.zen-cart.cn
  */
 
-define('HEADING_TITLE', 'Currencies');
+define('HEADING_TITLE', '货币');
 
-define('TABLE_HEADING_CURRENCY_NAME', 'Currency');
-define('TABLE_HEADING_CURRENCY_CODES', 'Code');
-define('TABLE_HEADING_CURRENCY_VALUE', 'Value');
-define('TABLE_HEADING_ACTION', 'Action');
+define('TABLE_HEADING_CURRENCY_NAME', '货币');
+define('TABLE_HEADING_CURRENCY_CODES', '代码');
+define('TABLE_HEADING_CURRENCY_VALUE', '汇率');
+define('TABLE_HEADING_ACTION', '操作');
 
-define('TEXT_INFO_EDIT_INTRO', 'Please make any necessary changes');
-define('TEXT_INFO_CURRENCY_TITLE', 'Title:');
-define('TEXT_INFO_CURRENCY_CODE', 'Code:');
-define('TEXT_INFO_CURRENCY_SYMBOL_LEFT', 'Symbol Left:');
-define('TEXT_INFO_CURRENCY_SYMBOL_RIGHT', 'Symbol Right:');
-define('TEXT_INFO_CURRENCY_DECIMAL_POINT', 'Decimal Point:');
-define('TEXT_INFO_CURRENCY_THOUSANDS_POINT', 'Thousands Point:');
-define('TEXT_INFO_CURRENCY_DECIMAL_PLACES', 'Decimal Places:');
-define('TEXT_INFO_CURRENCY_LAST_UPDATED', 'Last Updated:');
-define('TEXT_INFO_CURRENCY_VALUE', 'Value:');
-define('TEXT_INFO_CURRENCY_EXAMPLE', 'Example Output:');
-define('TEXT_INFO_INSERT_INTRO', 'Please enter the new currency with its related data');
-define('TEXT_INFO_DELETE_INTRO', 'Are you sure you want to delete this currency?');
-define('TEXT_INFO_HEADING_NEW_CURRENCY', 'New Currency');
-define('TEXT_INFO_HEADING_EDIT_CURRENCY', 'Edit Currency');
-define('TEXT_INFO_HEADING_DELETE_CURRENCY', 'Delete Currency');
-define('TEXT_INFO_SET_AS_DEFAULT', TEXT_SET_DEFAULT . ' (requires a manual update of currency values)');
-define('TEXT_INFO_CURRENCY_UPDATED', 'The exchange rate for %s (%s) was updated successfully via %s.');
+define('TEXT_INFO_EDIT_INTRO', '请做必要修改');
+define('TEXT_INFO_CURRENCY_TITLE', '标题:');
+define('TEXT_INFO_CURRENCY_CODE', '代码:');
+define('TEXT_INFO_CURRENCY_SYMBOL_LEFT', '左边符号:');
+define('TEXT_INFO_CURRENCY_SYMBOL_RIGHT', '右边符号:');
+define('TEXT_INFO_CURRENCY_DECIMAL_POINT', '小数点:');
+define('TEXT_INFO_CURRENCY_THOUSANDS_POINT', '千分位:');
+define('TEXT_INFO_CURRENCY_DECIMAL_PLACES', '小数位:');
+define('TEXT_INFO_CURRENCY_LAST_UPDATED', '最后更新:');
+define('TEXT_INFO_CURRENCY_VALUE', '值:');
+define('TEXT_INFO_CURRENCY_EXAMPLE', '输出样本:');
+define('TEXT_INFO_INSERT_INTRO', '请输入新货币和相关数据');
+define('TEXT_INFO_DELETE_INTRO', '您确认要删除该货币吗?');
+define('TEXT_INFO_HEADING_NEW_CURRENCY', '新建货币');
+define('TEXT_INFO_HEADING_EDIT_CURRENCY', '编辑货币');
+define('TEXT_INFO_HEADING_DELETE_CURRENCY', '删除货币');
+define('TEXT_INFO_SET_AS_DEFAULT', TEXT_SET_DEFAULT . ' (需要手工更新币值)');
+define('TEXT_INFO_CURRENCY_UPDATED', ' %s(%s)的汇率通过%s. 成功更新');
 
-define('ERROR_REMOVE_DEFAULT_CURRENCY', 'Error: The default currency can not be removed. Please set another currency as default, and try again.');
-define('ERROR_CURRENCY_INVALID', 'Error: The exchange rate for %s (%s) was not updated via %s. Is it a valid currency code?');
-define('WARNING_PRIMARY_SERVER_FAILED', 'Warning: The primary exchange rate server (%s) failed for %s (%s) - trying the secondary exchange rate server.');
-define('ERROR_INVALID_CURRENCY_ENTRY', 'ERROR: The information you submitted was incomplete, and has not been saved. You must specify a currency code and a name.');
+define('ERROR_REMOVE_DEFAULT_CURRENCY', '错误: 不能删除缺省货币. 请设置另一个货币为缺省值, 然后再试一次.');
+define('ERROR_CURRENCY_INVALID', '错误: %s(%s)的汇率没有通过%s更新. 该货币代码正确吗?');
+define('WARNING_PRIMARY_SERVER_FAILED', '警告: 主要汇率服务器(%s)无法更新%s(%s) - 试用第二汇率服务器.');
+define('ERROR_INVALID_CURRENCY_ENTRY', '错误: 提交的内容不完整，没有保存。请填写货币代码和名称。');

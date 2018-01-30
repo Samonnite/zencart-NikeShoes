@@ -17,12 +17,14 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: audience.php 1105 2005-04-04 22:05:35Z birdbrain $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: audience.php 290 2004-09-15 19:48:26Z wilt $
 //
 
-define('TEXT_SELECT_AN_OPTION', 'Please Select');
-define('TEXT_SELECT_CUSTOMER', 'Please Select A Customer');
-define('TEXT_ALL_CUSTOMERS', 'To All Customers');
-define('TEXT_NEWSLETTER_CUSTOMERS', 'To All Newsletter Subscribers');
+define('TEXT_SELECT_AN_OPTION', '请选择');
+define('TEXT_SELECT_CUSTOMER', '请选择一个客户');
+define('TEXT_ALL_CUSTOMERS', '给所有客户');
+define('TEXT_NEWSLETTER_CUSTOMERS', '给所有电子商情订阅者');
 
 ?>

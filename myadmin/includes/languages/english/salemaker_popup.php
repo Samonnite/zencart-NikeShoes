@@ -17,19 +17,21 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: salemaker_popup.php 1105 2005-04-04 22:05:35Z birdbrain $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: salemaker_popup.php 290 2004-09-15 19:48:26Z wilt $
 //
 
-define('HEADING_TITLE', 'Salemaker');
-define('SUBHEADING_TITLE', 'Salemaker Usage Tips:');
+define('HEADING_TITLE', '促销管理');
+define('SUBHEADING_TITLE', '促销管理提示:');
 
-define('TEXT_SALEMAKER_IMMEDIATELY', 'Immediately');
-define('TEXT_SALEMAKER_NEVER', 'Never');
-define('TEXT_CLOSE_WINDOW', '[ close window ]');
-define('TABLE_HEADING_SALE_NAME', 'SaleName');
-define('TABLE_HEADING_SALE_DEDUCTION', 'Deduction');
-define('TABLE_HEADING_SALE_DATE_START', 'Startdate');
-define('TABLE_HEADING_SALE_DATE_END', 'Enddate');
-define('TABLE_HEADING_STATUS', 'Status');
-define('TABLE_HEADING_ACTION', 'Action');
+define('TEXT_SALEMAKER_IMMEDIATELY', '立刻');
+define('TEXT_SALEMAKER_NEVER', '从不');
+define('TEXT_CLOSE_WINDOW', '[关闭窗口]');
+define('TABLE_HEADING_SALE_NAME', '促销名称');
+define('TABLE_HEADING_SALE_DEDUCTION', '减价');
+define('TABLE_HEADING_SALE_DATE_START', '生效日');
+define('TABLE_HEADING_SALE_DATE_END', '到期日');
+define('TABLE_HEADING_STATUS', '状态');
+define('TABLE_HEADING_ACTION', '操作');
 ?>

@@ -20,56 +20,56 @@
 // $Id: backup_mysql.php 154 2010-06-09 13:57:26Z drbyte $
 //
 
-// define the locations of the mysql utilities.  Typical location is in '/usr/bin/' ... but not on Windows servers.
-// try 'c:/mysql/bin/mysql.exe' and 'c:/mysql/bin/mysqldump.exe' on Windows hosts ... change drive letter and path as needed
+// 请正确设置mysql工具的路径，通常为 '/usr/bin/' ... Windows服务器不同。
+// Windows主机上，路径类似 'c:/mysql/bin/mysql.exe' 和 'c:/mysql/bin/mysqldump.exe'
 define('LOCAL_EXE_MYSQL',     '/usr/bin/mysql');  // used for restores
 define('LOCAL_EXE_MYSQLDUMP', '/usr/bin/mysqldump');  // used for backups
 
 // the following are the language definitions
-define('HEADING_TITLE', 'Database Backup Manager - MySQL');
-define('WARNING_NOT_SECURE_FOR_DOWNLOADS','<span class="errorText">NOTE: You do not have SSL enabled. Any downloads you do from this page will not be encrypted. Doing backups and restores will be fine, but download/upload of files from/to the server presents a security risk.');
-define('TABLE_HEADING_TITLE', 'Title');
-define('TABLE_HEADING_FILE_DATE', 'Date');
-define('TABLE_HEADING_FILE_SIZE', 'Size');
-define('TABLE_HEADING_ACTION', 'Action');
+define('HEADING_TITLE', '备份MySQL数据库');
+define('WARNING_NOT_SECURE_FOR_DOWNLOADS','<span class="errorText">提示: 没有使用SSL。本页面上的所有下载都未加密。备份和恢复问题不大，但从服务器下载或上传文件存在安全隐患。');
+define('TABLE_HEADING_TITLE', '标题');
+define('TABLE_HEADING_FILE_DATE', '日期');
+define('TABLE_HEADING_FILE_SIZE', '大小');
+define('TABLE_HEADING_ACTION', '操作');
 
-define('TEXT_INFO_HEADING_NEW_BACKUP', 'New Backup');
-define('TEXT_INFO_HEADING_RESTORE_LOCAL', 'Restore Local');
-define('TEXT_INFO_NEW_BACKUP', 'Do not interrupt the backup process which might take a couple of minutes.');
-define('TEXT_INFO_UNPACK', '<br><br>(after unpacking the file from the archive)');
-define('TEXT_INFO_RESTORE', 'Do not interrupt the restoration process.<br><br>The larger the backup, the longer this process takes!<br><br>If possible, use the mysql client.<br><br>For example:<br><br><b>mysql -h' . DB_SERVER . ' -u' . DB_SERVER_USERNAME . ' -p ' . DB_DATABASE . ' < %s </b> %s');
-define('TEXT_INFO_RESTORE_LOCAL', 'Do not interrupt the restoration process.<br><br>The larger the backup, the longer this process takes!');
-define('TEXT_INFO_RESTORE_LOCAL_RAW_FILE', 'The file uploaded must be a raw sql (text) file.');
-define('TEXT_INFO_DATE', 'Date:');
-define('TEXT_INFO_SIZE', 'Size:');
-define('TEXT_INFO_COMPRESSION', 'Compression:');
-define('TEXT_INFO_USE_GZIP', 'Use GZIP');
-define('TEXT_INFO_USE_ZIP', 'Use ZIP');
-define('TEXT_INFO_SKIP_LOCKS', 'Skip Lock option (check this if you get a LOCK TABLES permissions error)');
-define('TEXT_INFO_USE_NO_COMPRESSION', 'No Compression (Pure SQL)');
-define('TEXT_INFO_DOWNLOAD_ONLY', 'Download without storing on server');
-define('TEXT_INFO_BEST_THROUGH_HTTPS', '(Safer via a secured HTTPS connection)');
-define('TEXT_DELETE_INTRO', 'Are you sure you want to delete this backup?');
-define('TEXT_NO_EXTENSION', 'None');
-define('TEXT_BACKUP_DIRECTORY', 'Backup Directory:');
-define('TEXT_LAST_RESTORATION', 'Last Restoration:');
-define('TEXT_FORGET', '(forget)');
+define('TEXT_INFO_HEADING_NEW_BACKUP', '新建备份');
+define('TEXT_INFO_HEADING_RESTORE_LOCAL', '本地恢复');
+define('TEXT_INFO_NEW_BACKUP', '备份要花几分钟，不要中断备份进程。');
+define('TEXT_INFO_UNPACK', '<br><br>(将文件从档案中展开后)');
+define('TEXT_INFO_RESTORE', '不要中断恢复进程。<br><br>备份文件 越大, 处理时间 越久! <br><br>可能的话, 使用mysql客户<br><br>例如:<br><br><b>mysql -h' . DB_SERVER . ' -u' . DB_SERVER_USERNAME . ' -p ' . DB_DATABASE . ' < %s </b> %s');
+define('TEXT_INFO_RESTORE_LOCAL', '不要中断恢复进程。<br><br>备份文件 越大, 处理时间 越久! ');
+define('TEXT_INFO_RESTORE_LOCAL_RAW_FILE', '上传的文件必须是sql脚本文件(文本)。');
+define('TEXT_INFO_DATE', '日期:');
+define('TEXT_INFO_SIZE', '大小:');
+define('TEXT_INFO_COMPRESSION', '压缩:');
+define('TEXT_INFO_USE_GZIP', '使用GZIP');
+define('TEXT_INFO_USE_ZIP', '使用ZIP');
+define('TEXT_INFO_SKIP_LOCKS', '跳过加锁选项 (如果遇到锁定数据表权限错误，选定该选项)');
+define('TEXT_INFO_USE_NO_COMPRESSION', '未压缩 (纯SQL)');
+define('TEXT_INFO_DOWNLOAD_ONLY', '不保存在服务器上，直接下载');
+define('TEXT_INFO_BEST_THROUGH_HTTPS', '(通过HTTPS连接下载比较安全)');
+define('TEXT_DELETE_INTRO', '您要删除该备份吗?');
+define('TEXT_NO_EXTENSION', '无');
+define('TEXT_BACKUP_DIRECTORY', '备份目录:');
+define('TEXT_LAST_RESTORATION', '上次恢复:');
+define('TEXT_FORGET', '(忽略)');
 
-define('ERROR_BACKUP_DIRECTORY_DOES_NOT_EXIST', 'Error: Backup directory does not exist. Please set this in configure.php.');
-define('ERROR_BACKUP_DIRECTORY_NOT_WRITEABLE', 'Error: Backup directory is not writeable.');
-define('ERROR_DOWNLOAD_LINK_NOT_ACCEPTABLE', 'Error: Download link not acceptable.');
-define('ERROR_CANT_BACKUP_IN_SAFE_MODE','ERROR: This backup script seldom works when safe_mode is enabled or open_basedir restrictions are in effect.<br />If you get no errors doing a backup, check to see whether the file is less than 200kb. If so, then the backup is likely unreliable.');
-define('ERROR_EXEC_DISABLED','ERROR: Your server\'s "exec()" command has been disabled. This script cannot run. Ask your host if they are willing to re-enable PHP exec().');
-define('ERROR_FILE_NOT_REMOVEABLE', 'Error: Could not remove the file specified. You may have to use FTP to remove the file, due to a server-permissions configuration limitation.');
+define('ERROR_BACKUP_DIRECTORY_DOES_NOT_EXIST', '错误: 备份目录不存在。请在configure.php文件中设置。');
+define('ERROR_BACKUP_DIRECTORY_NOT_WRITEABLE', '错误: 备份目录不可写。');
+define('ERROR_DOWNLOAD_LINK_NOT_ACCEPTABLE', '错误: 下载链接不正确。');
+define('ERROR_CANT_BACKUP_IN_SAFE_MODE','错误: safe_mode打开时，备份脚本不能正常允许，或者是open_basedir进行了限制<br />如果备份时没有错误，检查文件大小是否小于200kb。如果是，说明备份不可靠。');
+define('ERROR_EXEC_DISABLED','错误: 您的服务器禁止了"exec()"命令，无法执行脚本，请咨询主机商。');
+define('ERROR_FILE_NOT_REMOVEABLE', '错误: 无法删除指定的文件。由于服务器限制，请通过FTP删除。');
 
-define('SUCCESS_LAST_RESTORE_CLEARED', 'Success: The last restoration date has been cleared.');
-define('SUCCESS_DATABASE_SAVED', 'Success: The database has been saved.');
-define('SUCCESS_DATABASE_RESTORED', 'Success: The database has been restored.');
-define('SUCCESS_BACKUP_DELETED', 'Success: The backup has been removed.');
-define('FAILURE_DATABASE_NOT_SAVED', 'Failure: The database has NOT been saved.');
-define('FAILURE_DATABASE_NOT_SAVED_UTIL_NOT_FOUND', 'ERROR: Could not locate the MYSQLDUMP backup utility. BACKUP FAILED.');
-define('FAILURE_DATABASE_NOT_RESTORED', 'Failure: The database may NOT have been restored properly. Please check it carefully.');
-define('FAILURE_DATABASE_NOT_RESTORED_FILE_NOT_FOUND', 'Failure: The database was NOT restored.  ERROR: FILE NOT FOUND: %s');
-define('FAILURE_DATABASE_NOT_RESTORED_UTIL_NOT_FOUND', 'ERROR: Could not locate the MYSQL restore utility. RESTORE FAILED.');
-define('FAILURE_BACKUP_FAILED_CHECK_PERMISSIONS','The backup failed because there was an error starting the backup program (mysqldump or mysqldump.exe).<br />If running on Windows 2003 server, you may need to alter permissions on cmd.exe to allow Special Access to the Internet Guest Account to read/execute.<br />You should talk to your webhost about why exec() commands are failing when attempting to run the mysqldump binary/program.');
+define('SUCCESS_LAST_RESTORE_CLEARED', '成功: 上次恢复的数据清除了。');
+define('SUCCESS_DATABASE_SAVED', '成功: 数据库保存了。');
+define('SUCCESS_DATABASE_RESTORED', '成功: 数据库恢复了。');
+define('SUCCESS_BACKUP_DELETED', '成功: 备份删除了。');
+define('FAILURE_DATABASE_NOT_SAVED', '失败: 数据库没有保存。');
+define('FAILURE_DATABASE_NOT_SAVED_UTIL_NOT_FOUND', '错误: 无法找到MYSQLDUMP备份工具。备份失败。');
+define('FAILURE_DATABASE_NOT_RESTORED', '失败: 数据库可能没有正确恢复。请仔细检查。');
+define('FAILURE_DATABASE_NOT_RESTORED_FILE_NOT_FOUND', '失败: 数据库没有恢复。错误: 文件没找到: %s');
+define('FAILURE_DATABASE_NOT_RESTORED_UTIL_NOT_FOUND', '错误: 没有找到MYSQL恢复工具。恢复失败。');
+define('FAILURE_BACKUP_FAILED_CHECK_PERMISSIONS','备份失败，执行备份程序(mysqldump 或 mysqldump.exe)时出错。<br />如果在Windows 2003 server上，可能需要修改cmd.exe的执行权限，允许Internet匿名帐号读写。<br />请咨询主机商有关如何执行exec()命令。');
 

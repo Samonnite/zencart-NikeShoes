@@ -4,97 +4,97 @@
  * @copyright Copyright 2003-2013 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
- * @version GIT: $Id: Author: DrByte  Mon Jul 1 14:52:11 2013 -0400 Modified in v1.5.2 $
+ * @version GIT: $Id: Author: Jack Modified in v1.5.4 $
  */
-  define('HEADING_TITLE', 'Developers Tool Kit');
-  define('TABLE_CONFIGURATION_TABLE', 'Lookup CONSTANT Definitions');
+  define('HEADING_TITLE', '开发工具集');
+  define('TABLE_CONFIGURATION_TABLE', '查询常量定义');
 
-  define('SUCCESS_PRODUCT_UPDATE_PRODUCTS_PRICE_SORTER', '<strong>Successful</strong> update for Products Price Sorter Values');
+  define('SUCCESS_PRODUCT_UPDATE_PRODUCTS_PRICE_SORTER', '<strong>成功</strong>更新商品价格排序值');
 
-  define('ERROR_CONFIGURATION_KEY_NOT_FOUND', '<strong>Error:</strong> No matching Configuration Keys were found ...');
-  define('ERROR_CONFIGURATION_KEY_NOT_ENTERED', '<strong>Error:</strong> No Configuration Key or Text was entered to search for ... Search was terminated');
+  define('ERROR_CONFIGURATION_KEY_NOT_FOUND', '<strong>错误:</strong> 没有找到匹配的配置关键字 ...');
+  define('ERROR_CONFIGURATION_KEY_NOT_ENTERED', '<strong>错误:</strong> 没有输入要查找的配置关键字或文字 ... 搜索中断');
 
-  define('TEXT_INFO_PRODUCTS_PRICE_SORTER_UPDATE', '<strong>Update ALL Products Price Sorter</strong><br />to be able to sort by displayed prices: ');
+  define('TEXT_INFO_PRODUCTS_PRICE_SORTER_UPDATE', '<strong>更新所有商品价格排序</strong><br />以便能按显示价格排序: ');
 
-  define('TEXT_CONFIGURATION_CONSTANT', '<strong>Look-up CONSTANT or Language File defines</strong>');
+  define('TEXT_CONFIGURATION_CONSTANT', '<strong>查询常量或语言文件定义</strong>');
   define('TEXT_CONFIGURATION_KEY', 'Key or Name:');
-  define('TEXT_INFO_CONFIGURATION_UPDATE', '<strong>NOTE:</strong> CONSTANTS are written in uppercase.<br />Language file, functions, classes, etc. lookups are performed when nothing has been found in the database tables, if selected in dropdown');
+  define('TEXT_INFO_CONFIGURATION_UPDATE', '<strong>注释:</strong> 常量是大写字母.<br />选择下拉后, 如果在数据库表中没有找到, 就查询语言文件, 函数, 类, 等. ');
 
-  define('TABLE_TITLE_KEY', '<strong>Key:</strong>');
-  define('TABLE_TITLE_TITLE', '<strong>Title:</strong>');
-  define('TABLE_TITLE_DESCRIPTION', '<strong>Description:</strong>');
-  define('TABLE_TITLE_GROUP', '<strong>Group:</strong>');
-  define('TABLE_TITLE_VALUE', '<strong>Value:</strong>');
+  define('TABLE_TITLE_KEY', '<strong>关键字:</strong>');
+  define('TABLE_TITLE_TITLE', '<strong>标题:</strong>');
+  define('TABLE_TITLE_DESCRIPTION', '<strong>简介:</strong>');
+  define('TABLE_TITLE_GROUP', '<strong>组别:</strong>');
+  define('TABLE_TITLE_VALUE', '<strong>价值:</strong>');
 
-  define('TEXT_LOOKUP_NONE', 'None');
-  define('TEXT_INFO_SEARCHING', 'Searching ');
-  define('TEXT_INFO_FILES_FOR', ' files ... for: ');
-  define('TEXT_INFO_MATCHES_FOUND', 'Match Lines found: ');
-  define('TEXT_INFO_FILENAME', 'FILENAME: ');
+  define('TEXT_LOOKUP_NONE', '无');
+  define('TEXT_INFO_SEARCHING', '查找 ');
+  define('TEXT_INFO_FILES_FOR', ' 文件 ... 关于: ');
+  define('TEXT_INFO_MATCHES_FOUND', '找到的匹配行: ');
+  define('TEXT_INFO_FILENAME', '文件名: ');
 
-  define('TEXT_LANGUAGE_LOOKUPS', 'Language File Look-ups:');
-  define('TEXT_LANGUAGE_LOOKUP_CURRENT_LANGUAGE', 'All Language Files for ' . strtoupper($_SESSION['language']) . ' - Catalog/Admin');
-  define('TEXT_LANGUAGE_LOOKUP_CURRENT_CATALOG', 'All Main Language files - Catalog (' . DIR_WS_CATALOG . DIR_WS_LANGUAGES . 'english.php /espanol.php etc.)');
-  define('TEXT_LANGUAGE_LOOKUP_CURRENT_CATALOG_TEMPLATE', 'All Current Selected Language Files - ' . DIR_WS_CATALOG . DIR_WS_LANGUAGES . $_SESSION['language'] . '/*.php');
-  define('TEXT_LANGUAGE_LOOKUP_CURRENT_ADMIN', 'All Main Language files - Admin (' . DIR_WS_ADMIN . DIR_WS_LANGUAGES . 'english.php /espanol.php etc.)');
-  define('TEXT_LANGUAGE_LOOKUP_CURRENT_ADMIN_LANGUAGE', 'All Current Selected Language Files - Admin (' . DIR_WS_ADMIN . DIR_WS_LANGUAGES . $_SESSION['language'] . '/*.php)');
-  define('TEXT_LANGUAGE_LOOKUP_CURRENT_ALL', 'All Current Selected Language files - Catalog/Admin');
+  define('TEXT_LANGUAGE_LOOKUPS', '语言文件查找:');
+  define('TEXT_LANGUAGE_LOOKUP_CURRENT_LANGUAGE', ' ' . strtoupper($_SESSION['language']) . '的所有语言文件 - Catalog/Admin');
+  define('TEXT_LANGUAGE_LOOKUP_CURRENT_CATALOG', '所有主要语言文件 - Catalog (' . DIR_WS_CATALOG . DIR_WS_LANGUAGES . 'english.php /schinese.php 等)');
+  define('TEXT_LANGUAGE_LOOKUP_CURRENT_CATALOG_TEMPLATE', '所有当前选择语言文件 - ' . DIR_WS_CATALOG . DIR_WS_LANGUAGES . $_SESSION['language'] . '/*.php');
+  define('TEXT_LANGUAGE_LOOKUP_CURRENT_ADMIN', '所有主要语言文件 - Admin (' . DIR_WS_ADMIN . DIR_WS_LANGUAGES . 'english.php /schinese.php etc.)');
+  define('TEXT_LANGUAGE_LOOKUP_CURRENT_ADMIN_LANGUAGE', '所有当前选择语言文件 - Admin (' . DIR_WS_ADMIN . DIR_WS_LANGUAGES . $_SESSION['language'] . '/*.php)');
+  define('TEXT_LANGUAGE_LOOKUP_CURRENT_ALL', '所有当前选择语言文件 - Catalog/Admin');
 
-  define('TEXT_FUNCTION_CONSTANT', '<strong>Look-up Functions or things in Function files</strong>');
-  define('TEXT_FUNCTION_LOOKUPS', 'Function File Look-ups:');
-  define('TEXT_FUNCTION_LOOKUP_CURRENT', 'All Function files - Catalog/Admin');
-  define('TEXT_FUNCTION_LOOKUP_CURRENT_CATALOG', 'All Functions files - Catalog');
-  define('TEXT_FUNCTION_LOOKUP_CURRENT_ADMIN', 'All Functions files - Admin');
+  define('TEXT_FUNCTION_CONSTANT', '<strong>在函数文件中查找</strong>');
+  define('TEXT_FUNCTION_LOOKUPS', '函数文件查找:');
+  define('TEXT_FUNCTION_LOOKUP_CURRENT', '所有函数文件 - Catalog/Admin');
+  define('TEXT_FUNCTION_LOOKUP_CURRENT_CATALOG', '所有函数文件 - Catalog');
+  define('TEXT_FUNCTION_LOOKUP_CURRENT_ADMIN', '所有函数文件 - Admin');
 
-  define('TEXT_CLASS_CONSTANT', '<strong>Look-up Classes or things in Classes files</strong>');
-  define('TEXT_CLASS_LOOKUPS', 'Classes File Look-ups:');
-  define('TEXT_CLASS_LOOKUP_CURRENT', 'All Classes files - Catalog/Admin');
-  define('TEXT_CLASS_LOOKUP_CURRENT_CATALOG', 'All Classes files - Catalog');
-  define('TEXT_CLASS_LOOKUP_CURRENT_ADMIN', 'All Classes files - Admin');
+  define('TEXT_CLASS_CONSTANT', '<strong>在类文件中查找</strong>');
+  define('TEXT_CLASS_LOOKUPS', '类文件查找:');
+  define('TEXT_CLASS_LOOKUP_CURRENT', '所有类文件 - Catalog/Admin');
+  define('TEXT_CLASS_LOOKUP_CURRENT_CATALOG', '所有类文件 - Catalog');
+  define('TEXT_CLASS_LOOKUP_CURRENT_ADMIN', '所有类文件 - Admin');
 
-  define('TEXT_TEMPLATE_CONSTANT', '<strong>Look-up Template things</strong>');
-  define('TEXT_TEMPLATE_LOOKUPS', 'Template File Look-ups:');
-  define('TEXT_TEMPLATE_LOOKUP_CURRENT', 'All Template files - /templates sideboxes /pages etc.');
-  define('TEXT_TEMPLATE_LOOKUP_CURRENT_TEMPLATES', 'All Template files - /templates');
-  define('TEXT_TEMPLATE_LOOKUP_CURRENT_SIDEBOXES', 'All Template files - /sideboxes');
-  define('TEXT_TEMPLATE_LOOKUP_CURRENT_PAGES', 'All Template files - /pages');
+  define('TEXT_TEMPLATE_CONSTANT', '<strong>在模板文件中查找</strong>');
+  define('TEXT_TEMPLATE_LOOKUPS', '模板文件查找:');
+  define('TEXT_TEMPLATE_LOOKUP_CURRENT', '所有模板文件 - /templates sideboxes /pages 等');
+  define('TEXT_TEMPLATE_LOOKUP_CURRENT_TEMPLATES', '所有模板文件 - /templates');
+  define('TEXT_TEMPLATE_LOOKUP_CURRENT_SIDEBOXES', '所有模板文件 - /sideboxes');
+  define('TEXT_TEMPLATE_LOOKUP_CURRENT_PAGES', '所有模板文件 - /pages');
 
-  define('TEXT_ALL_FILES_CONSTANT', '<strong>Look-up in all files</strong>');
-  define('TEXT_ALL_FILES_LOOKUPS', 'All Files Look-ups:');
-  define('TEXT_ALL_FILES_LOOKUP_CURRENT', 'All Files - Catalog/Admin');
-  define('TEXT_ALL_FILES_LOOKUP_CURRENT_CATALOG', 'All Files - Catalog');
-  define('TEXT_ALL_FILES_LOOKUP_CURRENT_ADMIN', 'All Files - Admin');
+  define('TEXT_ALL_FILES_CONSTANT', '<strong>在所有文件中查找</strong>');
+  define('TEXT_ALL_FILES_LOOKUPS', '所有文件查找:');
+  define('TEXT_ALL_FILES_LOOKUP_CURRENT', '所有文件 - Catalog/Admin');
+  define('TEXT_ALL_FILES_LOOKUP_CURRENT_CATALOG', '所有文件 - Catalog');
+  define('TEXT_ALL_FILES_LOOKUP_CURRENT_ADMIN', '所有文件 - Admin');
 
-  define('TEXT_INFO_NO_EDIT_AVAILABLE','No edit available');
-  define('TEXT_INFO_CONFIGURATION_HIDDEN', ' or, HIDDEN');
+  define('TEXT_INFO_NO_EDIT_AVAILABLE','没有可以编辑的');
+  define('TEXT_INFO_CONFIGURATION_HIDDEN', ' 或, 隐藏');
 
-  define('TEXT_SEARCH_ALL_FILES', 'Search ALL files for: ');
-  define('TEXT_SEARCH_DATABASE_TABLES', 'Search database configuration tables for: ');
+  define('TEXT_SEARCH_ALL_FILES', '搜索所有文件: ');
+  define('TEXT_SEARCH_DATABASE_TABLES', '搜索数据库的configuration表: ');
 
-  define('TEXT_ALL_FILESTYPE_LOOKUPS', 'File type');
-  define('TEXT_ALL_FILES_LOOKUP_PHP', '.php only');
-  define('TEXT_ALL_FILES_LOOKUP_PHPCSS', '.php and .css');
-  define('TEXT_ALL_FILES_LOOKUP_CSS', '.css only');
-  define('TEXT_ALL_FILES_LOOKUP_HTMLTXT', '.html and .txt');
-  define('TEXT_ALL_FILES_LOOKUP_JS', '.js only');
+  define('TEXT_ALL_FILESTYPE_LOOKUPS', '文件类型');
+  define('TEXT_ALL_FILES_LOOKUP_PHP', '仅限 .php');
+  define('TEXT_ALL_FILES_LOOKUP_PHPCSS', '.php 和 .css');
+  define('TEXT_ALL_FILES_LOOKUP_CSS', '仅限 .css');
+  define('TEXT_ALL_FILES_LOOKUP_HTMLTXT', '.html 和 .txt');
+  define('TEXT_ALL_FILES_LOOKUP_JS', '仅限 .js');
 
-  define('TEXT_CASE_SENSITIVE', 'Case Sensitive?');
+  define('TEXT_CASE_SENSITIVE', '大小写敏感？');
 
   //Search Configuration Keys
-  define('SEARCH_CFG_KEYS_HEADING_TITLE','<strong>Search in Configuration Settings/Keys</strong>');
-  define('SEARCH_CFG_KEYS_SEARCH_BOX_TEXT', '<strong>Phrase to search:</strong> (This will search configuration setting names and descriptions, and also configuration_keys if exact match)');
-  define('SEARCH_CFG_KEYS_TABLE_SECTION', 'Section');
-  define('SEARCH_CFG_KEYS_TABLE_GROUP','Group');
-  define('SEARCH_CFG_KEYS_TABLE_TITLE', 'Title');
-  define('SEARCH_CFG_KEYS_TABLE_DESCRIPTION','Description');
-  define('SEARCH_CFG_KEYS_TABLE_VALUE','Value');
-  define('SEARCH_CFG_KEYS_TABLE_KEY_NAME', 'Key Name');
-  define('SEARCH_CFG_KEYS_TABLE_EDIT','Edit');
-  define('SEARCH_CFG_KEYS_NOT_FOUND_KEYS', 'No configuration key(s) found.');
-  define('SEARCH_CFG_KEYS_FOUND_KEYS', 'configuration key(s) found.');
-  define('SEARCH_CFG_KEYS_FORM_PLACEHOLDER', 'Enter words to find in settings');
-  define('SEARCH_CFG_KEYS_FORM_BUTTON_SEARCH_SORTED_BY_GROUP', 'Search');
-  define('SEARCH_CFG_KEYS_FORM_BUTTON_SEARCH_SORTED_BY_KEY', 'Search (sorted by key)');
-  define('SEARCH_CFG_KEYS_FORM_BUTTON_VIEW_ALL', 'View All');
-  define('SEARCH_CFG_KEYS_FORM_BUTTON_RESET', 'Reset');
+  define('SEARCH_CFG_KEYS_HEADING_TITLE','<strong>搜索配置/参数</strong>');
+  define('SEARCH_CFG_KEYS_SEARCH_BOX_TEXT', '<strong>搜索关键字:</strong> (用于搜索配置参数名字和说明，以及完全匹配的配置值。)');
+  define('SEARCH_CFG_KEYS_TABLE_SECTION', '部分');
+  define('SEARCH_CFG_KEYS_TABLE_GROUP','分组');
+  define('SEARCH_CFG_KEYS_TABLE_TITLE', '标题');
+  define('SEARCH_CFG_KEYS_TABLE_DESCRIPTION','说明');
+  define('SEARCH_CFG_KEYS_TABLE_VALUE','值');
+  define('SEARCH_CFG_KEYS_TABLE_KEY_NAME', '关键字名');
+  define('SEARCH_CFG_KEYS_TABLE_EDIT','修改');
+  define('SEARCH_CFG_KEYS_NOT_FOUND_KEYS', '没有找到配置内容。');
+  define('SEARCH_CFG_KEYS_FOUND_KEYS', '找到配置内容。');
+  define('SEARCH_CFG_KEYS_FORM_PLACEHOLDER', '输入需要查询的关键字');
+  define('SEARCH_CFG_KEYS_FORM_BUTTON_SEARCH_SORTED_BY_GROUP', '搜索');
+  define('SEARCH_CFG_KEYS_FORM_BUTTON_SEARCH_SORTED_BY_KEY', '搜索 (键值排序)');
+  define('SEARCH_CFG_KEYS_FORM_BUTTON_VIEW_ALL', '全部');
+  define('SEARCH_CFG_KEYS_FORM_BUTTON_RESET', '重置');
 

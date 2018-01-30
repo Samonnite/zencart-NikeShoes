@@ -17,27 +17,29 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: languages.php 1105 2005-04-04 22:05:35Z birdbrain $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: languages.php 290 2004-09-15 19:48:26Z wilt $
 //
 
-define('HEADING_TITLE', 'Languages');
+define('HEADING_TITLE', '语言');
 
-define('TABLE_HEADING_LANGUAGE_NAME', 'Language');
-define('TABLE_HEADING_LANGUAGE_CODE', 'Code');
-define('TABLE_HEADING_ACTION', 'Action');
+define('TABLE_HEADING_LANGUAGE_NAME', '语言');
+define('TABLE_HEADING_LANGUAGE_CODE', '代码');
+define('TABLE_HEADING_ACTION', '操作');
 
-define('TEXT_INFO_EDIT_INTRO', 'Please make any necessary changes');
-define('TEXT_INFO_LANGUAGE_NAME', 'Name:');
-define('TEXT_INFO_LANGUAGE_CODE', 'Code:');
-define('TEXT_INFO_LANGUAGE_IMAGE', 'Image:');
-define('TEXT_INFO_LANGUAGE_DIRECTORY', 'Directory:');
-define('TEXT_INFO_LANGUAGE_SORT_ORDER', 'Sort Order:');
-define('TEXT_INFO_INSERT_INTRO', 'Please enter the new language with its related data');
-define('TEXT_INFO_DELETE_INTRO', 'Are you sure you want to delete this language?');
-define('TEXT_INFO_HEADING_NEW_LANGUAGE', 'New Language');
-define('TEXT_INFO_HEADING_EDIT_LANGUAGE', 'Edit Language');
-define('TEXT_INFO_HEADING_DELETE_LANGUAGE', 'Delete Language');
+define('TEXT_INFO_EDIT_INTRO', '请做必要的修改');
+define('TEXT_INFO_LANGUAGE_NAME', '名称:');
+define('TEXT_INFO_LANGUAGE_CODE', '代码:');
+define('TEXT_INFO_LANGUAGE_IMAGE', '图像:');
+define('TEXT_INFO_LANGUAGE_DIRECTORY', '目录:');
+define('TEXT_INFO_LANGUAGE_SORT_ORDER', '排序:');
+define('TEXT_INFO_INSERT_INTRO', '请输入新语言及其相关数据');
+define('TEXT_INFO_DELETE_INTRO', '你确定要删除该语言吗?');
+define('TEXT_INFO_HEADING_NEW_LANGUAGE', '新建语言');
+define('TEXT_INFO_HEADING_EDIT_LANGUAGE', '编辑语言');
+define('TEXT_INFO_HEADING_DELETE_LANGUAGE', '删除语言');
 
-define('ERROR_REMOVE_DEFAULT_LANGUAGE', 'Error: The default language can not be removed. Please set another language as default, and try again.');
-define('ERROR_DUPLICATE_LANGUAGE_CODE', 'Error: A language with that code has already been defined.');
+define('ERROR_REMOVE_DEFAULT_LANGUAGE', '错误: 缺省语言无法删除. 请设置另一语言为默认值,再试一次.');
+define('ERROR_DUPLICATE_LANGUAGE_CODE', '错误: 用那种代码编译的语言已定义.');
 ?>

@@ -17,45 +17,47 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
 //  $Id: specials.php 4533 2006-09-17 17:21:10Z ajeh $
 //
 
-define('HEADING_TITLE', 'Specials');
+define('HEADING_TITLE', '特价商品');
 
-define('TABLE_HEADING_PRODUCTS', 'Products');
-define('TABLE_HEADING_PRODUCTS_MODEL','Model');
-define('TABLE_HEADING_PRODUCTS_PRICE', 'Products Price/Special/Sale');
-define('TABLE_HEADING_PRODUCTS_PERCENTAGE','Percentage');
-define('TABLE_HEADING_AVAILABLE_DATE', 'Available');
-define('TABLE_HEADING_EXPIRES_DATE','Expires');
-define('TABLE_HEADING_STATUS', 'Status');
-define('TABLE_HEADING_ACTION', 'Action');
+define('TABLE_HEADING_PRODUCTS', '商品名称');
+define('TABLE_HEADING_PRODUCTS_MODEL','型号');
+define('TABLE_HEADING_PRODUCTS_PRICE', '价格/特价/促销');
+define('TABLE_HEADING_PRODUCTS_PERCENTAGE','百分比');
+define('TABLE_HEADING_AVAILABLE_DATE', '生效日');
+define('TABLE_HEADING_EXPIRES_DATE','到期日');
+define('TABLE_HEADING_STATUS', '状态');
+define('TABLE_HEADING_ACTION', '操作');
 
-define('TEXT_SPECIALS_PRODUCT', 'Product:');
-define('TEXT_SPECIALS_SPECIAL_PRICE', 'Special Price:');
-define('TEXT_SPECIALS_EXPIRES_DATE', 'Expiry Date:');
-define('TEXT_SPECIALS_AVAILABLE_DATE', 'Available Date:');
-define('TEXT_SPECIALS_PRICE_TIP', '<b>Specials Notes:</b><ul><li>You can enter a percentage to deduct in the Specials Price field, for example: <b>20%</b></li><li>If you enter a new price, the decimal separator must be a \'.\' (decimal-point), example: <b>49.99</b></li><li>Leave the expiry date empty for no expiration</li></ul>');
+define('TEXT_SPECIALS_PRODUCT', '商品名称:');
+define('TEXT_SPECIALS_SPECIAL_PRICE', '特价:');
+define('TEXT_SPECIALS_EXPIRES_DATE', '到期日:');
+define('TEXT_SPECIALS_AVAILABLE_DATE', '生效日:');
+define('TEXT_SPECIALS_PRICE_TIP', '<b>特价通知:</b><ul><li>你可以在特价栏输入优惠百分比, 例如: <b>20%</b></li><li>如果你输入一个新价格,小数分隔符号必须是\'.\' (小数点), 比如: <b>49.99</b></li><li>如果没有到期日,就将到期日留空</li></ul>');
 
-define('TEXT_INFO_DATE_ADDED', 'Date Added:');
-define('TEXT_INFO_LAST_MODIFIED', 'Last Modified:');
-define('TEXT_INFO_NEW_PRICE', 'New Price:');
-define('TEXT_INFO_ORIGINAL_PRICE', 'Original Price:');
-define('TEXT_INFO_DISPLAY_PRICE', 'Display Price:<br />');
-define('TEXT_INFO_AVAILABLE_DATE', 'Available On:');
-define('TEXT_INFO_EXPIRES_DATE', 'Expires At:');
-define('TEXT_INFO_STATUS_CHANGE', 'Status Change:');
-define('TEXT_IMAGE_NONEXISTENT', 'No Image Exists');
+define('TEXT_INFO_DATE_ADDED', '添加日期:');
+define('TEXT_INFO_LAST_MODIFIED', '最后修改:');
+define('TEXT_INFO_NEW_PRICE', '新价格:');
+define('TEXT_INFO_ORIGINAL_PRICE', '原价:');
+define('TEXT_INFO_DISPLAY_PRICE', '显示价格:<br />');
+define('TEXT_INFO_AVAILABLE_DATE', '生效日:');
+define('TEXT_INFO_EXPIRES_DATE', '到期日:');
+define('TEXT_INFO_STATUS_CHANGE', '状态改变:');
+define('TEXT_IMAGE_NONEXISTENT', '没有图像存在');
 
-define('TEXT_INFO_HEADING_DELETE_SPECIALS', 'Delete Special');
-define('TEXT_INFO_DELETE_INTRO', 'Are you sure you want to delete the special products price?');
+define('TEXT_INFO_HEADING_DELETE_SPECIALS', '删除特价');
+define('TEXT_INFO_DELETE_INTRO', '你确定要删除特价吗?');
 
-define('SUCCESS_SPECIALS_PRE_ADD', 'Successful: Pre-Add of Special ... please update the price and dates ...');
-define('WARNING_SPECIALS_PRE_ADD_EMPTY', 'Warning: No Product ID specified ... nothing was added ...');
-define('WARNING_SPECIALS_PRE_ADD_DUPLICATE', 'Warning: Product ID already on Special ... nothing was added ...');
-define('WARNING_SPECIALS_PRE_ADD_BAD_PRODUCTS_ID', 'Warning: Product ID is invalid ... nothing was added ...');
-define('TEXT_INFO_HEADING_PRE_ADD_SPECIALS', 'Manually add new Special by Product ID');
-define('TEXT_INFO_PRE_ADD_INTRO', 'On large databases, you may Manually Add a Special by the Product ID<br /><br />This is best used when the page takes too long to render and trying to select a Product from the dropdown becomes difficult due to too many Products from which to choose.');
-define('TEXT_PRE_ADD_PRODUCTS_ID', 'Please enter the Product ID to be Pre-Added: ');
-define('TEXT_INFO_MANUAL', 'Product ID to be Manually Added as a Special');
+define('SUCCESS_SPECIALS_PRE_ADD', '成功：预添加特价商品 ... 请更新价格和日期 ...');
+define('WARNING_SPECIALS_PRE_ADD_EMPTY', '警告：没有指定商品编号 ... 没有添加 ...');
+define('WARNING_SPECIALS_PRE_ADD_DUPLICATE', '警告：该编号的商品已经有特价 ... 没有添加 ...');
+define('WARNING_SPECIALS_PRE_ADD_BAD_PRODUCTS_ID', '警告: 商品编号不对 ... 没有添加 ...');
+define('TEXT_INFO_HEADING_PRE_ADD_SPECIALS', '根据商品编号手工添加特价商品');
+define('TEXT_INFO_PRE_ADD_INTRO', '如果数据库比较大，可以根据商品编号手工添加特价商品<br /><br />当商品很多，从页面的下拉菜单中选择商品不方便时，采用这种方式比较好。');
+define('TEXT_PRE_ADD_PRODUCTS_ID', '请输入预添加的商品编号: ');
+define('TEXT_INFO_MANUAL', '手工添加特价商品的编号');
 ?>

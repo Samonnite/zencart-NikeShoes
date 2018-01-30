@@ -14,7 +14,7 @@
 
 // the following is for display later
   $sinfo =  '<table width="700" border="1" cellpadding="3" style="border: 0px; border-color: #000000;">' .
-         '  <tr align="center"><td><a href="http://www.zen-cart.com"><img border="0" src="images/logo.gif" alt=" Zen Cart " /></a>' .
+         '  <tr align="center"><td><a href="http://www.zen-cart.com"><img border="0" src="images/logo.png" alt=" Zen Cart " /></a>' .
          '     <h2 class="p"> ' . PROJECT_VERSION_NAME . ' ' . PROJECT_VERSION_MAJOR . '.' . PROJECT_VERSION_MINOR . '</h2>' .
                ((PROJECT_VERSION_PATCH1 =='') ? '' : '<h3>Patch: ' . PROJECT_VERSION_PATCH1 . '::' . PROJECT_VERSION_PATCH1_SOURCE . '</h3>') .
                ((PROJECT_VERSION_PATCH2 =='') ? '' : '<h3>Patch: ' . PROJECT_VERSION_PATCH2 . '::' . PROJECT_VERSION_PATCH2_SOURCE . '</h3>') .

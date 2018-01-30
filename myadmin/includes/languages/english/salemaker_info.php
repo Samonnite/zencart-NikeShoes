@@ -17,59 +17,60 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: salemaker_info.php 1105 2005-04-04 22:05:35Z birdbrain $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: salemaker_info.php 290 2004-09-15 19:48:26Z wilt $
 //
 
-define('HEADING_TITLE', 'Salemaker');
-define('SUBHEADING_TITLE', 'Salemaker Usage Tips:');
+define('HEADING_TITLE', '促销管理');
+define('SUBHEADING_TITLE', '促销管理指南:');
 define('INFO_TEXT', '<ul>
                       <li>
-                        Always use a \'.\' as decimal point in deduction and pricerange.
+                        减价和标价时请使用 \'.\' 作为小数点。
                       </li>
                       <li>
-                        Enter amounts in the same currency as you would when creating/editing a product.
+                        采用与创建、编辑商品时相同货币的金额。
                       </li>
                       <li>
-                        In the Deduction fields, you can enter an amount or a percentage to deduct,
-                        or a replacement price. (eg. deduct $5.00 from all prices, deduct 10% from
-                        all prices or change all prices to $25.00)
+                        减价字段，可以输入金额、百分比、
+                        或新的价格. (例如：从所有价格中减5元、
+                        从所有价格中减10%或修改所有价格为25元)
                       </li>
                       <li>
-                        Entering a price range narrows down the product range that will be affected. (eg.
-                        products from $50.00 to $150.00)
+                        可以输入一个价格区间以减少应用的商品范围。(例如：
+                        从50元到150元的商品)
                       </li>
                       <li>
-                        You must choose the action to take if a product is a special <i>and</i> is subject to this sale:
+                        当商品有特价<b>且</b>促销时，您必须作出选择:
 						<ul>
                           <li>
-                            <strong>Ignore Specials Price - Apply to Product Price and Replace Special</strong><br>
-							The salededuction will be applied to the regular price of the product.
-                            (eg. Regular price $10.00, Specials price is $9.50, SaleCondition is 10%.
-							The product\'s final price will show $9.00 on sale. The Specials price is ignored.)
+                            <strong>忽略特价 - 促销价以商品原价为基础且取代特价</strong><br>
+							该促销将替代商品原价。
+                            (例如：原价10元，特价9.5元，促销10%，
+							该商品的最后价格为9元，忽略特价信息)
                           </li>
                           <li>
-                            <strong>Ignore SaleCondition - No Sale Applied When Special Exists</strong><br>
-                            The salededuction will not be applied to Specials. The Specials price will show just like
-                            when there is no sale defined. (eg. Regular price $10.00, Specials price is $9.50,
-                            SaleCondition is 10%. The product\'s final price will show $9.50 on sale.
-                            The SalesCondition is ignored.)
+                            <strong>忽略促销 - 当商品有特价时，不允许促销</strong><br>
+                            特价商品不进行促销，该特价商品将不显示促销价。 
+                            (例如：原价10元，特价9.5元，促销10%，
+							该商品的最后价格为9.5元，忽略促销信息)
                           </li>
                           <li>
-                            <strong>Apply SaleDeduction to Specials Price - Otherwise Apply to Price</strong><br>
-                            The salededuction will be applied to the Specials price. A compounded price will show.
-                            (eg. Regular price $10.00, Specials price is $9.50, SaleCondition is 10%. The product\'s
-                            final price will show $8.55. An additional 10% off the Specials price.)
+                            <strong>在特价基础上促销 - 否则在原价基础上促销</strong><br>
+                            允许在特价基础上促销，将显示综合的价格。
+                            (例如：原价10元，特价9.5元，促销10%，
+							该商品的最后价格为8.55元，是在特价的基础上优惠10%。)
                           </li>
                         </ul>
                       </li>
                       <li>
-                        Leaving the start date empty will start the sale immediately.
+                        如果生效日为空，表示促销立刻生效。
                       </li>
                       <li>
-                        Leave the end date empty if you do not want the sale to expire.</li>
+                        如果到期日为空，表示促销永久有效。</li>
                       <li>
-                        Checking a category automatically includes the sub-categories.
+                        检查分类时自动检查子分类。
                       </li>
                     </ul>');
-define('TEXT_CLOSE_WINDOW', '[ close window ]');
+define('TEXT_CLOSE_WINDOW', '[关闭窗口]');
 ?>

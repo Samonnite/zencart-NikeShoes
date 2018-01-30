@@ -17,18 +17,20 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: product_notification.php 1105 2005-04-04 22:05:35Z birdbrain $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: product_notification.php 290 2004-09-15 19:48:26Z wilt $
 //
 
-define('TEXT_COUNT_CUSTOMERS', 'Customers receiving this Product Notification: %s');
-define('TEXT_PRODUCTS', 'Products');
-define('TEXT_SELECTED_PRODUCTS', 'Selected Products');
+define('TEXT_COUNT_CUSTOMERS', '接收该商品通知的客户: %s');
+define('TEXT_PRODUCTS', '商品');
+define('TEXT_SELECTED_PRODUCTS', '已选择的商品');
 
-define('JS_PLEASE_SELECT_PRODUCTS', 'Please select some products.');
+define('JS_PLEASE_SELECT_PRODUCTS', '请选择一些商品.');
 
-define('BUTTON_GLOBAL', 'Global');
+define('BUTTON_GLOBAL', '全部');
 define('BUTTON_SELECT', '>>>');
 define('BUTTON_UNSELECT', '<<<');
-define('BUTTON_SUBMIT', 'Submit');
-define('BUTTON_CANCEL', 'Cancel');
+define('BUTTON_SUBMIT', '提交');
+define('BUTTON_CANCEL', '取消');
 ?>

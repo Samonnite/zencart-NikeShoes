@@ -17,12 +17,14 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-// $Id: stats_products_viewed.php 1105 2005-04-04 22:05:35Z birdbrain $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+// $Id: stats_products_viewed.php 290 2004-09-15 19:48:26Z wilt $
 //
 
-define('HEADING_TITLE', 'Best Viewed Products');
+define('HEADING_TITLE', '商品访问次数统计');
 
-define('TABLE_HEADING_NUMBER', 'ID#');
-define('TABLE_HEADING_PRODUCTS', 'Products');
-define('TABLE_HEADING_VIEWED', 'Viewed');
+define('TABLE_HEADING_NUMBER', '编号');
+define('TABLE_HEADING_PRODUCTS', '商品');
+define('TABLE_HEADING_VIEWED', '已阅');
 ?>

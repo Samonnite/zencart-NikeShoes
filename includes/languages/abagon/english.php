@@ -311,6 +311,7 @@
 
   define('BOX_INFORMATION_DISCOUNT_COUPONS', 'Discount Coupons');
   define('BOX_INFORMATION_GV', TEXT_GV_NAME . ' FAQ');
+  define('FILENAME_SHIPPING', TEXT_GV_NAME . ' Return Policy');
   define('VOUCHER_BALANCE', TEXT_GV_NAME . ' Balance ');
   define('BOX_HEADING_GIFT_VOUCHER', TEXT_GV_NAME . ' Account');
   define('GV_FAQ', TEXT_GV_NAME . ' FAQ');
@@ -485,7 +486,7 @@
 
   define('TABLE_HEADING_FEATURED_PRODUCTS','Featured Products');
 
-  define('TABLE_HEADING_NEW_PRODUCTS', 'New Products');
+  define('TABLE_HEADING_NEW_PRODUCTS', ' New Products For January');
   define('TABLE_HEADING_UPCOMING_PRODUCTS', 'Upcoming Products');
   define('TABLE_HEADING_DATE_EXPECTED', 'Date Expected');
   define('TABLE_HEADING_SPECIALS_INDEX', 'Monthly Specials');

@@ -17,12 +17,14 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: stats_customers.php 1105 2005-04-04 22:05:35Z birdbrain $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: stats_customers.php 290 2004-09-15 19:48:26Z wilt $
 //
 
-define('HEADING_TITLE', 'Best Customer Orders-Total');
+define('HEADING_TITLE', '客户订单统计');
 
-define('TABLE_HEADING_NUMBER', 'ID#');
-define('TABLE_HEADING_CUSTOMERS', 'Customers');
-define('TABLE_HEADING_TOTAL_PURCHASED', 'Total Purchased');
+define('TABLE_HEADING_NUMBER', '编号');
+define('TABLE_HEADING_CUSTOMERS', '客户名字');
+define('TABLE_HEADING_TOTAL_PURCHASED', '订单总额');
 ?>

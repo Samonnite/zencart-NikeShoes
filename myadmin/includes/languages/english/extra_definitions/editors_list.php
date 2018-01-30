@@ -1,10 +1,15 @@
 <?php
 /**
  * @package htmleditors
- * @copyright Copyright 2003-2011 Zen Cart Development Team
+ * @copyright Copyright 2010 Kuroi Web Design
+ * @copyright Portions Copyright 2003-2006 Zen Cart Development Team
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
- * @version $Id: editors_list.php 18711 2011-05-09 22:57:25Z kuroi $
+ * @version $Id: editors_list.php 100 2010-04-28 17:47:10Z kuroi $
  */
+
 /*
- * NOTE: This file is deprecated for v1.5.0 onwards and may be deleted.
+ * File included to "reset" editors list
  */
+
+  define('EDITOR_HTMLAREA', 'HTMLarea');
+  define('EDITOR_FCKEDITOR', 'FCKeditor');

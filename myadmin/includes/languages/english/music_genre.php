@@ -17,27 +17,29 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: music_genre.php 276 2004-09-10 22:35:28Z wilt $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: music_genre.php 277 2004-09-10 23:03:52Z wilt $
 //
-  define('HEADING_TITLE', 'Music Genres');
-  define('TABLE_HEADING_MUSIC_GENRE', 'Music Genres');
-  define('TABLE_HEADING_ACTION', 'Action');
-  define('TEXT_NEW_INTRO', 'Please enter the details of the new Music Genre below.');
-  define('TEXT_EDIT_INTRO', 'Please amend the details of the Music Genre below.');
-  define('TEXT_DELETE_INTRO', 'Are you sure you want to delete this Music Genre.');
-  define('TEXT_DELETE_IMAGE', 'Delete Image?.');
-  define('TEXT_MUSIC_GENRE_NAME', 'Music Genre Name');
-  define('TEXT_MUSIC_GENRE_IMAGE', 'Music Genre Image');
-  define('TEXT_MUSIC_GENRE_IMAGE_DIR', 'Image Directory&nbsp;');
+  define('HEADING_TITLE', '音乐类型');
+  define('TABLE_HEADING_MUSIC_GENRE', '音乐类型');
+  define('TABLE_HEADING_ACTION', '操作');
+  define('TEXT_NEW_INTRO', '请在下面输入新音乐类型的详情.');
+  define('TEXT_EDIT_INTRO', '请在下面修改该音乐类型的详情.');
+  define('TEXT_DELETE_INTRO', '您确认要删除该音乐类型吗?');
+  define('TEXT_DELETE_IMAGE', '删除图像?');
+  define('TEXT_MUSIC_GENRE_NAME', '音乐类型名称');
+  define('TEXT_MUSIC_GENRE_IMAGE', '音乐类型图像');
+  define('TEXT_MUSIC_GENRE_IMAGE_DIR', '图像目录&nbsp;');
 
-  define('TEXT_HEADING_NEW_MUSIC_GENRE', 'New Music Genre');
-  define('TEXT_HEADING_EDIT_MUSIC_GENRE', 'Edit Music Genre');
-  define('TEXT_HEADING_DELETE_MUSIC_GENRE', 'Delete Music Genre');
-  define('TEXT_DATE_ADDED', 'Date Added');
-  define('TEXT_LAST_MODIFIED', 'Date Modified');
-  define('TEXT_IMAGE_NONEXISTENT', 'Image does not exist');
-  define('TEXT_PRODUCTS', 'Linked Products');
-  define('TEXT_DISPLAY_NUMBER_OF_MUSIC_GENRES', 'Displaying <strong>%d</strong> to <strong>%d</strong> (of <strong>%d</strong> Music Genres)');
-  define('TEXT_DELETE_PRODUCTS', 'Delete this Music Genre and all items linked to it?');
-  define('TEXT_DELETE_WARNING_PRODUCTS', '<b>WARNING:</b> There are %s items still linked to this Music Genre!');
+  define('TEXT_HEADING_NEW_MUSIC_GENRE', '新建音乐类型');
+  define('TEXT_HEADING_EDIT_MUSIC_GENRE', '编辑音乐类型');
+  define('TEXT_HEADING_DELETE_MUSIC_GENRE', '删除音乐类型');
+  define('TEXT_DATE_ADDED', '加入日期');
+  define('TEXT_LAST_MODIFIED', '修改日期');
+  define('TEXT_IMAGE_NONEXISTENT', '图像不存在');
+  define('TEXT_PRODUCTS', '链接商品');
+  define('TEXT_DISPLAY_NUMBER_OF_MUSIC_GENRES', '显示<strong>%d</strong>到<strong>%d</strong> (共<strong>%d</strong>个音乐类型)');
+  define('TEXT_DELETE_PRODUCTS', '删除该音乐类型和所有链接的条目吗?');
+  define('TEXT_DELETE_WARNING_PRODUCTS', '<b>WARNING:</b> 共有%s个条目还链接到该音乐类型!');
 ?>

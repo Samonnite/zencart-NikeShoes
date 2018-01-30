@@ -17,70 +17,72 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
 //  $Id: ezpages.php 2827 2006-01-08 19:46:40Z ajeh $
 //
-define('HEADING_TITLE', 'EZ-Pages');
-define('TABLE_HEADING_PAGES', 'Page Title');
-define('TABLE_HEADING_ACTION', 'Action');
-define('TABLE_HEADING_VSORT_ORDER', 'Sidebox Sort Order');
-define('TABLE_HEADING_HSORT_ORDER', 'Footer Sort Order');
-define('TEXT_PAGES_TITLE', 'Page Title:');
-define('TEXT_PAGES_HTML_TEXT', 'HTML Content:');
-define('TABLE_HEADING_DATE_ADDED', 'Date Added:');
-define('TEXT_PAGES_STATUS_CHANGE', 'Status Change: %s');
-define('TEXT_INFO_DELETE_INTRO', 'Are you sure you want to delete this page?');
-define('SUCCESS_PAGE_INSERTED', 'Success: The page has been inserted.');
-define('SUCCESS_PAGE_UPDATED', 'Success: The page has been updated.');
-define('SUCCESS_PAGE_REMOVED', 'Success: The page has been removed.');
-define('SUCCESS_PAGE_STATUS_UPDATED', 'Success: The status of the page has been updated.');
-define('ERROR_PAGE_TITLE_REQUIRED', 'Error: Page title required.');
-define('ERROR_UNKNOWN_STATUS_FLAG', 'Error: Unknown status flag.');
-define('ERROR_MULTIPLE_HTML_URL', 'Error: you have defined multiple settings when only one may be defined per Link ...<br />Only define either: HTML Content -or- Internal Link URL -or- External Link URL');
+define('HEADING_TITLE', '简易页面管理');
+define('TABLE_HEADING_PAGES', '页眉标题');
+define('TABLE_HEADING_ACTION', '操作');
+define('TABLE_HEADING_VSORT_ORDER', '边框顺序');
+define('TABLE_HEADING_HSORT_ORDER', '页脚顺序');
+define('TEXT_PAGES_TITLE', '页面标题:');
+define('TEXT_PAGES_HTML_TEXT', 'HTML内容:');
+define('TABLE_HEADING_DATE_ADDED', '加入日期:');
+define('TEXT_PAGES_STATUS_CHANGE', '状态改变: %s');
+define('TEXT_INFO_DELETE_INTRO', '你确定要删除本页吗?');
+define('SUCCESS_PAGE_INSERTED', '成功: 本页已经插入.');
+define('SUCCESS_PAGE_UPDATED', '成功: 本页已经更新.');
+define('SUCCESS_PAGE_REMOVED', '成功: 本页已经删除.');
+define('SUCCESS_PAGE_STATUS_UPDATED', '成功: 本页状态已经更新.');
+define('ERROR_PAGE_TITLE_REQUIRED', '错误: 需要页面标题.');
+define('ERROR_UNKNOWN_STATUS_FLAG', '错误: 未知状态标签.');
+define('ERROR_MULTIPLE_HTML_URL', '错误: 每个链接只允许定义一个设置 ...<br />只要定义其中一项: HTML内容 -或- 内部链接URL -或- 外部链接URL');
 
-define('TABLE_HEADING_ID', 'ID');
-define('TABLE_HEADING_STATUS_HEADER', 'Header:');
-define('TABLE_HEADING_STATUS_SIDEBOX', 'Sidebox:');
-define('TABLE_HEADING_STATUS_FOOTER', 'Footer:');
+define('TABLE_HEADING_ID', '账号');
+define('TABLE_HEADING_STATUS_HEADER', '页眉:');
+define('TABLE_HEADING_STATUS_SIDEBOX', '边框:');
+define('TABLE_HEADING_STATUS_FOOTER', '页脚:');
 define('TABLE_HEADING_STATUS_TOC', 'TOC:');
-define('TABLE_HEADING_CHAPTER', 'Chapter:');
+define('TABLE_HEADING_CHAPTER', '章节:');
 
-define('TABLE_HEADING_PAGE_OPEN_NEW_WINDOW', 'Open New Window:');
-define('TABLE_HEADING_PAGE_IS_SSL', 'Page is SSL:');
+define('TABLE_HEADING_PAGE_OPEN_NEW_WINDOW', '打开新窗口:');
+define('TABLE_HEADING_PAGE_IS_SSL', '页面是SSL:');
 
-define('TEXT_DISPLAY_NUMBER_OF_PAGES', 'Displaying <b>%d</b> to <b>%d</b> (of <b>%d</b> pages)');
-define('IMAGE_NEW_PAGE', 'New Page');
-define('TEXT_INFO_PAGE_IMAGE', 'Image');
-define('TEXT_INFO_CURRENT_IMAGE', 'Current Image:');
-define('TEXT_INFO_PAGES_ID', 'ID: ');
-define('TEXT_INFO_PAGES_ID_SELECT', 'Select a page ...');
+define('TEXT_DISPLAY_NUMBER_OF_PAGES', '显示<b>%d</b>到<b>%d</b> (共<b>%d</b>页)');
+define('IMAGE_NEW_PAGE', '新页面');
+define('TEXT_INFO_PAGE_IMAGE', '图像');
+define('TEXT_INFO_CURRENT_IMAGE', '当前图像:');
+define('TEXT_INFO_PAGES_ID', '账号: ');
+define('TEXT_INFO_PAGES_ID_SELECT', '选择一个页面 ...');
 
-define('TEXT_HEADER_SORT_ORDER', 'Order:');
-define('TEXT_SIDEBOX_SORT_ORDER', 'Order:');
-define('TEXT_FOOTER_SORT_ORDER', 'Order:');
-define('TEXT_TOC_SORT_ORDER', 'Order:');
-define('TEXT_CHAPTER', 'Prev/Next Chapter:');
-define('TABLE_HEADING_CHAPTER_PREV_NEXT', 'Chapter:&nbsp;<br />');
+define('TEXT_HEADER_SORT_ORDER', '排序:');
+define('TEXT_SIDEBOX_SORT_ORDER', '排序:');
+define('TEXT_FOOTER_SORT_ORDER', '排序:');
+define('TEXT_TOC_SORT_ORDER', '排序:');
+define('TEXT_CHAPTER', '前/后 章节:');
+define('TABLE_HEADING_CHAPTER_PREV_NEXT', '章节:&nbsp;<br />');
 
-define('TEXT_HEADER_SORT_ORDER_EXPLAIN', 'Header Sort Order used while generating pages in single row for the header; Sort order should be greater than zero to enable this page in the row type listing');
-define('TEXT_SIDEBOX_ORDER_EXPLAIN', 'Sidebox Sort order is used when pages are listed in vertical links; Sort order should be greater than zero to enable it in vertical listing, else it will be considered as HTML text for special purposes');
-define('TEXT_FOOTER_ORDER_EXPLAIN', 'Footer Sort Order used while generating pages in single row footer; Sort order should be greater than zero to enable this page in the row type listing');
-define('TEXT_TOC_SORT_ORDER_EXPLAIN', 'TOC (Table of Contents) Sort Order used while generating pages that are customized as either a single row (header/footer, etc) or vertically, based on individual needs; Sort order should be greater than zero to enable this page in the listing');
-define('TEXT_CHAPTER_EXPLAIN', 'Chapters are used with TOC (Table of Contents) Sort Order for the display on Previous/Next. Links in the TOC will consist of pages matching this chapter number, and will be displayed in the TOC Sort Order');
+define('TEXT_HEADER_SORT_ORDER_EXPLAIN', '页眉排序用于编辑页面时控制页眉的顺序，数字应大于0，以便使本页在列表中出现');
+define('TEXT_SIDEBOX_ORDER_EXPLAIN', '边框排序用于垂直方向上的顺序，数字应大于0，以便能在垂直列表中出现，另外也可用于HTML文本');
+define('TEXT_FOOTER_ORDER_EXPLAIN', '页脚排序用于编辑页面时控制页脚的顺序，数字应大于0，以便使本页在列表中出现');
+define('TEXT_TOC_SORT_ORDER_EXPLAIN', 'TOC排序用于编辑页面时根据每页不同，定义水平方向或者垂直方向，数字应大于0，以便使页面在列表中出现');
+define('TEXT_CHAPTER_EXPLAIN', '章节和TOC排序一起显示前/后链接，TOC中的链接包含页面号码，显示于TOC排序中');
 
-define('TEXT_ALT_URL', 'Internal Link URL:');
-define('TEXT_ALT_URL_EXPLAIN', 'If specified, the page content will be ignored and this INTERNAL alternate URL will be used to make the link<br />Example to Reviews: index.php?main_page=reviews<br />Example to My Account: index.php?main_page=account and mark as SSL');
+define('TEXT_ALT_URL', '内部链接地址:');
+define('TEXT_ALT_URL_EXPLAIN', '忽略HTML内容，采用内部链接地址<br />评论的链接示例: index.php?main_page=reviews<br />我的账号的链接示例: index.php?main_page=account 并设置为SSL');
 
-define('TEXT_ALT_URL_EXTERNAL', 'External Link URL:');
-define('TEXT_ALT_URL_EXTERNAL_EXPLAIN', 'If specified, the page content will be ignored and this EXTERNAL alternate URL will be used to make the link<br />Example to external link: http://www.sashbox.net');
+define('TEXT_ALT_URL_EXTERNAL', '外部链接地址:');
+define('TEXT_ALT_URL_EXTERNAL_EXPLAIN', '忽略HTML内容，采用外部链接地址<br />外部链接示例: http://www.zen-cart.cn');
 
-define('TEXT_SORT_CHAPTER_TOC_TITLE_INFO', 'Display Order: ');
-define('TEXT_SORT_CHAPTER_TOC_TITLE', 'Chapter/TOC');
-define('TEXT_SORT_HEADER_TITLE', 'Header');
-define('TEXT_SORT_SIDEBOX_TITLE', 'Sidebox');
-define('TEXT_SORT_FOOTER_TITLE', 'Footer');
-define('TEXT_SORT_PAGE_TITLE', 'Page Title');
-define('TEXT_SORT_PAGE_ID_TITLE', 'Page ID, Title');
+define('TEXT_SORT_CHAPTER_TOC_TITLE_INFO', '显示顺序: ');
+define('TEXT_SORT_CHAPTER_TOC_TITLE', '章节/TOC');
+define('TEXT_SORT_HEADER_TITLE', '页眉');
+define('TEXT_SORT_SIDEBOX_TITLE', '边框');
+define('TEXT_SORT_FOOTER_TITLE', '页脚');
+define('TEXT_SORT_PAGE_TITLE', '页面标题');
+define('TEXT_SORT_PAGE_ID_TITLE', '页面ID, 标题');
 
-define('TEXT_PAGE_TITLE', 'Title:');
-define('TEXT_WARNING_MULTIPLE_SETTINGS', '<strong>WARNING: Multiple Link Definition</strong>');
+define('TEXT_PAGE_TITLE', '标题:');
+define('TEXT_WARNING_MULTIPLE_SETTINGS', '<strong>警告: 多链接定义</strong>');
 ?>

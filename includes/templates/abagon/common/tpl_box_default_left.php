@@ -15,7 +15,7 @@
 
 // choose box images based on box position
   if ($title_link) {
-    $title = $title . ' - <a href="' . zen_href_link($title_link) . '">' . BOX_HEADING_LINKS . '</a>';
+    // $title = $title . ' - <a href="' . zen_href_link($title_link) . '">' . BOX_HEADING_LINKS . '</a>';
   }
 //
 // #wel - category header style

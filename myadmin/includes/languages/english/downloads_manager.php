@@ -17,36 +17,38 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: downloads_manager.php 1105 2005-04-04 22:05:35Z birdbrain $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: downloads_manager.php 290 2004-09-15 19:48:26Z wilt $
 //
 
-define('HEADING_TITLE','Downloads Manager');
-define('TABLE_HEADING_ATTRIBUTES_ID', 'Attr ID');
-define('TABLE_HEADING_PRODUCTS_ID', 'Prod ID');
-define('TABLE_HEADING_PRODUCT', 'Product Name');
-define('TABLE_HEADING_MODEL', 'Model');
-define('TABLE_HEADING_OPT_NAME', 'Option Name');
-define('TABLE_HEADING_OPT_VALUE', 'Option Value Name');
-define('TABLE_TEXT_FILENAME', 'Filename');
-define('TABLE_TEXT_MAX_DAYS', 'Days');
-define('TABLE_TEXT_MAX_COUNT', 'Count');
-define('TABLE_HEADING_ACTION', 'Action');
+define('HEADING_TITLE','下载管理');
+define('TABLE_HEADING_ATTRIBUTES_ID', '属性ID');
+define('TABLE_HEADING_PRODUCTS_ID', '商品');
+define('TABLE_HEADING_PRODUCT', '商品名称');
+define('TABLE_HEADING_MODEL', '型号');
+define('TABLE_HEADING_OPT_NAME', '选项名');
+define('TABLE_HEADING_OPT_VALUE', '选项内容名称');
+define('TABLE_TEXT_FILENAME', '文件名称');
+define('TABLE_TEXT_MAX_DAYS', '天数');
+define('TABLE_TEXT_MAX_COUNT', '计数');
+define('TABLE_HEADING_ACTION', '操作');
 
-define('TABLE_HEADING_OPT_PRICE', 'Price');
-define('TABLE_HEADING_OPT_PRICE_PREFIX', 'Prefix');
+define('TABLE_HEADING_OPT_PRICE', '价格');
+define('TABLE_HEADING_OPT_PRICE_PREFIX', '前缀');
 
-define('TEXT_PRODUCTS_NAME', 'Product: ');
-define('TEXT_PRODUCTS_MODEL', 'Model: ');
+define('TEXT_PRODUCTS_NAME', '商品: ');
+define('TEXT_PRODUCTS_MODEL', '型号: ');
 
-define('TEXT_INFO_HEADING_EDIT_PRODUCTS_DOWNLOAD', 'EDITING DOWNLOAD INFORMATION');
-define('TEXT_INFO_HEADING_DELETE_PRODUCTS_DOWNLOAD', 'CONFIRM DELETION OF DOWNLOAD');
-define('TEXT_INFO_EDIT_INTRO', 'Edit the Download information:');
-define('TEXT_DELETE_INTRO', 'The following filename will be removed from the database. This will not delete the file from the server:');
+define('TEXT_INFO_HEADING_EDIT_PRODUCTS_DOWNLOAD', '编辑下载信息');
+define('TEXT_INFO_HEADING_DELETE_PRODUCTS_DOWNLOAD', '确认取消下载');
+define('TEXT_INFO_EDIT_INTRO', '编辑下载信息:');
+define('TEXT_DELETE_INTRO', '以下文件将会从数据库中删除. 但文件不会从服务器上删除:');
 
-define('TEXT_INFO_FILENAME', 'Filename: ');
-define('TEXT_INFO_MAX_DAYS', 'Max Days: ');
-define('TEXT_INFO_MAX_COUNT', 'Max Downloads: ');
+define('TEXT_INFO_FILENAME', '文件名: ');
+define('TEXT_INFO_MAX_DAYS', '最多天数: ');
+define('TEXT_INFO_MAX_COUNT', '最大下载: ');
 
-define('TEXT_INFO_FILENAME_MISSING','&nbsp;Missing filename');
-define('TEXT_INFO_FILENAME_GOOD','&nbsp;Valid filename');
+define('TEXT_INFO_FILENAME_MISSING','&nbsp;缺少文件名');
+define('TEXT_INFO_FILENAME_GOOD','&nbsp;有效文件名');
 ?>

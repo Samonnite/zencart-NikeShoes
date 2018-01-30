@@ -19,6 +19,6 @@
 // +----------------------------------------------------------------------+
 //  $Id: ezpages_multilanguage_defines.php  2006-06-09 bunyip $
 //
-define('TEXT_INFO_EZPAGES_CREATE', ' - Creating New Page');
-define('BOX_MULTI_EZPAGES_INSTALL', 'Install/Uninstall Multi-Language EZ-Pages');
+define('TEXT_INFO_EZPAGES_CREATE', ' - 新建页面');
+define('BOX_MULTI_EZPAGES_INSTALL', '多语言简易页面');
 ?>

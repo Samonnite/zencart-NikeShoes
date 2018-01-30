@@ -1,0 +1,10 @@
+[25-Jan-2018 05:11:27 UTC] PHP Warning:  require(includes/templates/template_default/common/tpl_mega_menu.php): failed to open stream: No such file or directory in D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\includes\templates\abagon\common\tpl_header.php on line 156
+[25-Jan-2018 05:11:27 UTC] PHP Stack trace:
+[25-Jan-2018 05:11:27 UTC] PHP   1. {main}() D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\index.php:0
+[25-Jan-2018 05:11:27 UTC] PHP   2. require() D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\index.php:117
+[25-Jan-2018 05:11:27 UTC] PHP   3. require() D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\includes\templates\abagon\common\tpl_main_page.php:50
+[25-Jan-2018 05:11:27 UTC] PHP Fatal error:  require(): Failed opening required 'includes/templates/template_default/common/tpl_mega_menu.php' (include_path='.;C:\php\pear') in D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\includes\templates\abagon\common\tpl_header.php on line 156
+[25-Jan-2018 05:11:27 UTC] PHP Stack trace:
+[25-Jan-2018 05:11:27 UTC] PHP   1. {main}() D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\index.php:0
+[25-Jan-2018 05:11:27 UTC] PHP   2. require() D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\index.php:117
+[25-Jan-2018 05:11:27 UTC] PHP   3. require() D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\includes\templates\abagon\common\tpl_main_page.php:50

@@ -17,14 +17,16 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: products_expected.php 1105 2005-04-04 22:05:35Z birdbrain $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: products_expected.php 290 2004-09-15 19:48:26Z wilt $
 //
 
-define('HEADING_TITLE', 'Products Expected');
+define('HEADING_TITLE', '预售商品');
 
-define('TABLE_HEADING_PRODUCTS', 'Products');
-define('TABLE_HEADING_DATE_EXPECTED', 'Date Expected');
-define('TABLE_HEADING_ACTION', 'Action');
+define('TABLE_HEADING_PRODUCTS', '商品');
+define('TABLE_HEADING_DATE_EXPECTED', '上市日期');
+define('TABLE_HEADING_ACTION', '操作');
 
-define('TEXT_INFO_DATE_EXPECTED', 'Date Expected:');
+define('TEXT_INFO_DATE_EXPECTED', '上市日期:');
 ?>

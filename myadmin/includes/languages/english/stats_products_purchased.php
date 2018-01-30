@@ -17,20 +17,22 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
 //  $Id: stats_products_purchased.php 4735 2006-10-12 22:37:46Z ajeh $
 //
 
-define('HEADING_TITLE', 'Best Products Purchased');
+define('HEADING_TITLE', '商品销售统计');
 
-define('TABLE_HEADING_NUMBER', 'ID#');
-define('TABLE_HEADING_PRODUCTS', 'Products');
-define('TABLE_HEADING_PURCHASED', 'Purchased');
+define('TABLE_HEADING_NUMBER', '编号');
+define('TABLE_HEADING_PRODUCTS', '商品名称');
+define('TABLE_HEADING_PURCHASED', '销售数量');
 
-define('TABLE_HEADING_CUSTOMERS_ID', 'Customer<br />ID#');
-define('TABLE_HEADING_ORDERS_ID', 'Order<br />ID#');
-define('TABLE_HEADING_ORDERS_DATE_PURCHASED', 'Date');
-define('TABLE_HEADING_CUSTOMERS_INFO', 'Customer');
-define('TABLE_HEADING_PRODUCTS_QUANTITY', 'QTY');
-define('TABLE_HEADING_PRODUCTS_NAME', 'Product');
-define('TABLE_HEADING_PRODUCTS_MODEL', 'Model');
+define('TABLE_HEADING_CUSTOMERS_ID', '客户<br />ID#');
+define('TABLE_HEADING_ORDERS_ID', '订单<br />ID#');
+define('TABLE_HEADING_ORDERS_DATE_PURCHASED', '日期');
+define('TABLE_HEADING_CUSTOMERS_INFO', '客户');
+define('TABLE_HEADING_PRODUCTS_QUANTITY', '数量');
+define('TABLE_HEADING_PRODUCTS_NAME', '商品');
+define('TABLE_HEADING_PRODUCTS_MODEL', '型号');
 ?>

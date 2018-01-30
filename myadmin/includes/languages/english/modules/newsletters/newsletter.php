@@ -7,30 +7,30 @@
  * @version $Id: newsletter.php 4385 2006-09-04 04:10:48Z drbyte $
  */
 
-define('TEXT_COUNT_CUSTOMERS', 'Customers receiving newsletter: %s');
-define('HEADING_TITLE', 'Newsletter Manager');
+define('TEXT_COUNT_CUSTOMERS', '接收电子商情的客户: %s');
+define('HEADING_TITLE', '电子商情管理');
 
-define('TABLE_HEADING_NEWSLETTERS', 'Newsletters');
-define('TABLE_HEADING_SIZE', 'Size');
-define('TABLE_HEADING_MODULE', 'Module');
-define('TABLE_HEADING_SENT', 'Sent');
-define('TABLE_HEADING_STATUS', 'Status');
-define('TABLE_HEADING_ACTION', 'Action');
+define('TABLE_HEADING_NEWSLETTERS', '电子商情');
+define('TABLE_HEADING_SIZE', '大小');
+define('TABLE_HEADING_MODULE', '模块');
+define('TABLE_HEADING_SENT', '发送');
+define('TABLE_HEADING_STATUS', '状态');
+define('TABLE_HEADING_ACTION', '操作');
 
-define('TEXT_NEWSLETTER_MODULE', 'Module:');
-define('TEXT_NEWSLETTER_TITLE', 'Subject:');
-define('TEXT_NEWSLETTER_CONTENT', 'Text-Only <br />Content:');
-define('TEXT_NEWSLETTER_CONTENT_HTML', 'Rich Text <br />Content:');
+define('TEXT_NEWSLETTER_MODULE', '模块:');
+define('TEXT_NEWSLETTER_TITLE', '标题:');
+define('TEXT_NEWSLETTER_CONTENT', '文本格式<br />的内容:');
+define('TEXT_NEWSLETTER_CONTENT_HTML', 'HTML格式<br />的内容:');
 
-define('TEXT_NEWSLETTER_DATE_ADDED', 'Date Added:');
-define('TEXT_NEWSLETTER_DATE_SENT', 'Date Sent:');
+define('TEXT_NEWSLETTER_DATE_ADDED', '加入日期:');
+define('TEXT_NEWSLETTER_DATE_SENT', '发送日期:');
 
-define('TEXT_INFO_DELETE_INTRO', 'Are you sure you want to delete this newsletter?');
+define('TEXT_INFO_DELETE_INTRO', '您确认要删除这封电子商情吗?');
 
-define('TEXT_PLEASE_SELECT_AUDIENCE','Please select the audience for this newsletter mailing: ');
-define('TEXT_PLEASE_WAIT', 'Please wait .. sending emails ..<br /><br />Please do not interrupt this process!');
-define('TEXT_FINISHED_SENDING_EMAILS', 'Finished sending e-mails!');
+define('TEXT_PLEASE_SELECT_AUDIENCE','请选择该电子商情的接收者: ');
+define('TEXT_PLEASE_WAIT', '请等待 .. 正在发送电子邮件 ...<br /><br />请不要中断处理!');
+define('TEXT_FINISHED_SENDING_EMAILS', '发送电子邮件结束!');
 
-define('ERROR_NEWSLETTER_TITLE', 'Error: Newsletter title required');
-define('ERROR_NEWSLETTER_MODULE', 'Error: Newsletter module required');
+define('ERROR_NEWSLETTER_TITLE', '错误: 该电子商情缺少标题');
+define('ERROR_NEWSLETTER_MODULE', '错误: 该电子商情缺少模块');
 ?>

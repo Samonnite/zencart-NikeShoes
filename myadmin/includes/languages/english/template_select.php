@@ -17,28 +17,30 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: template_select.php 1105 2005-04-04 22:05:35Z birdbrain $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: template_select.php 290 2004-09-15 19:48:26Z wilt $
 //
 
-define('HEADING_TITLE', 'Template Selection');
+define('HEADING_TITLE', '模板选择');
 
-define('TABLE_HEADING_LANGUAGE', 'Template Language');
-define('TABLE_HEADING_NAME', 'Template Name');
-define('TABLE_HEADING_DIRECTORY', 'Template Directory');
-define('TABLE_HEADING_ACTION', 'Action');
+define('TABLE_HEADING_LANGUAGE', '模板语言');
+define('TABLE_HEADING_NAME', '模板名称');
+define('TABLE_HEADING_DIRECTORY', '模板目录');
+define('TABLE_HEADING_ACTION', '操作');
 
-define('TEXT_INFO_HEADING_EDIT_TEMPLATE', 'Edit Template Settings');
-define('TEXT_INFO_HEADING_DELETE_TEMPLATE', 'Delete Template association');
-define('TEXT_INFO_EDIT_INTRO', 'Change the template');
-define('TEXT_INFO_DELETE_INTRO', 'Delete this association');
-define('TEXT_INFO_TEMPLATE_NAME', 'Template Name');
-define('TEXT_INFO_LANGUAGE_NAME', 'Language Name');
-define('TEXT_INFO_TEMPLATE_VERSION', 'Template Version : ');
-define('TEXT_INFO_TEMPLATE_AUTHOR', 'Template Author : ');
-define('TEXT_INFO_TEMPLATE_DESCRIPTION', 'Template Description');
-define('TEXT_INFO_TEMPLATE_INSTALLED', 'Templates Installed');
-define('TEXT_INFO_HEADING_NEW_TEMPLATE', 'Associate Template with language');
-define('TEXT_INFO_INSERT_INTRO', 'Choose below to associate a template with a language');
-define('IMAGE_NEW_TEMPLATE', 'Create a new template/language association');
+define('TEXT_INFO_HEADING_EDIT_TEMPLATE', '编辑模板设置');
+define('TEXT_INFO_HEADING_DELETE_TEMPLATE', '删除相关模板');
+define('TEXT_INFO_EDIT_INTRO', '更换模板');
+define('TEXT_INFO_DELETE_INTRO', '删除该连接');
+define('TEXT_INFO_TEMPLATE_NAME', '模板名称');
+define('TEXT_INFO_LANGUAGE_NAME', '语言名称');
+define('TEXT_INFO_TEMPLATE_VERSION', '模板版本: ');
+define('TEXT_INFO_TEMPLATE_AUTHOR', '模板作者: ');
+define('TEXT_INFO_TEMPLATE_DESCRIPTION', '模板简介');
+define('TEXT_INFO_TEMPLATE_INSTALLED', '已安装模板');
+define('TEXT_INFO_HEADING_NEW_TEMPLATE', '关联语言和模板');
+define('TEXT_INFO_INSERT_INTRO', '请在下面选择语言和模板关联');
+define('IMAGE_NEW_TEMPLATE', '创建一个新的模板/语言关联');
 
 ?>

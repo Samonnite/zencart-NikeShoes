@@ -11,7 +11,7 @@
 ?>
 <div class="centerColumn" id="loginDefault">
 
-<h1 id="loginDefaultHeading"><?php echo HEADING_TITLE; ?></h1>
+<!-- <h1 id="loginDefaultHeading"><?php echo HEADING_TITLE; ?></h1> -->
 
 <?php if ($messageStack->size('login') > 0) echo $messageStack->output('login'); ?>
 

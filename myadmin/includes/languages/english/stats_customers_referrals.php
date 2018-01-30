@@ -7,10 +7,10 @@
  * @version GIT: $Id: Author: DrByte  Tue Jul 17 22:56:16 2012 -0400 Modified in v1.5.1 $
  */
 
-  define('HEADING_TITLE', 'Customers Referral Report');
-  define('TEXT_INFO_SELECT_REFERRAL','Select a Referral/Coupon Code');
-  define('TEXT_REFERRAL_UNKNOWN', 'Unknown');
-  define('TEXT_INFO_START_DATE', 'Start Date (m-d-y)');
-  define('TEXT_INFO_END_DATE', 'End Date (m-d-y)');
-  define('TEXT_ORDER_NUMBER', 'Order #');
-  define('TEXT_COUPON_ID', 'Discount Coupon ID#');
+  define('HEADING_TITLE', '客户推荐分析');
+  define('TEXT_INFO_SELECT_REFERRAL','选择一个推荐/优惠券代码');
+  define('TEXT_REFERRAL_UNKNOWN', '未知');
+  define('TEXT_INFO_START_DATE', '开始日期 (年-月-日)');
+  define('TEXT_INFO_END_DATE', '结束日期 (年-月-日)');
+  define('TEXT_ORDER_NUMBER', '订单号');
+  define('TEXT_COUPON_ID', '优惠券');

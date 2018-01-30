@@ -1,0 +1,12 @@
+[25-Jan-2018 01:48:03 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\myadmin\easypopulate.php on line 389
+[25-Jan-2018 01:48:03 UTC] PHP Stack trace:
+[25-Jan-2018 01:48:03 UTC] PHP   1. {main}() D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\myadmin\easypopulate.php:0
+[25-Jan-2018 01:48:03 UTC] PHP   2. mysql_fetch_array() D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\myadmin\easypopulate.php:389
+[25-Jan-2018 01:48:03 UTC] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\myadmin\easypopulate.php on line 398
+[25-Jan-2018 01:48:03 UTC] PHP Stack trace:
+[25-Jan-2018 01:48:03 UTC] PHP   1. {main}() D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\myadmin\easypopulate.php:0
+[25-Jan-2018 01:48:03 UTC] PHP   2. mysql_num_rows() D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\myadmin\easypopulate.php:398
+[25-Jan-2018 01:48:03 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\myadmin\easypopulate.php on line 411
+[25-Jan-2018 01:48:03 UTC] PHP Stack trace:
+[25-Jan-2018 01:48:03 UTC] PHP   1. {main}() D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\myadmin\easypopulate.php:0
+[25-Jan-2018 01:48:03 UTC] PHP   2. mysql_fetch_array() D:\wamp\www\zen-cart-chinese-with-plugin-1.5.4\myadmin\easypopulate.php:411

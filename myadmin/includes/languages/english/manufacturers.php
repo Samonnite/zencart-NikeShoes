@@ -17,38 +17,40 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
 //  $Id: manufacturers.php 4808 2006-10-22 18:48:53Z ajeh $
 //
 
-define('HEADING_TITLE', 'Manufacturers');
+define('HEADING_TITLE', '厂商管理');
 
-define('TABLE_HEADING_MANUFACTURERS', 'Manufacturers');
-define('TABLE_HEADING_ACTION', 'Action');
+define('TABLE_HEADING_MANUFACTURERS', '厂商名字');
+define('TABLE_HEADING_ACTION', '操作');
 
-define('TEXT_HEADING_NEW_MANUFACTURER', 'New Manufacturer');
-define('TEXT_HEADING_EDIT_MANUFACTURER', 'Edit Manufacturer');
-define('TEXT_HEADING_DELETE_MANUFACTURER', 'Delete Manufacturer');
+define('TEXT_HEADING_NEW_MANUFACTURER', '新厂商');
+define('TEXT_HEADING_EDIT_MANUFACTURER', '编辑厂商');
+define('TEXT_HEADING_DELETE_MANUFACTURER', '删除厂商');
 
-define('TEXT_MANUFACTURERS', 'Manufacturers:');
-define('TEXT_DATE_ADDED', 'Date Added:');
-define('TEXT_LAST_MODIFIED', 'Last Modified:');
-define('TEXT_PRODUCTS', 'Products:');
-define('TEXT_PRODUCTS_IMAGE_DIR', 'Upload to directory:');
-define('TEXT_IMAGE_NONEXISTENT', 'IMAGE DOES NOT EXIST');
-define('TEXT_MANUFACTURERS_IMAGE_MANUAL', '<strong>Or, select an existing image file from server, filename:</strong>');
+define('TEXT_MANUFACTURERS', '厂商:');
+define('TEXT_DATE_ADDED', '添加日期:');
+define('TEXT_LAST_MODIFIED', '最后修改:');
+define('TEXT_PRODUCTS', '商品:');
+define('TEXT_PRODUCTS_IMAGE_DIR', '上传目录:');
+define('TEXT_IMAGE_NONEXISTENT', '图片不存在');
+define('TEXT_MANUFACTURERS_IMAGE_MANUAL', '<strong>或从服务器上选择已有图像文件，文件名:</strong>');
 
-define('TEXT_NEW_INTRO', 'Please fill out the following information for the new manufacturer');
-define('TEXT_EDIT_INTRO', 'Please make any necessary changes');
+define('TEXT_NEW_INTRO', '请为新厂商填写以下信息');
+define('TEXT_EDIT_INTRO', '请做必要修改');
 
-define('TEXT_MANUFACTURERS_NAME', 'Manufacturers Name:');
-define('TEXT_MANUFACTURERS_IMAGE', 'Manufacturers Image:');
-define('TEXT_MANUFACTURERS_URL', 'Manufacturers URL:');
+define('TEXT_MANUFACTURERS_NAME', '厂商名字:');
+define('TEXT_MANUFACTURERS_IMAGE', '厂商图片:');
+define('TEXT_MANUFACTURERS_URL', '厂商网址:');
 
-define('TEXT_DELETE_INTRO', 'Are you sure you want to delete this manufacturer?');
-define('TEXT_DELETE_IMAGE', 'Delete manufacturers image?');
-define('TEXT_DELETE_PRODUCTS', 'Delete products from this manufacturer? (including product reviews, products on special, upcoming products)');
-define('TEXT_DELETE_WARNING_PRODUCTS', '<b>WARNING:</b> There are %s products still linked to this manufacturer!');
+define('TEXT_DELETE_INTRO', '你确定要删除该厂商资料?');
+define('TEXT_DELETE_IMAGE', '删除厂商图片?');
+define('TEXT_DELETE_PRODUCTS', '删除该厂商的商品? (包括商品评论、特价商品和预售商品)');
+define('TEXT_DELETE_WARNING_PRODUCTS', '<b>警告:</b> 仍然有%s件商品属于该厂商!');
 
-define('ERROR_DIRECTORY_NOT_WRITEABLE', 'Error: I can not write to this directory. Please set the right user permissions on: %s');
-define('ERROR_DIRECTORY_DOES_NOT_EXIST', 'Error: Directory does not exist: %s');
+define('ERROR_DIRECTORY_NOT_WRITEABLE', '错误: 无法写入该目录，请设置正确的权限: %s');
+define('ERROR_DIRECTORY_DOES_NOT_EXIST', '错误: 目录不存在: %s');
 ?>

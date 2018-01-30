@@ -28,7 +28,7 @@
   define('HEADER_SALES_TEXT', '');
   define('HEADER_LOGO_WIDTH', '222px');
   define('HEADER_LOGO_HEIGHT', '92px');
-  define('HEADER_LOGO_IMAGE', 'logo.gif');
+  define('HEADER_LOGO_IMAGE', 'logo.png');
 
 // header Search Button/Box Search Button
   define('HEADER_SEARCH_BUTTON','搜索');

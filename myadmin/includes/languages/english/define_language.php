@@ -17,12 +17,14 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: define_language.php 1105 2005-04-04 22:05:35Z birdbrain $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: define_language.php 290 2004-09-15 19:48:26Z wilt $
 //
 
-define('HEADING_TITLE', 'Define Language');
+define('HEADING_TITLE', '选择语言');
 
-define('TEXT_FILE_DOES_NOT_EXIST', 'File does not exist.');
+define('TEXT_FILE_DOES_NOT_EXIST', '文件不存在.');
 
-define('ERROR_FILE_NOT_WRITEABLE', 'Error: I can not write to this file. Please set the right user permissions on: %s');
+define('ERROR_FILE_NOT_WRITEABLE', '错误: 无法写入该文件. 请设置适当的用户权限到: %s');
 ?>

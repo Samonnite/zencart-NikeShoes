@@ -5,31 +5,32 @@
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: linkpoint_review.php 4612 2006-09-26 08:03:05Z drbyte $
+ * @Simplified Chinese version   http://www.zen-cart.cn
  */
 
-define('HEADING_TITLE', 'Credit Card Review');
+define('HEADING_TITLE', '信用卡查询');
 
 define('TABLE_HEADING_ID', 'ID#');
-define('TABLE_HEADING_FIRSTNAME', 'First Name');
-define('TABLE_HEADING_LASTNAME', 'Last Name');
-define('TABLE_HEADING_ACCOUNT_CREATED', 'Account Created');
-define('TABLE_HEADING_LOGIN', 'Last Login');
-define('TABLE_HEADING_ACTION', 'Action');
-define('TABLE_HEADING_PRICING_GROUP', 'Pricing Group');
-define('TABLE_HEADING_AUTHORIZATION_APPROVAL', 'Authorized');
+define('TABLE_HEADING_FIRSTNAME', '姓氏');
+define('TABLE_HEADING_LASTNAME', '名字');
+define('TABLE_HEADING_ACCOUNT_CREATED', '创建帐号');
+define('TABLE_HEADING_LOGIN', '最后登录');
+define('TABLE_HEADING_ACTION', '操作');
+define('TABLE_HEADING_PRICING_GROUP', '价格分组');
+define('TABLE_HEADING_AUTHORIZATION_APPROVAL', '授权');
 
-define('TEXT_DATE_ACCOUNT_CREATED', 'Account Created:');
-define('TEXT_DATE_ACCOUNT_LAST_MODIFIED', 'Last Modified:');
-define('TEXT_INFO_DATE_LAST_LOGON', 'Last Logon:');
-define('TEXT_INFO_NUMBER_OF_LOGONS', 'Number of Logons:');
-define('TYPE_BELOW', 'Type below');
-define('PLEASE_SELECT', 'Select One');
-define('TEXT_INFO_NUMBER_OF_ORDERS', 'Number of Orders:');
-define('TEXT_INFO_LAST_ORDER','Last Order:');
-define('TEXT_INFO_ORDERS_TOTAL', 'Total:');
+define('TEXT_DATE_ACCOUNT_CREATED', '帐号创建:');
+define('TEXT_DATE_ACCOUNT_LAST_MODIFIED', '最后修改:');
+define('TEXT_INFO_DATE_LAST_LOGON', '最后登录:');
+define('TEXT_INFO_NUMBER_OF_LOGONS', '登录次数:');
+define('TYPE_BELOW', '在下面输入');
+define('PLEASE_SELECT', '请选择');
+define('TEXT_INFO_NUMBER_OF_ORDERS', '订单数:');
+define('TEXT_INFO_LAST_ORDER','最后订单:');
+define('TEXT_INFO_ORDERS_TOTAL', '总额:');
 
-define('ENTRY_NONE', 'None');
+define('ENTRY_NONE', '无');
 
-define('TABLE_HEADING_COMPANY','Company');
+define('TABLE_HEADING_COMPANY','公司');
 
 ?>

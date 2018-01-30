@@ -20,5 +20,5 @@
 // $Id: document_general.php 290 2004-09-15 19:48:26Z wilt $
 //
 
-define('BOX_CATALOG_QUICK_UPDATES', 'Quick Updates');
+define('BOX_CATALOG_QUICK_UPDATES', '快速更新');
 ?>

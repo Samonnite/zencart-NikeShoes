@@ -6,4 +6,4 @@
  * @version $Id: alt_nav.php 19301 2011-07-28 21:50:05Z kuroi $
  */
 
-define('HEADING_TITLE', 'Alternative Navigation');
+define('HEADING_TITLE', '其它菜单');

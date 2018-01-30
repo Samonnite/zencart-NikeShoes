@@ -17,20 +17,22 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: option_values.php 1105 2005-04-04 22:05:35Z birdbrain $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: option_values.php 290 2004-09-15 19:48:26Z wilt $
 //
-  define('HEADING_TITLE', 'Option Values Default Sort Order');
-  define('TEXT_UPDATE_OPTION_VALUES', 'Update Option Values Sort Order');
-  define('TEXT_SELECT_OPTION','Select an Option Name:');
-  define('TEXT_EDIT_OPTION_NAME', 'Editing Option Name: ');
-  define('TEXT_NO_OPTION_VALUE','No Option Values Defined for<br />Option Name: ');
-  define('TEXT_UPDATE_SUBMIT','Update Sort Order');
+  define('HEADING_TITLE', '选项内容缺省排序');
+  define('TEXT_UPDATE_OPTION_VALUES', '更新选项内容排序');
+  define('TEXT_SELECT_OPTION','选择选项名称:');
+  define('TEXT_EDIT_OPTION_NAME', '编辑选项名称: ');
+  define('TEXT_NO_OPTION_VALUE','没有定义选项内容的<br />选项名称: ');
+  define('TEXT_UPDATE_SUBMIT','更新排序');
 
 // moved from english.php
-  define('TEXT_UPDATE_SORT_ORDERS_OPTIONS_PRODUCTS','<strong>For a Product:</strong> ');
-  define('TEXT_UPDATE_SORT_ORDERS_OPTIONS_CATEGORIES','<strong>For a Category:</strong> ');
-  define('SUCCESS_PRODUCT_UPDATE_SORT','Successful Attribute Sort Order Update for ID# ');
-  define('SUCCESS_PRODUCT_UPDATE_SORT_ALL','Successful Attribute Sort Order Update for ALL Products ');
-  define('SUCCESS_OPTION_VALUES_SORT_ORDER','Successful Update of Option Values Sort Order: ');
-  define('SUCCESS_CATEGORIES_UPDATE_SORT','Successful Attribute Sort Order Update for Categories ID# ');
+  define('TEXT_UPDATE_SORT_ORDERS_OPTIONS_PRODUCTS','<strong>对商品:</strong> ');
+  define('TEXT_UPDATE_SORT_ORDERS_OPTIONS_CATEGORIES','<strong>对分类:</strong> ');
+  define('SUCCESS_PRODUCT_UPDATE_SORT','成功更新属性排序的编号 ');
+  define('SUCCESS_PRODUCT_UPDATE_SORT_ALL','成功更新所有商品的属性排序 ');
+  define('SUCCESS_OPTION_VALUES_SORT_ORDER','成功更新选项内容排序: ');
+  define('SUCCESS_CATEGORIES_UPDATE_SORT','成功更新属性排序的分类编号 ');
 ?>

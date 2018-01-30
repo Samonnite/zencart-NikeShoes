@@ -17,54 +17,56 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
 //  $Id: salemaker.php 6369 2007-05-25 03:03:42Z ajeh $
 //
 
-define('HEADING_TITLE', 'SaleMaker');
-define('TABLE_HEADING_SALE_NAME', 'SaleName');
-define('TABLE_HEADING_SALE_DEDUCTION', 'Deduction');
-define('TABLE_HEADING_SALE_DATE_START', 'Startdate');
-define('TABLE_HEADING_SALE_DATE_END', 'Enddate');
-define('TABLE_HEADING_STATUS', 'Status');
-define('TABLE_HEADING_ACTION', 'Action');
-define('TEXT_SALEMAKER_NAME', 'SaleName:');
-define('TEXT_SALEMAKER_DEDUCTION', 'Deduction:');
-define('TEXT_SALEMAKER_DEDUCTION_TYPE', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type:&nbsp;&nbsp;');
-define('TEXT_SALEMAKER_PRICERANGE_FROM', 'Products Pricerange:');
-define('TEXT_SALEMAKER_PRICERANGE_TO', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
-define('TEXT_SALEMAKER_SPECIALS_CONDITION', 'If a product is a Special:');
-define('TEXT_SALEMAKER_DATE_START', 'Start Date:');
-define('TEXT_SALEMAKER_DATE_END', 'End Date:');
-define('TEXT_SALEMAKER_CATEGORIES', '<b>Or</b> check the categories to which this sale applies:');
-define('TEXT_SALEMAKER_POPUP', '<a href="javascript:session_win();"><span class="errorText"><b>Click here for Salemaker Usage Tips.</b></span></a>');
-define('TEXT_SALEMAKER_POPUP1', '<a href="javascript:session_win1();"><span class="errorText"><b>(More Info)</b></span></a>');
-define('TEXT_SALEMAKER_IMMEDIATELY', 'Immediately');
-define('TEXT_SALEMAKER_NEVER', 'Never');
-define('TEXT_SALEMAKER_ENTIRE_CATALOG', 'Check this box if you want the sale to be applied to <b>all products</b>:');
-define('TEXT_SALEMAKER_TOP', 'Entire catalog');
-define('TEXT_INFO_DATE_ADDED', 'Date Added:');
-define('TEXT_INFO_DATE_MODIFIED', 'Last Modified:');
-define('TEXT_INFO_DATE_STATUS_CHANGE', 'Last Status Change:');
-define('TEXT_INFO_SPECIALS_CONDITION', 'Specials Condition:');
-define('TEXT_INFO_DEDUCTION', 'Deduction:');
-define('TEXT_INFO_PRICERANGE_FROM', 'Pricerange:');
-define('TEXT_INFO_PRICERANGE_TO', ' to ');
-define('TEXT_INFO_DATE_START', 'Starts:');
-define('TEXT_INFO_DATE_END', 'Expires:');
-define('SPECIALS_CONDITION_DROPDOWN_0', 'Ignore Specials Price - Apply to Product Price and Replace Special');
-define('SPECIALS_CONDITION_DROPDOWN_1', 'Ignore SaleCondition - No Sale Applied When Special Exists');
-define('SPECIALS_CONDITION_DROPDOWN_2', 'Apply SaleDeduction to Specials Price - Otherwise Apply to Price');
+define('HEADING_TITLE', '促销管理');
+define('TABLE_HEADING_SALE_NAME', '促销名称');
+define('TABLE_HEADING_SALE_DEDUCTION', '减价');
+define('TABLE_HEADING_SALE_DATE_START', '生效日');
+define('TABLE_HEADING_SALE_DATE_END', '到期日');
+define('TABLE_HEADING_STATUS', '状态');
+define('TABLE_HEADING_ACTION', '操作');
+define('TEXT_SALEMAKER_NAME', '促销名称:');
+define('TEXT_SALEMAKER_DEDUCTION', '减价:');
+define('TEXT_SALEMAKER_DEDUCTION_TYPE', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类型:&nbsp;&nbsp;');
+define('TEXT_SALEMAKER_PRICERANGE_FROM', '价格范围:');
+define('TEXT_SALEMAKER_PRICERANGE_TO', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;到&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
+define('TEXT_SALEMAKER_SPECIALS_CONDITION', '如果商品有特价:');
+define('TEXT_SALEMAKER_DATE_START', '开始日期:');
+define('TEXT_SALEMAKER_DATE_END', '结束日期:');
+define('TEXT_SALEMAKER_CATEGORIES', '<b>或者</b>选择促销的分类:');
+define('TEXT_SALEMAKER_POPUP', '<a href="javascript:session_win();"><span class="errorText"><b>点击这里查看促销管理说明</b></span></a>');
+define('TEXT_SALEMAKER_POPUP1', '<a href="javascript:session_win1();"><span class="errorText"><b>(详情)</b></span></a>');
+define('TEXT_SALEMAKER_IMMEDIATELY', '立刻');
+define('TEXT_SALEMAKER_NEVER', '从不');
+define('TEXT_SALEMAKER_ENTIRE_CATALOG', '如果您希望该促销应用于<b>所有商品</b>，请选定该方框:');
+define('TEXT_SALEMAKER_TOP', '全部分类');
+define('TEXT_INFO_DATE_ADDED', '加入日期:');
+define('TEXT_INFO_DATE_MODIFIED', '最后修改:');
+define('TEXT_INFO_DATE_STATUS_CHANGE', '最后状态改变:');
+define('TEXT_INFO_SPECIALS_CONDITION', '特价条件:');
+define('TEXT_INFO_DEDUCTION', '减价:');
+define('TEXT_INFO_PRICERANGE_FROM', '价格范围:');
+define('TEXT_INFO_PRICERANGE_TO', ' 到 ');
+define('TEXT_INFO_DATE_START', '开始日期:');
+define('TEXT_INFO_DATE_END', '结束日期:');
+define('SPECIALS_CONDITION_DROPDOWN_0', '忽略特价 - 在原价基础上促销');
+define('SPECIALS_CONDITION_DROPDOWN_1', '忽略促销 - 有特价时不允许促销');
+define('SPECIALS_CONDITION_DROPDOWN_2', '在特价基础上促销 - 否则在原价基础上促销');
 // moved to english.php
 /*
-define('DEDUCTION_TYPE_DROPDOWN_0', 'Deduct amount');
-define('DEDUCTION_TYPE_DROPDOWN_1', 'Percent');
-define('DEDUCTION_TYPE_DROPDOWN_2', 'New Price');
+define('DEDUCTION_TYPE_DROPDOWN_0', '减价');
+define('DEDUCTION_TYPE_DROPDOWN_1', '百分比');
+define('DEDUCTION_TYPE_DROPDOWN_2', '新价格');
 */
-define('TEXT_INFO_HEADING_COPY_SALE', 'Copy Sale');
-define('TEXT_INFO_COPY_INTRO', 'Enter a name for the copy of<br>&nbsp;&nbsp;"%s"');
-define('TEXT_INFO_HEADING_DELETE_SALE', 'Delete Sale');
-define('TEXT_INFO_DELETE_INTRO', 'Are you sure you want to permanently delete this sale?');
-define('TEXT_MORE_INFO', '(More Info)');
+define('TEXT_INFO_HEADING_COPY_SALE', '复制促销');
+define('TEXT_INFO_COPY_INTRO', '输入要复制到的名称<br>&nbsp;&nbsp;"%s"');
+define('TEXT_INFO_HEADING_DELETE_SALE', '删除促销');
+define('TEXT_INFO_DELETE_INTRO', '您确认要永久删除该促销吗?');
+define('TEXT_MORE_INFO', '(详情)');
 
-define('TEXT_WARNING_SALEMAKER_PREVIOUS_CATEGORIES','&nbsp;Warning : %s sales already include this category');
+define('TEXT_WARNING_SALEMAKER_PREVIOUS_CATEGORIES','&nbsp;警告: 该分类中已有%s个促销');
 ?>

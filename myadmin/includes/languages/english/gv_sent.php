@@ -17,25 +17,27 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: gv_sent.php 2388 2005-11-18 00:18:35Z ajeh $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: gv_sent.php 290 2004-09-15 19:48:26Z wilt $
 //
 
-define('HEADING_TITLE', 'Gift Voucher\'s Sent');
+define('HEADING_TITLE', '已发礼券');
 
-define('TABLE_HEADING_SENDERS_NAME', 'Senders Name');
-define('TABLE_HEADING_VOUCHER_VALUE', TEXT_GV_NAME . ' Value');
+define('TABLE_HEADING_SENDERS_NAME', '发送方姓名');
+define('TABLE_HEADING_VOUCHER_VALUE', TEXT_GV_NAME . '金额');
 define('TABLE_HEADING_VOUCHER_CODE', TEXT_GV_REDEEM);
-define('TABLE_HEADING_DATE_SENT', 'Date Sent');
-define('TEXT_HEADING_DATE_REDEEMED', 'Date Redeemed');
-define('TABLE_HEADING_ACTION', 'Action');
+define('TABLE_HEADING_DATE_SENT', '发送日期');
+define('TEXT_HEADING_DATE_REDEEMED', '兑现日期');
+define('TABLE_HEADING_ACTION', '操作');
 
-define('TEXT_INFO_SENDERS_ID', 'Senders ID:');
-define('TEXT_INFO_AMOUNT_SENT', 'Amount Sent:');
-define('TEXT_INFO_DATE_SENT', 'Date Sent:');
+define('TEXT_INFO_SENDERS_ID', '发送方编号:');
+define('TEXT_INFO_AMOUNT_SENT', '发送金额:');
+define('TEXT_INFO_DATE_SENT', '发送日期:');
 define('TEXT_INFO_VOUCHER_CODE', TEXT_GV_REDEEM . ':');
-define('TEXT_INFO_EMAIL_ADDRESS', 'Email Addr:');
-define('TEXT_INFO_DATE_REDEEMED', 'Date Redeemed:');
-define('TEXT_INFO_IP_ADDRESS', 'IP Address:');
-define('TEXT_INFO_CUSTOMERS_ID', 'Customer Id:');
-define('TEXT_INFO_NOT_REDEEMED', 'Not Redeemed');
+define('TEXT_INFO_EMAIL_ADDRESS', '电子邮件:');
+define('TEXT_INFO_DATE_REDEEMED', '兑现日期:');
+define('TEXT_INFO_IP_ADDRESS', 'IP地址:');
+define('TEXT_INFO_CUSTOMERS_ID', '客户编号:');
+define('TEXT_INFO_NOT_REDEEMED', '没有兑现');
 ?>

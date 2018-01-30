@@ -9,7 +9,7 @@
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version GIT: $Id: Author: DrByte  Sun Jul 15 20:50:58 2012 -0400 Modified in v1.5.1 $
  */
-$relPath = (file_exists('includes/templates/template_default/images/logo.gif')) ? '' : '../';
+$relPath = (file_exists('includes/templates/template_default/images/logo.png')) ? '' : '../';
 $instPath = (file_exists('zc_install/index.php')) ? 'zc_install/index.php' : (file_exists('../zc_install/index.php') ? '../zc_install/index.php' : '');
 $docsPath = (file_exists('docs/index.html')) ? 'docs/index.html' : (file_exists('../docs/index.html') ? '../docs/index.html' : '');
 ?>
@@ -36,7 +36,7 @@ $docsPath = (file_exists('docs/index.html')) ? 'docs/index.html' : (file_exists(
 <body style="margin: 20px">
 <div style="width: 730px; background-color: #ffffff; margin: auto; padding: 10px; border: 1px solid #cacaca;">
 <div>
-<img src="<?php echo $relPath; ?>includes/templates/template_default/images/logo.gif" alt="Zen Cart 中文版" title="Zen Cart 中文版" width="125" height="50" border="0" />
+<img src="<?php echo $relPath; ?>includes/templates/template_default/images/logo.png" alt="Zen Cart 中文版" title="Zen Cart 中文版" width="125" height="50" border="0" />
 </div>
 <h1>您好，多谢使用 Zen Cart&reg; 中文版</h1>
 <h2>看到本页面有几个原因:</h2>

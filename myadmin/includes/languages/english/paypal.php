@@ -20,74 +20,76 @@
 // | to obtain it through the world-wide-web, please send a note to       |
 // | license@zen-cart.com so we can mail you a copy immediately.          |
 // +----------------------------------------------------------------------+
-//  $Id: paypal.php 3016 2006-02-12 05:26:46Z ajeh $
+// | Simplified Chinese version   http://www.zen-cart.cn                  |
+// +----------------------------------------------------------------------+
+//  $Id: paypal.php 995 2005-02-11 08:35:07Z drbyte $
 //
 
   // sort orders
-  define('TEXT_PAYPAL_IPN_SORT_ORDER_INFO', 'Display Order: ');
-  define('TEXT_SORT_PAYPAL_ID_DESC', 'PayPal Order Received (new - old)');
-  define('TEXT_SORT_PAYPAL_ID', 'PayPal Order Received (old - new)');
-  define('TEXT_SORT_ZEN_ORDER_ID_DESC', 'Order ID (high - low), PayPal Order Received');
-  define('TEXT_SORT_ZEN_ORDER_ID', 'Order ID (low - high), PayPal Order Received');
-  define('TEXT_PAYMENT_AMOUNT_DESC', 'Order Amount (high - low)');
-  define('TEXT_PAYMENT_AMOUNT', 'Order Amount (low - high)');
+  define('TEXT_PAYPAL_IPN_SORT_ORDER_INFO', '显示顺序: ');
+  define('TEXT_SORT_PAYPAL_ID_DESC', '接收到的PayPal订单 (新 - 旧)');
+  define('TEXT_SORT_PAYPAL_ID', '接收到的PayPal订单 (旧 - 新)');
+  define('TEXT_SORT_ZEN_ORDER_ID_DESC', '订单编号 (高 - 低), 接收到的PayPal订单');
+  define('TEXT_SORT_ZEN_ORDER_ID', '订单编号 (低 - 高), 接收到的PayPal订单');
+  define('TEXT_PAYMENT_AMOUNT_DESC', '订单金额 (高 - 低)');
+  define('TEXT_PAYMENT_AMOUNT', '订单金额 (低 - 高)');
 
   //begin ADMIN text
-  define('HEADING_ADMIN_TITLE', 'PayPal Instant Payment Notifications');
-  define('HEADING_PAYMENT_STATUS', 'Payment Status');
-  define('TEXT_ALL_IPNS', 'All');
+  define('HEADING_ADMIN_TITLE', 'PayPal及时付款通知');
+  define('HEADING_PAYMENT_STATUS', '付款状态');
+  define('TEXT_ALL_IPNS', '所有');
 
-  define('TABLE_HEADING_ORDER_NUMBER', 'Order #');
+  define('TABLE_HEADING_ORDER_NUMBER', '订单 #');
   define('TABLE_HEADING_PAYPAL_ID', 'PayPal #');
-  define('TABLE_HEADING_TXN_TYPE', 'Transaction Type');
-  define('TABLE_HEADING_PAYMENT_STATUS', 'Payment Status');
-  define('TABLE_HEADING_PAYMENT_AMOUNT', 'Amount');
-  define('TABLE_HEADING_ACTION', 'Action');
-  define('TABLE_HEADING_DATE_ADDED', 'Date Added');
-  define('TABLE_HEADING_NUM_HISTORY_ENTRIES', 'Number of entries in Status History');
-  define('TABLE_HEADING_ENTRY_NUM', 'Entry Number');
-  define('TABLE_HEADING_TRANS_ID', 'Trans. ID');
+  define('TABLE_HEADING_TXN_TYPE', '交易类型');
+  define('TABLE_HEADING_PAYMENT_STATUS', '付款状态');
+  define('TABLE_HEADING_PAYMENT_AMOUNT', '金额');
+  define('TABLE_HEADING_ACTION', '操作');
+  define('TABLE_HEADING_DATE_ADDED', '加入日期');
+  define('TABLE_HEADING_NUM_HISTORY_ENTRIES', '状态历史中的条目数');
+  define('TABLE_HEADING_ENTRY_NUM', '条目号码');
+  define('TABLE_HEADING_TRANS_ID', '交易编号');
 
 
 
-  define('TEXT_INFO_PAYPAL_IPN_HEADING', 'PayPal IPN');
-  define('TEXT_DISPLAY_NUMBER_OF_TRANSACTIONS', 'Displaying <strong>%d</strong> to <strong>%d</strong> (of <strong>%d</strong> IPN\'s)');
+  define('TEXT_INFO_PAYPAL_IPN_HEADING', 'PayPal及时付款通知');
+  define('TEXT_DISPLAY_NUMBER_OF_TRANSACTIONS', '显示<strong>%d</strong>到<strong>%d</strong> (共<strong>%d</strong>个及时付款通知\'s)');
 
   //Details section
-  define('HEADING_DEATILS_CUSTOMER_REGISTRATION_TITLE', 'PayPal Customer Registration Details');
-  define('HEADING_DETAILS_REGISTRATION_TITLE', 'PayPal Instant Payment Notification');
-  define('TEXT_INFO_ENTRY_ADDRESS', 'Address');
-  define('TEXT_INFO_ORDER_NUMBER', 'Order Number');
-  define('TEXT_INFO_TXN_TYPE', 'Transaction Type');
-  define('TEXT_INFO_PAYMENT_STATUS', 'Payment Status');
-  define('TEXT_INFO_PAYMENT_AMOUNT', 'Amount');
-  define('ENTRY_FIRST_NAME', 'First Name');
-  define('ENTRY_LAST_NAME', 'Last Name');
-  define('ENTRY_BUSINESS_NAME', 'Business Name');
-  define('ENTRY_ADDRESS', 'Address');
+  define('HEADING_DEATILS_CUSTOMER_REGISTRATION_TITLE', 'PayPal 客户注册详情');
+  define('HEADING_DETAILS_REGISTRATION_TITLE', 'PayPal 个及时付款通知');
+  define('TEXT_INFO_ENTRY_ADDRESS', '地址');
+  define('TEXT_INFO_ORDER_NUMBER', '订单号');
+  define('TEXT_INFO_TXN_TYPE', '交易类型');
+  define('TEXT_INFO_PAYMENT_STATUS', '付款状态');
+  define('TEXT_INFO_PAYMENT_AMOUNT', '金额');
+  define('ENTRY_FIRST_NAME', '名字');
+  define('ENTRY_LAST_NAME', '姓氏');
+  define('ENTRY_BUSINESS_NAME', '公司名');
+  define('ENTRY_ADDRESS', '地址');
   //EMAIL ALREADY DEFINED IN ORDERS
-  define('ENTRY_PAYER_ID', 'Payer ID');
-  define('ENTRY_PAYER_STATUS', 'Payer Status');
-  define('ENTRY_ADDRESS_STATUS', 'Address Status');
-  define('ENTRY_PAYMENT_TYPE', 'Payment Type');
-  define('TABLE_HEADING_ENTRY_PAYMENT_STATUS', 'Payment Status');
-  define('TABLE_HEADING_PENDING_REASON', 'Pending Reason');
-  define('TABLE_HEADING_IPN_DATE', 'IPN Date');
-  define('ENTRY_INVOICE', 'Invoice');
-  define('ENTRY_PAYPAL_IPN_TXN', 'Transaction ID');
-  define('ENTRY_PAYMENT_DATE', 'Payment Date');
-  define('ENTRY_PAYMENT_LAST_MODIFIED', 'Last modified');
-  define('ENTRY_MC_CURRENCY', 'MC Currency');
-  define('ENTRY_MC_GROSS', 'MC Gross');
-  define('ENTRY_MC_FEE', 'MC Fee');
-  define('ENTRY_PAYMENT_GROSS', 'Payment Gross');
-  define('ENTRY_PAYMENT_FEE', 'Payment Fee');
-  define('ENTRY_SETTLE_AMOUNT', 'Settle Amount');
-  define('ENTRY_SETTLE_CURRENCY', 'Settle Currency');
-  define('ENTRY_EXCHANGE_RATE', 'Exchange Rate');
-  define('ENTRY_CART_ITEMS', 'No Of Cart Items');
-  define('ENTRY_CUSTOMER_COMMENTS', 'Customer Comments');
-  define('TEXT_NO_IPN_HISTORY', 'No IPN history available');
-  define('TEXT_TXN_SIGNATURE', 'Transaction Signature');
+  define('ENTRY_PAYER_ID', '付款人编号');
+  define('ENTRY_PAYER_STATUS', '付款人状态');
+  define('ENTRY_ADDRESS_STATUS', '地址状态');
+  define('ENTRY_PAYMENT_TYPE', '付款类型');
+  define('TABLE_HEADING_ENTRY_PAYMENT_STATUS', '付款状态');
+  define('TABLE_HEADING_PENDING_REASON', '等待原因');
+  define('TABLE_HEADING_IPN_DATE', 'IPN日期');
+  define('ENTRY_INVOICE', '发票');
+  define('ENTRY_PAYPAL_IPN_TXN', '交易编号');
+  define('ENTRY_PAYMENT_DATE', '付款日期');
+  define('ENTRY_PAYMENT_LAST_MODIFIED', '最后修改');
+  define('ENTRY_MC_CURRENCY', 'MC 币种');
+  define('ENTRY_MC_GROSS', 'MC 总额');
+  define('ENTRY_MC_FEE', 'MC 费用');
+  define('ENTRY_PAYMENT_GROSS', '付款总额');
+  define('ENTRY_PAYMENT_FEE', '付款费用');
+  define('ENTRY_SETTLE_AMOUNT', '最后金额');
+  define('ENTRY_SETTLE_CURRENCY', '选定货币');
+  define('ENTRY_EXCHANGE_RATE', '汇率');
+  define('ENTRY_CART_ITEMS', '购物车商品数量');
+  define('ENTRY_CUSTOMER_COMMENTS', '顾客评论');
+  define('TEXT_NO_IPN_HISTORY', '没有IPN历史记录');
+  define('TEXT_TXN_SIGNATURE', '交易签名');
   //end ADMIN text
 ?>

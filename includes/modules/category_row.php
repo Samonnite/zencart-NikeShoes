@@ -22,9 +22,9 @@ $col = 0;
 $list_box_contents = '';
 if ($num_categories > 0) {
   if ($num_categories < MAX_DISPLAY_CATEGORIES_PER_ROW || MAX_DISPLAY_CATEGORIES_PER_ROW == 0) {
-    $col_width = floor(100/$num_categories);
+    $col_width = floor(100/$num_categories)-1;
   } else {
-    $col_width = floor(100/MAX_DISPLAY_CATEGORIES_PER_ROW);
+    $col_width = floor(100/MAX_DISPLAY_CATEGORIES_PER_ROW)-1;
   }
 
   while (!$categories->EOF) {

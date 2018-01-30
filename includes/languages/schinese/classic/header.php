@@ -22,7 +22,7 @@ define('HEADER_ALT_TEXT', 'Zen Cart 中文版:: 电子商务的艺术');
 define('HEADER_SALES_TEXT', '商店广告语放这里');
 define('HEADER_LOGO_WIDTH', '200px');
 define('HEADER_LOGO_HEIGHT', '70px');
-define('HEADER_LOGO_IMAGE', 'logo.gif');
+define('HEADER_LOGO_IMAGE', 'logo.png');
 
 // header Search Button/Box Search Button
 define('HEADER_SEARCH_BUTTON','搜索');

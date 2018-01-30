@@ -19,14 +19,14 @@
 		$product_amount = $products[$i]['quantity'] + $product_amount;
 	}
 
-	$content .= '<div class="cart-icon"><img class="full float-left" alt="" src="'. $template->get_template_dir('', DIR_WS_TEMPLATE, $current_page_base,'images') . '/spacer.gif" />'. '<span>' . $product_amount . '</span>&nbsp;' . HEADER_PRODUCT_AMOUNT . ' '.HEADER_CART_SUBTOTAL .'<span>' . $currencies->format($_SESSION['cart']->show_total()) . '</span></div></td>'; 
+	$content .= '<div class="cart-icon"><a href="index.php?main_page=shopping_cart">'. '<span>' . $product_amount . '</span>&nbsp;' . HEADER_PRODUCT_AMOUNT . ' '.HEADER_CART_SUBTOTAL .'<span>' . $currencies->format($_SESSION['cart']->show_total()) . '</span></a></div></td>'; 
   } else {
-    $content .= '<div id="cartBoxEmpty" class="cart-icon"><img class="empty float-left" alt="" src="'. $template->get_template_dir('', DIR_WS_TEMPLATE, $current_page_base,'images') . '/spacer.gif" />' . HEADER_SHOPPING_CART_EMPTY . '&nbsp;</div></td>';
+    $content .='<td class="blue-link"><a href="index.php?main_page=shopping_cart">'. HEADER_SHOPPING_CART_EMPTY .' '.HEADER_CART_SUBTOTAL .' </a>';
   }
 
  /* if ($_SESSION['cart']->count_contents() > 0) {
     $content .= HEADER_CART_SUBTOTAL .'<span>' . $currencies->format($_SESSION['cart']->show_total()) . '</span>';
   }*/
-   $content .='<td class="blue-link"><a href="'.zen_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL').'">'.HEADER_TITLE_CHECKOUT.'</a>';
+   
 
 ?>

@@ -33,9 +33,9 @@
   define('HEADER_SEARCH_BUTTON','Search');
   define('HEADER_SEARCH_DEFAULT_TEXT', 'Search entire store here...');
   define('HEADER_ADVANCED_SEARCH', 'Advanced Search');
-  define('HEADER_SHOPPING_CART_EMPTY', '0 items');
-  define('HEADER_PRODUCT_AMOUNT', 'item(s)');
-  define('HEADER_CART_SUBTOTAL', 'in cart - ');
+  define('HEADER_SHOPPING_CART_EMPTY', '0 article(s) - $');
+  define('HEADER_PRODUCT_AMOUNT', 'articles(s) -');
+  define('HEADER_CART_SUBTOTAL', ' ');
   define('HEADER_CURRENCY', '&nbsp;&nbsp;Currency:');
   define('HEADER_LANGUAGES', 'Language:');
 
